@@ -1,0 +1,21 @@
+<!--
+
+-->
+{% if not nav_item.children %}
+<li>
+  <a href="{{ nav_item.url|url }}" class="side-bar__link {% if nav_item.active %}side-bar__link--active{% endif %}">
+    {{ nav_item.title }}
+  </a>
+</li>
+{% else %}
+  <li>
+    <span class="side-bar__link {% if nav_item.active %}side-bar__link--expanded side-bar__link--active{% else %}side-bar__link--collapsed{% endif %}">
+      {{ nav_item.title }}
+    </span>
+    <ul class="side-bar__sub-menu {% if nav_item.active %}side-bar__sub-menu--visible{% endif %}">
+        {% for nav_item in nav_item.children %}
+            {% include "nav.html" %}
+        {% endfor %}
+    </ul>
+  </li>
+{% endif %}

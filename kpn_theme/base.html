@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!--
+    The page_title contains the title for a page as shown in the navigation.
+    Site name contains the name as defined in the mkdocs.yml
+  -->
+  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
+
+  <!--
+    Just add a favicon.ico image to the docs.
+  -->
+  <link rel="shortcut icon" href="{{ "img/favicon.ico"|url }}">
+
+
+  <style type="text/css">
+  @font-face {
+    font-family: kpn-metric;
+    font-style: normal;
+    font-weight: 300;
+    src: url('{{ "css/kpn-metric-light.eot"|url }}');
+    src: url('{{ "css/kpn-metric-light.eot?#iefix"|url }}')
+        format("embedded-opentype"),
+      url('{{ "css/kpn-metric-light.wof"|url }}') format("woff"),
+      url('{{ "css/kpn-metric-light.ttf"|url }}') format("truetype"),
+      url('{{ "css/kpn-metric-light.svg"|url }}#kpn-metric') format("svg");
+  }
+  @font-face {
+    font-family: kpn-metric;
+    font-style: normal;
+    font-weight: 400;
+    src: url('{{ "css/kpn-metric-normal.eot"|url }}');
+    src: url('{{ "css/kpn-metric-normal.eot?#iefix"|url }}')
+        format("embedded-opentype"),
+      url('{{ "css/kpn-metric-normal.woff"|url }}') format("woff"),
+      url('{{ "css/kpn-metric-normal.ttf"|url }}') format("truetype"),
+      url('{{ "css/kpn-metric-normal.svg#kpn-metric"|url }}') format("svg");
+  }
+  @font-face {
+    font-family: kpn-metric;
+    font-style: normal;
+    font-weight: 700;
+    src: url('{{ "css/kpn-metric-bold.eot"|url }}');
+    src: url('{{ "css/kpn-metric-bold.eot?#iefix"|url }}')
+        format("embedded-opentype"),
+      url('{{ "css/kpn-metric-bold.woff"|url }}') format("woff"),
+      url('{{ "css/kpn-metric-bold.ttf"|url }}') format("truetype"),
+      url('{{ "css/kpn-metric-bold.svg#kpn-metric"|url }}') format("svg");
+  }
+  @font-face {
+    font-family: kpn-ui-icons;
+    font-style: normal;
+    font-weight: 400;
+    src: url('{{ "css/kpn-ui-icons.eot"|url }}');
+    src: url('{{ "css/kpn-ui-icons.eot?#iefix"|url }}')
+        format("embedded-opentype"),
+      url('{{ "css/kpn-ui-icons.woff"|url }}') format("woff"),
+      url('{{ "css/kpn-ui-icons.ttf"|url }}') format("truetype"),
+      url('{{ "css/kpn-ui-icons.svg#kpn-ui-icons"|url }}') format("svg");
+  }
+  @font-face {
+    font-family: kpn-service-icons;
+    font-style: normal;
+    font-weight: 400;
+    src: url('{{ "css/kpn-service-icons.eot"|url }}');
+    src: url('{{ "css/kpn-service-icons.eot?#iefix"|url }}')
+        format("embedded-opentype"),
+      url('{{ "css/kpn-service-icons.woff"|url }}') format("woff"),
+      url('{{ "css/kpn-service-icons.ttf"|url }}') format("truetype"),
+      url('{{ "css/kpn-service-icons.svg#kpn-service-icons"|url }}')
+        format("svg");
+  }
+  </style>
+
+  <link rel="stylesheet" href="{{ "css/bundle.css"|url }}">
+  <link rel="stylesheet" href="{{ "css/theme.css"|url }}">
+  <link rel="stylesheet" href="{{ "css/codehilite.css"|url }}">
+
+  <!--
+    extra_ess contains paths to CSS files in the users
+    documentation directory or a list of CSS files defined in
+    their mkdocs.yml.
+
+    http://www.mkdocs.org/user-guide/configuration/#extra_css
+  -->
+  {% for path in config.extra_css %}
+    <link href="{{ path|url }}" rel="stylesheet">
+  {% endfor %}
+
+  {% block extrahead %}
+  {% endblock %}
+
+  <!--
+    Include Google Analytics tracking code.
+
+    http://www.mkdocs.org/user-guide/configuration/#google_analytics
+  -->
+  {% if config.google_analytics %}
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', '{{ config.google_analytics[0] }}', '{{ config.google_analytics[1] }}');
+      ga('send', 'pageview');
+  </script>
+  {% endif %}
+
+</head>
+
+<body class="app-body">
+  <!-- KPN STYLE Beginning -->
+
+  <div class="app-layout">
+    <!-- Top Bar -->
+    <nav class="app-layout__top-bar top-bar">
+      <a class="top-bar__logo">
+        <img alt="KPN Logo" src="{{ "img/logo-kpn.png"|url }}" />
+      </a>
+      <div class="top-bar__title">{{ config.site_name }}</div>
+      <ul class="top-bar__menu">
+        <!--
+          Create a search form that sends the user to the search.html file - this is
+          the other file in the template which adds search to the theme. The only
+          requirement here is that there is a text input with the name 'q' and the
+          action and methods match below.
+        -->
+        <!-- SEARCH IS DISABLED UNTIL WE HAVE AN IMPLEMENTATION -->
+<!--
+        {% if 'search' in config['plugins'] %}
+          <li class="top-bar__item">
+
+            <span class="top-bar__link" role="search">
+              <form action="{{ "search.html"|url }}" method="get">
+                <input type="search" class="input" name="q" placeholder="Search" />
+              </form>
+            </span >
+          </li>
+        {% endif %} -->
+        <!--
+          Support repo URL
+        -->
+        <li class="top-bar__item">
+          {% if page and page.edit_url %}
+            <a class="top-bar__link repo-link"
+              href="{{ page.edit_url }}" target="_blank" rel="noopener noreferrer"">
+              <img height="25" alt="{{ config.repo_name }}" src="{{ "img/git-icon-black.png"|url }}" />
+            </a>
+          {% elif config.repo_url %}
+            <a class="top-bar__link repo-link"
+              href="{{ config.repo_url }}" target="_blank" rel="noopener noreferrer"">
+              <img height="25" alt="{{ config.repo_name }}" src="{{ "img/git-icon-black.png"|url }}" />
+            </a>
+          {% endif %}
+        </li>
+        <li class="top-bar__item top-bar__item--trigger"></li>
+        <!-- <li class="top-bar__item">
+
+          <a class="top-bar__link top-bar__link--active">Home</a>
+        </li>
+        <li class="top-bar__item"><a class="top-bar__link">Information</a></li>
+        <li class="top-bar__item">
+          <a class="top-bar__link top-bar__link--collapsed">Getting Started</a>
+
+        </li>
+        <li class="top-bar__item top-bar__item--trigger">Menu</li> -->
+      </ul>
+    </nav>
+
+    <!--
+      Create the navigation for the documentation.
+
+      Because we don't know how many levels deep the navigation is, it needs to
+      be included in it's own file so it can be recursive. Otherwise the theme
+      can also only support a specific number of levels.
+
+      See the nav.html file for more details about how this works.
+    -->
+    <nav class="app-layout__side-bar side-bar">
+      <div class="side-bar__action-bar">
+        <a class="side-bar__link" href="/">{{ config.site_name }}</a>
+        <button class="side-bar__close"></button>
+      </div>
+      <ul class="side-bar__menu">
+        {% for nav_item in nav %}
+          {% include "nav.html" %}
+        {% endfor %}
+      </ul>
+    </nav>
+
+    <!-- MAIN BLOCK -->
+    <main class="app-layout__main main">
+      <div class="app-layout__title-bar title-bar">
+        <div class="title-bar__title">{{ page.title }}</div>
+      </div>
+      {% if page.toc %}
+      <div class="sidebar--secondary hidden-s hidden-xs">
+        <h4>Table of contents</h4>
+        <ul>
+        {% for toc_item in page.toc %}
+            <li><a class="a" href="{{ toc_item.url }}">{{ toc_item.title }}</a></li>
+            {% for toc_item in toc_item.children %}
+                <li><a class="a child" href="{{ toc_item.url }}">{{ toc_item.title }}</a></li>
+            {% endfor %}
+        {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+      <div class="container content-block">
+        <div class="kpn-style">
+          {% block content %}
+            {{ page.content }}
+          {% endblock %}
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__body">
+        {% if page.next_page or page.previous_page %}
+        <div class="row">
+          <div class="col col--s-4">
+            {% if page.previous_page %}
+              <a class="footer__link padding-top-0"
+                href="{{ page.previous_page.url|url }}"
+                title="{{ page.previous_page.title }}">
+                &#8592; Previous Page
+              </a>
+            {% else %}
+              &#8592; Previous Page
+            {% endif %}
+          </div>
+          <div class="col col--s-4">
+
+          </div>
+          <div class="col col--s-4">
+            {% if page.next_page %}
+              <a class="footer__link padding-top-0"
+                href="{{ page.next_page.url|url }}"
+                title="{{ page.next_page.title }}"/>
+                Next Page &#8594;
+              </a>
+            {% else %}
+                Next Page &#8594;
+            {% endif %}
+          </div>
+        </div>
+        {% endif %}
+      </div>
+    </footer>
+  </div>
+
+
+  <!--
+  MkDocs version      : {{ mkdocs_version }}
+  Docs Build Date UTC : {{ build_date_utc }}
+  -->
+
+  <!--
+    To include static assets from our theme, just add
+    {{ base_url }} beforehand which will be the relative path to
+    the root of the documentation.
+  -->
+  <script src="{{ "js/theme.js"|url }}"></script>
+  <script src="{{ "js/detail.js"|url }}"></script>
+  <!--
+    extra_javascript contains paths to JavaScript files in the
+    users documentation directory or a list of JavaScript files
+    defined in their mkdocs.yml.
+
+    http://www.mkdocs.org/user-guide/configuration/#extra_javascript
+  -->
+  {% for path in config.extra_javascript %}
+    <script src="{{ path|url }}"></script>
+  {% endfor %}
+</body>
+</html>
