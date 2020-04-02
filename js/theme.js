@@ -1,7 +1,15 @@
-/*
- * This JavaScript doesn't do anything. The file exists just to demonstrate
- * including static assets from the HTML in themes.
- */
+function docReady(fn) {
+  // see if DOM is already available
+  if (
+    document.readyState === "complete" ||
+    document.readyState === "interactive"
+  ) {
+    // call on next available tick
+    setTimeout(fn, 1);
+  } else {
+    document.addEventListener("DOMContentLoaded", fn);
+  }
+}
 
 /**
  * Behavior for side bar navigation links when clicked
@@ -50,16 +58,19 @@ const updateSecondarySideBarHeight = () => {
   // const w = document.documentElement.clientWidth;
   const h = document.documentElement.clientHeight;
 
-  const secondarySideBar = document.getElementsByClassName("sidebar--secondary")[0];
-  secondarySideBar.style['height'] = `${h-160}px`;
-
+  const secondarySideBar = document.getElementsByClassName(
+    "sidebar--secondary"
+  )[0];
+  secondarySideBar.style["height"] = `${h - 160}px`;
 };
 
-// Attaching the event listener function to window's resize event
-window.addEventListener("resize", updateSecondarySideBarHeight);
+docReady(() => {
+  // Attaching the event listener function to window's resize event
+  window.addEventListener("resize", updateSecondarySideBarHeight);
 
-// Initializing functions
-updateSecondarySideBarHeight();
-sideBarNavigationLinks();
-openSideBarMenu();
-closeSideBarMenu();
+  // Initializing functions
+  updateSecondarySideBarHeight();
+  sideBarNavigationLinks();
+  openSideBarMenu();
+  closeSideBarMenu();
+});

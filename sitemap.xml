@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
-     <loc>None</loc>
+     <loc>https://kpn.github.io/mkdocs-kpn-theme/</loc>
      <lastmod>2020-04-02</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>None</loc>
+     <loc>https://kpn.github.io/mkdocs-kpn-theme/getting-started/</loc>
      <lastmod>2020-04-02</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>None</loc>
+     <loc>https://kpn.github.io/mkdocs-kpn-theme/md-extensions/</loc>
      <lastmod>2020-04-02</lastmod>
      <changefreq>daily</changefreq>
     </url>

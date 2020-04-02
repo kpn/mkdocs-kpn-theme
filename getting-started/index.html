@@ -8,13 +8,24 @@
     The page_title contains the title for a page as shown in the navigation.
     Site name contains the name as defined in the mkdocs.yml
   -->
-  <title>Configuration - KPN Theme</title>
+  <title>Getting started - KPN Theme</title>
 
+  <!-- Page description -->
+  
+    <meta name="description" content="A KPN theme for MkDocs" />
+  
+
+  <!-- Redirect -->
+  
+    <link rel="canonical" href="https://kpn.github.io/mkdocs-kpn-theme/getting-started/" />
+  
+
+  <!-- Page author -->
+  
   <!--
     Just add a favicon.ico image to the docs.
   -->
   <link rel="shortcut icon" href="../img/favicon.ico">
-
 
   <style type="text/css">
   @font-face {
@@ -132,11 +143,12 @@
         <!--
           Support repo URL
         -->
+
         <li class="top-bar__item">
           
             <a class="top-bar__link repo-link"
-              href="https://github.com/kpn/mkdocs-kpn-theme/edit/master/docs/configuration.md" target="_blank" rel="noopener noreferrer"">
-              <img height="25" alt="GitHub" src="../img/git-icon-black.png" />
+              href="" target="_blank" rel="noopener noreferrer"">
+              <img height="25" alt="kpn/mkdocs-kpn-theme" src="../img/git-icon-black.png" />
             </a>
           
         </li>
@@ -187,7 +199,7 @@
 
 <li>
   <a href="./" class="side-bar__link side-bar__link--active">
-    Configuration
+    Getting started
   </a>
 </li>
 
@@ -197,7 +209,7 @@
 -->
 
 <li>
-  <a href="../extensions/" class="side-bar__link ">
+  <a href="../md-extensions/" class="side-bar__link ">
     Extensions
   </a>
 </li>
@@ -209,14 +221,27 @@
     <!-- MAIN BLOCK -->
     <main class="app-layout__main main">
       <div class="app-layout__title-bar title-bar">
-        <div class="title-bar__title">Configuration</div>
+        <div class="title-bar__title">Getting started</div>
       </div>
       
       <div class="sidebar--secondary hidden-s hidden-xs">
         <h4>Table of contents</h4>
         <ul>
         
-            <li><a class="a" href="#configuration">Configuration</a></li>
+            <li><a class="a" href="#about-mkdocs">About mkdocs</a></li>
+            
+        
+            <li><a class="a" href="#installation">Installation</a></li>
+            
+        
+            <li><a class="a" href="#usage">Usage</a></li>
+            
+                <li class="child-li"><a class="a child" href="#creating-a-configuration">Creating a configuration</a></li>
+            
+                <li class="child-li"><a class="a child" href="#running-commands">Running commands</a></li>
+            
+        
+            <li><a class="a" href="#full-configuration-example">Full configuration example</a></li>
             
         
         </ul>
@@ -225,18 +250,84 @@
       <div class="container content-block">
         <div class="kpn-style">
           
-            <h1 id="configuration">Configuration</h1>
-<p>In order to enable the features appearing in the extensions website you need
-to add them to your <code>mkdocs.yml</code> in the <code>markdown_extensions</code> list.</p>
-<div class="codehilite"><pre><span></span><code><span class="nt">site_name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">KPN Theme</span>
+            <h2 id="about-mkdocs">About mkdocs<a class="headerlink" href="#about-mkdocs" title="Permanent link">&para;</a></h2>
+<p><a href="https://www.mkdocs.org/">Mkdocs</a> is a project that enables you into writing documentation for
+your project in a super <strong>fast and easy</strong> way.</p>
+<p>First, you have to create a <code>docs/</code> folder in the root of your project,
+inside it, you can start creating markdown (<code>.md</code>) files.</p>
+<p>The main file of the documentation is called <code>index.md</code>. This can be configured
+by configuring the <a href="https://www.mkdocs.org/#adding-pages">navigation setting</a> in your <code>mkdocs.yml</code> file.</p>
+<p>Once you finish writing your documentation, using the command line,
+<code>mkdocs</code> will get all of these markdown files and will output a rendered
+HTML website to the <code>site/</code> folder.</p>
+<p>That's it!</p>
+<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
+<p>If you are starting from the ground up, you need to install <code>mkdocs</code> in your
+project.</p>
+<div class="codehilite"><pre><span></span><code>python -m pip install mkdocs mkdocs-kpn
+</code></pre></div>
+
+
+<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
+<h3 id="creating-a-configuration">Creating a configuration<a class="headerlink" href="#creating-a-configuration" title="Permanent link">&para;</a></h3>
+<p>In the root of your project create a file called <code>mkdocs.yml</code>
+and put this initial configuration:</p>
+<div class="codehilite"><pre><span></span><code><span class="nt">site_name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">&lt;My Website Name&gt;</span>
+
 <span class="nt">theme</span><span class="p">:</span>
   <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">kpn</span>
 
+<span class="nt">markdown_extensions</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="nt">codehilite</span><span class="p">:</span>
+      <span class="nt">guess_lang</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+</code></pre></div>
+
+
+<p>For more settings check the Full Example at the bottom of the page.</p>
+<h3 id="running-commands">Running commands<a class="headerlink" href="#running-commands" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code>python -m mkdocs build
+</code></pre></div>
+
+
+<p>Will output the generated website into a <code>site/</code> folder. Remember to add it
+to your <code>.gitignore</code>, the idea is for CI's to automatically build it.</p>
+<hr />
+<div class="codehilite"><pre><span></span><code>python -m mkdocs serve
+</code></pre></div>
+
+
+<p>This command will run a webserver which will reload your browser as soon as you
+make a change. This is useful to see your documentation while you are writing it.</p>
+<h2 id="full-configuration-example">Full configuration example<a class="headerlink" href="#full-configuration-example" title="Permanent link">&para;</a></h2>
+<p>Full <code>mkdocs.yml</code> example:</p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Project information</span>
+<span class="nt">site_name</span><span class="p">:</span> <span class="s">&#39;KPN</span><span class="nv"> </span><span class="s">Theme&#39;</span>
+<span class="nt">site_description</span><span class="p">:</span> <span class="s">&#39;A</span><span class="nv"> </span><span class="s">KPN</span><span class="nv"> </span><span class="s">theme</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">MkDocs&#39;</span>
+<span class="nt">site_author</span><span class="p">:</span> <span class="s">&#39;Jon</span><span class="nv"> </span><span class="s">Doe&#39;</span>
+
+<span class="c1"># Repository</span>
+<span class="nt">repo_name</span><span class="p">:</span> <span class="s">&#39;kpn/mkdocs-kpn-theme&#39;</span>
 <span class="nt">repo_url</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">https://github.com/kpn/mkdocs-kpn-theme</span>
 
+<span class="c1"># Copyright</span>
+<span class="nt">copyright</span><span class="p">:</span> <span class="s">&#39;Copyright</span><span class="nv"> </span><span class="s">&amp;copy;</span><span class="nv"> </span><span class="s">KPN&#39;</span>
+
+<span class="c1"># Google Analytics Disabled by default</span>
+<span class="nt">google_analytics</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="s">&#39;UA-XXXXXXXX-X&#39;</span>
+  <span class="p p-Indicator">-</span> <span class="s">&#39;auto&#39;</span>
+
+<span class="nt">extra</span><span class="p">:</span>
+  <span class="c1"># Use the repo edit url instead of the link to the repo</span>
+  <span class="nt">use_edit_url</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+
+<span class="c1"># Extensions</span>
 <span class="nt">markdown_extensions</span><span class="p">:</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">admonition</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">codehilite</span>
+  <span class="p p-Indicator">-</span> <span class="nt">codehilite</span><span class="p">:</span>
+      <span class="nt">guess_lang</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+  <span class="p p-Indicator">-</span> <span class="nt">toc</span><span class="p">:</span>
+      <span class="nt">permalink</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">footnotes</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.critic</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.emoji</span>
@@ -257,6 +348,8 @@ to add them to your <code>mkdocs.yml</code> in the <code>markdown_extensions</co
         
         <div class="row">
           <div class="col col--s-4">
+          </div>
+          <div class="col col--s-4 space-between">
             
               <a class="footer__link padding-top-0"
                 href=".."
@@ -264,18 +357,20 @@ to add them to your <code>mkdocs.yml</code> in the <code>markdown_extensions</co
                 &#8592; Previous Page
               </a>
             
-          </div>
-          <div class="col col--s-4">
-
-          </div>
-          <div class="col col--s-4">
+            
+              <div>
+                Copyright &copy; KPN
+              </div>
+            
             
               <a class="footer__link padding-top-0"
-                href="../extensions/"
+                href="../md-extensions/"
                 title="Extensions"/>
                 Next Page &#8594;
               </a>
             
+          </div>
+          <div class="col col--s-4">
           </div>
         </div>
         
@@ -286,7 +381,7 @@ to add them to your <code>mkdocs.yml</code> in the <code>markdown_extensions</co
 
   <!--
   MkDocs version      : 1.1
-  Docs Build Date UTC : 2020-04-02 15:40:26
+  Docs Build Date UTC : 2020-04-02 17:10:33
   -->
 
   <!--

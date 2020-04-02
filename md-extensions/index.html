@@ -10,11 +10,22 @@
   -->
   <title>Extensions - KPN Theme</title>
 
+  <!-- Page description -->
+  
+    <meta name="description" content="A KPN theme for MkDocs" />
+  
+
+  <!-- Redirect -->
+  
+    <link rel="canonical" href="https://kpn.github.io/mkdocs-kpn-theme/md-extensions/" />
+  
+
+  <!-- Page author -->
+  
   <!--
     Just add a favicon.ico image to the docs.
   -->
   <link rel="shortcut icon" href="../img/favicon.ico">
-
 
   <style type="text/css">
   @font-face {
@@ -132,11 +143,12 @@
         <!--
           Support repo URL
         -->
+
         <li class="top-bar__item">
           
             <a class="top-bar__link repo-link"
-              href="https://github.com/kpn/mkdocs-kpn-theme/edit/master/docs/extensions.md" target="_blank" rel="noopener noreferrer"">
-              <img height="25" alt="GitHub" src="../img/git-icon-black.png" />
+              href="" target="_blank" rel="noopener noreferrer"">
+              <img height="25" alt="kpn/mkdocs-kpn-theme" src="../img/git-icon-black.png" />
             </a>
           
         </li>
@@ -186,8 +198,8 @@
 -->
 
 <li>
-  <a href="../configuration/" class="side-bar__link ">
-    Configuration
+  <a href="../getting-started/" class="side-bar__link ">
+    Getting started
   </a>
 </li>
 
@@ -258,7 +270,13 @@
       <div class="container content-block">
         <div class="kpn-style">
           
-            <h2 id="admonition-block-styled-content">Admonition - Block styled content</h2>
+            <h2 id="admonition-block-styled-content">Admonition - Block styled content<a class="headerlink" href="#admonition-block-styled-content" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="c1"># location: mkdocs.yml</span>
+<span class="nt">markdown_extensions</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">admonition</span>
+</code></pre></div>
+
+
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>This is an admonition box.</p>
@@ -309,7 +327,13 @@
 </code></pre></div>
 
 
-<h2 id="codehilite-language-highlight">Codehilite - Language highlight</h2>
+<h2 id="codehilite-language-highlight">Codehilite - Language highlight<a class="headerlink" href="#codehilite-language-highlight" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="c1"># location: mkdocs.yml</span>
+<span class="nt">markdown_extensions</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">codehilite</span>
+</code></pre></div>
+
+
 <div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">fun</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;holis&quot;</span><span class="p">)</span>
 </code></pre></div>
@@ -319,9 +343,15 @@
 </code></pre></div>
 
 
-<h2 id="line-highlight">Line highlight</h2>
+<h2 id="line-highlight">Line highlight<a class="headerlink" href="#line-highlight" title="Permanent link">&para;</a></h2>
 <p>You can highlight using <code>the output is like:</code></p>
-<h2 id="footnotes">Footnotes</h2>
+<h2 id="footnotes">Footnotes<a class="headerlink" href="#footnotes" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="c1"># location: mkdocs.yml</span>
+<span class="nt">markdown_extensions</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">footnotes</span>
+</code></pre></div>
+
+
 <p>All the other pages are for<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> demonstration purposes
 with the navigation only.</p>
 <div class="codehilite"><pre><span></span><code>All the other pages are <span class="k">for</span><span class="o">[</span>^1<span class="o">]</span> demonstration purposes
@@ -331,27 +361,57 @@ with the navigation only.
 </code></pre></div>
 
 
-<h2 id="keyboard">Keyboard</h2>
+<h2 id="keyboard">Keyboard<a class="headerlink" href="#keyboard" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="c1"># location: mkdocs.yml</span>
+<span class="nt">markdown_extensions</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.keys</span>
+</code></pre></div>
+
+
 <p>Use keyboard values: <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-alt">Alt</kbd><span>+</span><kbd class="key-delete">Del</kbd></span></p>
 <div class="codehilite"><pre><span></span><code>++ctrl+alt+delete++
 </code></pre></div>
 
 
-<h2 id="critics">Critics</h2>
+<h2 id="critics">Critics<a class="headerlink" href="#critics" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="c1"># location: mkdocs.yml</span>
+<span class="nt">markdown_extensions</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.critic</span>
+</code></pre></div>
+
+
 <p>To insert or remove text you can use <mark>{++insert me++}</mark> and <mark>{--remove me--}</mark> respectively. You can also denote a substitution with <mark>{~~substitute this~>with this~~}</mark>.</p>
 <p>You can also highlight specific text with <mark>{==highlight me==}</mark>. Or even comment, which is generally done by highlighting text and following it with a comment: <mark>{==highlight me</mark>}<mark>{>>Add a comment&lt;&lt;}</mark>.</p>
 <hr />
 <p>To insert or remove text you can use <ins class="critic">insert me</ins> and <del class="critic">remove me</del> respectively. You can also denote a substitution with <del class="critic">substitute this</del><ins class="critic">with this</ins>.</p>
 <p>You can also highlight specific text with <mark class="critic">highlight me</mark>. Or even comment, which is generally done by highlighting text and following it with a comment: <mark class="critic">highlight me</mark><span class="critic comment">Add a comment</span>.</p>
-<h2 id="emojis">Emojis</h2>
+<h2 id="emojis">Emojis<a class="headerlink" href="#emojis" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="c1"># location: mkdocs.yml</span>
+<span class="nt">markdown_extensions</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.emoji</span>
+</code></pre></div>
+
+
 <p>You can also use emojis: <img alt="😄" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f604.png" title=":smile:" /> <img alt="❤️" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/2764.png" title=":heart:" /></p>
 <div class="codehilite"><pre><span></span><code>:smile: :heart:
 </code></pre></div>
 
 
-<h2 id="mark">Mark</h2>
+<h2 id="mark">Mark<a class="headerlink" href="#mark" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="c1"># location: mkdocs.yml</span>
+<span class="nt">markdown_extensions</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.mark</span>
+</code></pre></div>
+
+
 <p>Ability to add <code>&lt;mark&gt;&lt;/mark&gt;</code> by using <code>==hello==</code> <mark>hello</mark></p>
-<h2 id="smart-symbols">Smart symbols</h2>
+<h2 id="smart-symbols">Smart symbols<a class="headerlink" href="#smart-symbols" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="c1"># location: mkdocs.yml</span>
+<span class="nt">markdown_extensions</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.smartsymbols</span>
+</code></pre></div>
+
+
 <p>KPN &trade;</p>
 <p>I'd say &plusmn;8</p>
 <div class="codehilite"><pre><span></span><code>KPN <span class="o">(</span>tm<span class="o">)</span>
@@ -359,7 +419,13 @@ I<span class="err">&#39;</span>d say +/-8
 </code></pre></div>
 
 
-<h2 id="tasklist">Tasklist</h2>
+<h2 id="tasklist">Tasklist<a class="headerlink" href="#tasklist" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="c1"># location: mkdocs.yml</span>
+<span class="nt">markdown_extensions</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.tasklist</span>
+</code></pre></div>
+
+
 <p>Task List</p>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox" disabled checked/> item 1</li>
@@ -375,19 +441,25 @@ I<span class="err">&#39;</span>d say +/-8
 <li class="task-list-item"><input type="checkbox" disabled/> item 2</li>
 <li class="task-list-item"><input type="checkbox" disabled/> item 3</li>
 </ul>
-<h2 id="tilde">Tilde</h2>
-<p><del>Delete me</del></p>
-<p>CH<sub>3</sub>CH<sub>2</sub>OH</p>
-<p>text<sub>a subscript</sub></p>
-<div class="codehilite"><pre><span></span><code><span class="o">~~</span><span class="k">Delete</span> <span class="n">me</span><span class="o">~~</span>
-
-<span class="n">CH</span><span class="o">~</span><span class="mi">3</span><span class="o">~</span><span class="n">CH</span><span class="o">~</span><span class="mi">2</span><span class="o">~</span><span class="n">OH</span>
-
-<span class="nb">text</span><span class="o">~</span><span class="n">a</span><span class="err">\</span> <span class="n">subscript</span><span class="o">~</span>
+<h2 id="tilde">Tilde<a class="headerlink" href="#tilde" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="c1"># location: mkdocs.yml</span>
+<span class="nt">markdown_extensions</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.tilde</span>
 </code></pre></div>
 
 
-<h2 id="more">More</h2>
+<p><del>Delete me</del></p>
+<p>CH<sub>3</sub>CH<sub>2</sub>OH</p>
+<p>text<sub>a subscript</sub></p>
+<div class="codehilite"><pre><span></span><code>~~Delete me~~
+
+CH~3~CH~2~OH
+
+text~a<span class="se">\ </span>subscript~
+</code></pre></div>
+
+
+<h2 id="more">More<a class="headerlink" href="#more" title="Permanent link">&para;</a></h2>
 <p>Read more about the extensions in <a href="https://facelessuser.github.io/pymdown-extensions/extensions/">pymdown-extensions</a></p>
 <div class="footnote">
 <hr />
@@ -408,21 +480,25 @@ I<span class="err">&#39;</span>d say +/-8
         
         <div class="row">
           <div class="col col--s-4">
+          </div>
+          <div class="col col--s-4 space-between">
             
               <a class="footer__link padding-top-0"
-                href="../configuration/"
-                title="Configuration">
+                href="../getting-started/"
+                title="Getting started">
                 &#8592; Previous Page
               </a>
             
-          </div>
-          <div class="col col--s-4">
-
-          </div>
-          <div class="col col--s-4">
+            
+              <div>
+                Copyright &copy; KPN
+              </div>
+            
             
                 Next Page &#8594;
             
+          </div>
+          <div class="col col--s-4">
           </div>
         </div>
         
@@ -433,7 +509,7 @@ I<span class="err">&#39;</span>d say +/-8
 
   <!--
   MkDocs version      : 1.1
-  Docs Build Date UTC : 2020-04-02 15:40:26
+  Docs Build Date UTC : 2020-04-02 17:10:33
   -->
 
   <!--
