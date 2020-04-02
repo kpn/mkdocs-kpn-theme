@@ -12,7 +12,7 @@ setup(
     name="mkdocs-kpn",
     version=VERSION,
     url="https://github.com/kpn/mkdocs-kpn",
-    license="BSD",
+    license="MIT",
     description="A KPN-styles theme for MkDocs",
     author="Santiago Fraire Willemoës",
     author_email="de-ddci@kpn.com",
