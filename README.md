@@ -1,10 +1,6 @@
-<<<<<<< HEAD
-# mkdocs-kpn-theme
-KPN theme for MkDocs
-=======
 # KPN for MkDocs
 
-![theme image](docs/images/example.png)]
+![theme image](docs/images/example.png)
 
 ## Create a beautiful KPN project documentation
 
@@ -33,4 +29,3 @@ designed to serve your project documentation in a user-friendly way.
 - Support for a lot of markdown extensions.
 
 [kpn_styles]: https://style.kpn.com/
->>>>>>> feat: add kpn theme for mkdocs
