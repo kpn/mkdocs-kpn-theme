@@ -1,5 +1,10 @@
 # KPN for MkDocs
 
+[![Conventional
+Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg?style=flat-square)](https://conventionalcommits.org)
+[![PyPI Package latest
+release](https://img.shields.io/pypi/v/mkdocs-kpn.svg?style=flat-square)](https://pypi.org/project/mkdocs-kpn/)
+
 ![theme image](docs/images/example.png)
 
 ## Create a beautiful KPN project documentation

@@ -11,7 +11,7 @@ with open("requirements.txt") as data:
 setup(
     name="mkdocs-kpn",
     version=VERSION,
-    url="https://github.com/kpn/mkdocs-kpn",
+    url="https://github.com/kpn/mkdocs-kpn-theme",
     license="MIT",
     description="A KPN-styles theme for MkDocs",
     author="Santiago Fraire Willemoës",
