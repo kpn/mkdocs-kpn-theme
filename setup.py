@@ -2,6 +2,15 @@ from setuptools import setup, find_packages
 
 VERSION = "0.15.0"
 
+
+def get_long_description():
+    """
+    Return the README.
+    """
+    with open("README.md", encoding="utf8") as f:
+        return f.read()
+
+
 # Load list of dependencies
 with open("requirements.txt") as data:
     install_requires = [
@@ -14,11 +23,22 @@ setup(
     url="https://github.com/kpn/mkdocs-kpn-theme",
     license="MIT",
     description="A KPN-styles theme for MkDocs",
+    long_description=get_long_description(),
+    long_description_content_type="text/markdown",
     author="Santiago Fraire Willemoës",
     author_email="de-ddci@kpn.com",
     packages=find_packages(),
     include_package_data=True,
     install_requires=install_requires,
-    entry_points={"mkdocs.themes": ["kpn = kpn_theme", ]},
+    entry_points={"mkdocs.themes": ["kpn = kpn_theme",]},
     zip_safe=False,
+    classifiers=[
+        "Development Status :: 5 - Production/Stable",
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: JavaScript",
+        "Programming Language :: Python",
+        "Topic :: Documentation",
+        "Topic :: Text Processing :: Markup :: HTML",
+    ],
+    keywords=["mkdocs", "documentation", "theme"],
 )
