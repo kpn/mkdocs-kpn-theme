@@ -3,6 +3,12 @@ title: Extensions
 ---
 ## Admonition - Block styled content
 
+```yaml
+# location: mkdocs.yml
+markdown_extensions:
+  - admonition
+```
+
 !!! info "Info"
     This is an admonition box.
 
@@ -49,6 +55,12 @@ title: Extensions
 
 ## Codehilite - Language highlight
 
+```yaml
+# location: mkdocs.yml
+markdown_extensions:
+  - codehilite
+```
+
 ```python
 def fun():
     print("holis")
@@ -64,6 +76,12 @@ You can highlight using `the output is like:`
 
 ## Footnotes
 
+```yaml
+# location: mkdocs.yml
+markdown_extensions:
+  - footnotes
+```
+
 All the other pages are for[^1] demonstration purposes
 with the navigation only.
 
@@ -78,6 +96,12 @@ with the navigation only.
 
 ## Keyboard
 
+```yaml
+# location: mkdocs.yml
+markdown_extensions:
+  - pymdownx.keys
+```
+
 Use keyboard values: ++ctrl+alt+delete++
 
 ```bash
@@ -85,6 +109,12 @@ Use keyboard values: ++ctrl+alt+delete++
 ```
 
 ## Critics
+
+```yaml
+# location: mkdocs.yml
+markdown_extensions:
+  - pymdownx.critic
+```
 
 To insert or remove text you can use ==\{\+\+insert me++\}== and ==\{\--remove me-\-\}== respectively. You can also denote a substitution with ==\{\~~substitute this~\>with this~~\}==.
 
@@ -98,6 +128,12 @@ You can also highlight specific text with {==highlight me==}. Or even comment, w
 
 ## Emojis
 
+```yaml
+# location: mkdocs.yml
+markdown_extensions:
+  - pymdownx.emoji
+```
+
 You can also use emojis: :smile: :heart:
 
 ```bash
@@ -106,9 +142,21 @@ You can also use emojis: :smile: :heart:
 
 ## Mark
 
+```yaml
+# location: mkdocs.yml
+markdown_extensions:
+  - pymdownx.mark
+```
+
 Ability to add `<mark></mark>` by using `==hello==` ==hello==
 
 ## Smart symbols
+
+```yaml
+# location: mkdocs.yml
+markdown_extensions:
+  - pymdownx.smartsymbols
+```
 
 KPN (tm)
 
@@ -120,6 +168,12 @@ I'd say +/-8
 ```
 
 ## Tasklist
+
+```yaml
+# location: mkdocs.yml
+markdown_extensions:
+  - pymdownx.tasklist
+```
 
 Task List
 
@@ -136,13 +190,19 @@ Task List
 
 ## Tilde
 
+```yaml
+# location: mkdocs.yml
+markdown_extensions:
+  - pymdownx.tilde
+```
+
 ~~Delete me~~
 
 CH~3~CH~2~OH
 
 text~a\ subscript~
 
-```
+```bash
 ~~Delete me~~
 
 CH~3~CH~2~OH
