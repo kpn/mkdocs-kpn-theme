@@ -178,7 +178,7 @@
         <li class="top-bar__item">
           {% if config.repo_url and not config.extra.use_edit_url %}
             <a class="top-bar__link repo-link"
-              href="{{ page.repo_url }}" target="_blank" rel="noopener noreferrer"">
+            href="{{ config.repo_url }}" target="_blank" rel="noopener noreferrer"">
               <img height="25" alt="{{ config.repo_name }}" src="{{ "img/git-icon-black.png"|url }}" />
             </a>
           {% elif page and page.edit_url %}
