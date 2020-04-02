@@ -118,12 +118,12 @@ kbd {
 
 /* Repo link */
 .repo-link:hover img {
-  filter: invert(29%) sepia(85%) saturate(2054%) hue-rotate(95deg) brightness(99%) contrast(102%);
+  filter: invert(29%) sepia(85%) saturate(2054%) hue-rotate(95deg)
+    brightness(99%) contrast(102%);
 }
 .repo-link:after {
   background-color: inherit !important;
 }
-
 
 /* Secondary side-bar */
 .sidebar--secondary {
@@ -131,12 +131,13 @@ kbd {
   position: fixed;
   top: 112px;
   padding: 24px;
-  max-height: 100%;
+  height: 100%;
   overflow-y: auto;
+  font-size: .9rem;
 }
-.sidebar--secondary .child {
-  padding-left: 0.6rem;
 
+.sidebar--secondary .child-li {
+  padding-left: 0.6rem;
 }
 
 .sidebar--secondary ul {
@@ -146,7 +147,6 @@ kbd {
   margin-bottom: 24px;
 }
 .sidebar--secondary li {
-
   margin-bottom: 8px;
 }
 
@@ -156,7 +156,7 @@ kbd {
 
 @media only screen and (min-width: 992px) {
   .sidebar--secondary {
-    max-width: 170px;
+    width: 170px;
   }
 
   .content-block {
@@ -166,7 +166,7 @@ kbd {
 
 @media only screen and (min-width: 1200px) {
   .sidebar--secondary {
-    max-width: 300px;
+    width: 300px;
   }
   .content-block {
     margin-right: 24.2rem;

@@ -45,6 +45,21 @@ const closeSideBarMenu = () => {
   };
 };
 
+const updateSecondarySideBarHeight = () => {
+  // Get width and height of the window excluding scrollbars
+  // const w = document.documentElement.clientWidth;
+  const h = document.documentElement.clientHeight;
+
+  const secondarySideBar = document.getElementsByClassName("sidebar--secondary")[0];
+  secondarySideBar.style['height'] = `${h-160}px`;
+
+};
+
+// Attaching the event listener function to window's resize event
+window.addEventListener("resize", updateSecondarySideBarHeight);
+
+// Initializing functions
+updateSecondarySideBarHeight();
 sideBarNavigationLinks();
 openSideBarMenu();
-closeSideBarMenu()
+closeSideBarMenu();
