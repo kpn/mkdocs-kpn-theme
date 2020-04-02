@@ -117,6 +117,10 @@ kbd {
 }
 
 /* Repo link */
+.repo-link img {
+  filter: invert(24%) sepia(0%) saturate(2574%) hue-rotate(155deg) brightness(113%) contrast(77%);
+}
+
 .repo-link:hover img {
   filter: invert(29%) sepia(85%) saturate(2054%) hue-rotate(95deg)
     brightness(99%) contrast(102%);
