@@ -1,0 +1,213 @@
+pre {
+  padding: 0.5em;
+}
+.codehilitetable tr {
+  background-color: #272822;
+  color: white;
+}
+
+.critic {
+  padding: 0 0.25em;
+  box-shadow: none;
+}
+
+ins.critic {
+  background-color: #99cc00;
+}
+del.critic {
+  background-color: #ff3333;
+}
+.critic.comment {
+  background-color: #99ccff;
+}
+
+/* Emojis */
+.emojione,
+.twemoji {
+  width: 1.125em;
+  vertical-align: -15%;
+}
+p code {
+  border: 0.5px solid;
+  background-color: #e3e3e3;
+  border-radius: 0.1rem;
+  padding: 0 0.25rem;
+  color: #535353;
+}
+
+pre {
+  overflow-x: auto;
+}
+/* Keyboard */
+kbd {
+  font-size: 0.85rem;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  display: inline-block;
+  padding: 5px 9px;
+  background: linear-gradient(178deg, #fff, #fff, #fff, #ddd);
+}
+
+/* Admonition */
+.admonition {
+  background-color: white;
+  margin-bottom: 15px;
+}
+
+.admonition p {
+  background-color: white;
+  margin: 0px !important;
+  padding: 14px;
+}
+
+.admonition.note,
+.admonition.info,
+.admonition.tips {
+  border: 2px solid #c2e1f5;
+}
+
+.admonition.note .admonition-title,
+.admonition.info .admonition-title,
+.admonition.tips .admonition-title {
+  background-color: #c2e1f5;
+}
+
+.admonition.success,
+.admonition.check,
+.admonition.done {
+  border: 2px solid #c2e1c2;
+}
+
+.admonition.success .admonition-title,
+.admonition.check .admonition-title,
+.admonition.done .admonition-title {
+  background-color: #c2e1c2;
+}
+
+.admonition.warning,
+.admonition.warn,
+.admonition.caution,
+.admonition.attention,
+.admonition.important {
+  border: 2px solid #f5e1c2;
+}
+
+.admonition.warning .admonition-title,
+.admonition.warn .admonition-title,
+.admonition.caution .admonition-title,
+.admonition.attention .admonition-title,
+.admonition.important .admonition-title {
+  background-color: #f5e1c2;
+}
+
+.admonition.danger,
+.admonition.critical,
+.admonition.failure,
+.admonition.fail,
+.admonition.missing {
+  border: 2px solid #f5cccc;
+}
+
+.admonition.danger .admonition-title,
+.admonition.critical .admonition-title,
+.admonition.failure .admonition-title,
+.admonition.fail .admonition-title,
+.admonition.missing .admonition-title {
+  background-color: #f5cccc;
+}
+
+/* Repo link */
+.repo-link:hover img {
+  filter: invert(29%) sepia(85%) saturate(2054%) hue-rotate(95deg) brightness(99%) contrast(102%);
+}
+.repo-link:after {
+  background-color: inherit !important;
+}
+
+
+/* Secondary side-bar */
+.sidebar--secondary {
+  right: 0px;
+  position: fixed;
+  top: 112px;
+  padding: 24px;
+  max-height: 100%;
+  overflow-y: auto;
+}
+.sidebar--secondary .child {
+  padding-left: 0.6rem;
+
+}
+
+.sidebar--secondary ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+}
+.sidebar--secondary li {
+
+  margin-bottom: 8px;
+}
+
+.kpn-style {
+  min-height: 75vh;
+}
+
+@media only screen and (min-width: 992px) {
+  .sidebar--secondary {
+    max-width: 170px;
+  }
+
+  .content-block {
+    margin-right: 12.1rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .sidebar--secondary {
+    max-width: 300px;
+  }
+  .content-block {
+    margin-right: 24.2rem;
+  }
+}
+
+/* Detail */
+
+details {
+  display: block;
+}
+
+details[open] > summary::before {
+  content: "\25BC";
+}
+
+details summary {
+  display: block;
+  cursor: pointer;
+}
+
+details summary:focus {
+  outline: none;
+}
+
+details summary::before {
+  content: "\25B6";
+  padding-right: 0.5em;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Attach the "no-details" class to details tags
+   in browsers that do not support them to get
+   open/show functionality. */
+details.no-details:not([open]) > * {
+  display: none;
+}
+
+details.no-details:not([open]) summary {
+  display: block;
+}
