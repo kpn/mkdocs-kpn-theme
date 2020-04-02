@@ -21,9 +21,8 @@
   <!-- Redirect -->
   {% if page and page.meta and page.meta.redirect %}
     <script>
-      var anchor = window.location.hash.substr(1)
-      location.href = '{{ page.meta.redirect }}' +
-        (anchor ? '#' + anchor : '')
+      let anchor = window.location.hash.substr(1)
+      location.href = '{{ page.meta.redirect }}' + (anchor ? '#' + anchor : '');
     </script>
 
     <!-- no-js fallback -->
@@ -175,15 +174,16 @@
         <!--
           Support repo URL
         -->
+
         <li class="top-bar__item">
-          {% if page and page.edit_url %}
+          {% if config.repo_url and not config.extra.use_edit_url %}
             <a class="top-bar__link repo-link"
-              href="{{ page.edit_url }}" target="_blank" rel="noopener noreferrer"">
+              href="{{ page.repo_url }}" target="_blank" rel="noopener noreferrer"">
               <img height="25" alt="{{ config.repo_name }}" src="{{ "img/git-icon-black.png"|url }}" />
             </a>
-          {% elif config.repo_url %}
+          {% elif page and page.edit_url %}
             <a class="top-bar__link repo-link"
-              href="{{ config.repo_url }}" target="_blank" rel="noopener noreferrer"">
+              href="{{ config.edit_url }}" target="_blank" rel="noopener noreferrer"">
               <img height="25" alt="{{ config.repo_name }}" src="{{ "img/git-icon-black.png"|url }}" />
             </a>
           {% endif %}
@@ -267,7 +267,11 @@
             {% else %}
               &#8592; Previous Page
             {% endif %}
-
+            {% if config.copyright %}
+              <div>
+                {{ config.copyright }}
+              </div>
+            {% endif %}
             {% if page.next_page %}
               <a class="footer__link padding-top-0"
                 href="{{ page.next_page.url|url }}"

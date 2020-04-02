@@ -133,7 +133,7 @@ kbd {
   padding: 24px;
   height: 100%;
   overflow-y: auto;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .sidebar--secondary .child-li {
@@ -216,4 +216,22 @@ details.no-details:not([open]) summary {
 .space-between {
   display: flex;
   justify-content: space-between;
+}
+
+.headerlink {
+  text-decoration: none;
+  visibility: hidden;
+  color: #93939340;
+  padding-left: 10px;
+  opacity: 0;
+  transition: visibility 1s, opacity 0.2s linear;
+}
+
+h1:hover .headerlink,
+h2:hover .headerlink,
+h3:hover .headerlink,
+h4:hover .headerlink {
+  visibility: visible;
+  color: #93939385;
+  opacity: 1;
 }

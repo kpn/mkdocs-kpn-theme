@@ -1,14 +1,21 @@
 site_name: KPN Theme
 site_description: 'A KPN theme for MkDocs'
+site_url: 'https://kpn.github.io/mkdocs-kpn-theme/'
 
 theme:
   name: kpn
 
-repo_url: https://github.com/kpn/mkdocs-kpn-theme
+repo_name: 'kpn/mkdocs-kpn-theme'
+repo_url: https://github.com/kpn/mkdocs-kpn-theme/
+
+copyright: 'Copyright &copy; KPN'
 
 markdown_extensions:
   - admonition
-  - codehilite
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
   - footnotes
   - pymdownx.critic
   - pymdownx.emoji

@@ -3,5 +3,9 @@
 
 # Instructs the search plugin to include the search.html template
 include_search_page: true
+
+extra:
+  use_edit_url: false
+
 static_templates:
   - 404.html
