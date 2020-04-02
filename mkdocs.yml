@@ -1,4 +1,6 @@
 site_name: KPN Theme
+site_description: 'A KPN theme for MkDocs'
+
 theme:
   name: kpn
 

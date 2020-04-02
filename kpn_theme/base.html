@@ -10,11 +10,42 @@
   -->
   <title>{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
 
+  <!-- Page description -->
+  {% if page and page.meta and page.meta.description %}
+    <meta name="description"
+        content="{{ page.meta.description }}" />
+  {% elif config.site_description %}
+    <meta name="description" content="{{ config.site_description }}" />
+  {% endif %}
+
+  <!-- Redirect -->
+  {% if page and page.meta and page.meta.redirect %}
+    <script>
+      var anchor = window.location.hash.substr(1)
+      location.href = '{{ page.meta.redirect }}' +
+        (anchor ? '#' + anchor : '')
+    </script>
+
+    <!-- no-js fallback -->
+    <meta http-equiv="refresh" content="0; url={{ page.meta.redirect }}" />
+    <meta name="robots" content="noindex" />
+    <link rel="canonical" href="{{ page.meta.redirect }}" />
+
+  <!-- Canonical -->
+  {% elif page.canonical_url %}
+    <link rel="canonical" href="{{ page.canonical_url }}" />
+  {% endif %}
+
+  <!-- Page author -->
+  {% if page and page.meta and page.meta.author %}
+    <meta name="author" content="{{ page.meta.author }}" />
+  {% elif config.site_author %}
+    <meta name="author" content="{{ config.site_author }}" />
+  {% endif %}
   <!--
     Just add a favicon.ico image to the docs.
   -->
   <link rel="shortcut icon" href="{{ "img/favicon.ico"|url }}">
-
 
   <style type="text/css">
   @font-face {
