@@ -19,7 +19,7 @@ jobs:
         python-version: '3.x'
     - name: Install dependencies
       run: |
-        python -m pip install --pre -U mkdocs twine
+        python -m pip install --pre -U mkdocs twine wheel
         python -m pip install .
     - name: Build and publish
       env:
