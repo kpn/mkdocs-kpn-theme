@@ -152,6 +152,7 @@ kbd {
 
 .kpn-style {
   min-height: 75vh;
+  max-width: 850px;
 }
 
 @media only screen and (min-width: 992px) {
@@ -210,4 +211,9 @@ details.no-details:not([open]) > * {
 
 details.no-details:not([open]) summary {
   display: block;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
 }
