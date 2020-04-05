@@ -28,10 +28,10 @@ del.critic {
   vertical-align: -15%;
 }
 p code {
-  border: 0.5px solid;
+  border: 0.1px solid;
   background-color: #e3e3e3;
   border-radius: 0.1rem;
-  padding: 0 0.25rem;
+  padding: 0 0.27rem;
   color: #535353;
 }
 
@@ -130,6 +130,11 @@ kbd {
 }
 
 /* Secondary side-bar */
+
+.container {
+  padding-right: 48px;
+}
+
 .sidebar--secondary {
   right: 0px;
   position: fixed;
@@ -138,6 +143,8 @@ kbd {
   height: 100%;
   overflow-y: auto;
   font-size: 0.9rem;
+  border-left: 1px solid #d3d3d3;
+  background-color: white;
 }
 
 .sidebar--secondary .child-li {
@@ -171,7 +178,8 @@ kbd {
 
 @media only screen and (min-width: 1200px) {
   .sidebar--secondary {
-    width: 300px;
+    width: 280px;
+    padding-left: 48px;
   }
   .content-block {
     margin-right: 24.2rem;
