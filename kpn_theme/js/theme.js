@@ -61,7 +61,10 @@ const updateSecondarySideBarHeight = () => {
   const secondarySideBar = document.getElementsByClassName(
     "sidebar--secondary"
   )[0];
-  secondarySideBar.style["height"] = `${h - 160}px`;
+  const secondarySideBarExists = !!secondarySideBar;
+  if (secondarySideBarExists) {
+    secondarySideBar.style["height"] = `${h - 160}px`;
+  }
 };
 
 docReady(() => {
