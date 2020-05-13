@@ -11,18 +11,3 @@ copyright: 'Copyright &copy; KPN'
 
 static_templates:
   - 404.html
-
-markdown_extensions:
-  - admonition
-  - codehilite:
-      guess_lang: false
-  - toc:
-      permalink: true
-  - footnotes
-  - pymdownx.critic
-  - pymdownx.emoji
-  - pymdownx.keys
-  - pymdownx.mark
-  - pymdownx.smartsymbols
-  - pymdownx.tasklist
-  - pymdownx.tilde
