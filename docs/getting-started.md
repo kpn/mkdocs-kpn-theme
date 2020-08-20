@@ -105,5 +105,14 @@ markdown_extensions:
   - pymdownx.tilde
 ```
 
+## Code inside `table` and list
+
+| Example | Bla |
+| --- | --- |
+| `name` | `String` |
+
+- `name`
+- `list`
+
 [mkdocs]: https://www.mkdocs.org/
 [adding-pages]: https://www.mkdocs.org/#adding-pages

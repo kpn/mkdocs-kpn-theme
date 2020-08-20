@@ -24,3 +24,4 @@ markdown_extensions:
   - pymdownx.smartsymbols
   - pymdownx.tasklist
   - pymdownx.tilde
+  - pymdownx.highlight

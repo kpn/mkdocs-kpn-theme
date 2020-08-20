@@ -27,6 +27,15 @@ del.critic {
   width: 1.125em;
   vertical-align: -15%;
 }
+
+h1 code,
+h2 code,
+h3 code,
+h4 code,
+h5 code,
+span code,
+table code,
+li code,
 p code {
   border: 0.1px solid;
   background-color: #e3e3e3;
