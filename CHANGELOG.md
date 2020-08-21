@@ -1,3 +1,9 @@
+## v0.19.3 (2020-08-21)
+
+### Fix
+
+- make width 100% only for content block
+
 ## v0.19.2 (2020-08-21)
 
 ### Fix
