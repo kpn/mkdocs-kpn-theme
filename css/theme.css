@@ -257,6 +257,6 @@ h4:hover .headerlink {
   opacity: 1;
 }
 
-img {
+.content-block img {
   width: 100%;
 }
