@@ -256,3 +256,7 @@ h4:hover .headerlink {
   color: #93939385;
   opacity: 1;
 }
+
+img {
+  width: 100%;
+}
