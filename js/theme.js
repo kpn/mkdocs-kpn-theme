@@ -67,6 +67,22 @@ const updateSecondarySideBarHeight = () => {
   }
 };
 
+const addNavigationControl = (navigationClass, keyCode) => {
+  document.addEventListener("keyup", event => {
+    if (event.isComposing || event.keyCode !== keyCode) {
+      return;
+    }
+    const elements = document.getElementsByClassName(navigationClass);
+    Array.prototype.map.call(elements, element => {
+        element.click();
+    });
+  });
+
+}
+
+const KEY_LEFT = 37;
+const KEY_RIGHT = 39;
+
 docReady(() => {
   // Attaching the event listener function to window's resize event
   window.addEventListener("resize", updateSecondarySideBarHeight);
@@ -76,4 +92,6 @@ docReady(() => {
   sideBarNavigationLinks();
   openSideBarMenu();
   closeSideBarMenu();
+  addNavigationControl("navigation-prev", KEY_LEFT);
+  addNavigationControl("navigation-next", KEY_RIGHT);
 });
