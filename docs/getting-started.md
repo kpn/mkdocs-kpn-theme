@@ -44,6 +44,18 @@ markdown_extensions:
 
 For more settings check the Full Example at the bottom of the page.
 
+### Add search support
+
+Just add to the `mkdocs.yml` the following:
+
+```yaml
+plugins:
+  - search:
+      prebuild_index: true
+```
+
+A search input will appear. The search index is offline, so no backend is required.
+
 ### Running commands
 
 ```bash

@@ -25,3 +25,7 @@ markdown_extensions:
   - pymdownx.tasklist
   - pymdownx.tilde
   - pymdownx.highlight
+
+plugins:
+  - search:
+      prebuild_index: true

@@ -272,3 +272,14 @@ h4::before {
   visibility: hidden;
   pointer-events: none;
 }
+
+#search-input-wrapper {
+  align-items: center;
+  display: flex;
+  position: relative;
+  height: inherit;
+}
+
+#search-input {
+  margin: 0;
+}
