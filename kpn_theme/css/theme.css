@@ -258,5 +258,5 @@ h4:hover .headerlink {
 }
 
 .content-block img {
-  width: 100%;
+  max-width: 100%;
 }
