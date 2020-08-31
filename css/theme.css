@@ -258,5 +258,28 @@ h4:hover .headerlink {
 }
 
 .content-block img {
-  width: 100%;
+  max-width: 100%;
+}
+
+h1::before,
+h2::before,
+h3::before,
+h4::before {
+  display: block;
+  content: " ";
+  margin-top: -115px;
+  padding-top: 115px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+#search-input-wrapper {
+  align-items: center;
+  display: flex;
+  position: relative;
+  height: inherit;
+}
+
+#search-input {
+  margin: 0;
 }
