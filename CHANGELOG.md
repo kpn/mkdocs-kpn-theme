@@ -1,3 +1,14 @@
+## v0.20.0 (2020-08-31)
+
+### Feat
+
+- add offline search support
+
+### Fix
+
+- fragment navigation shows title properly
+- use max-width in images
+
 ## v0.19.3 (2020-08-21)
 
 ### Fix
