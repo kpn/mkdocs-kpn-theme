@@ -1,3 +1,9 @@
+## v0.21.0 (2020-08-31)
+
+### Feat
+
+- add left and right navigation keys
+
 ## v0.20.0 (2020-08-31)
 
 ### Feat
