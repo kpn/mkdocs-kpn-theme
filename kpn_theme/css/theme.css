@@ -127,7 +127,8 @@ kbd {
 
 /* Repo link */
 .repo-link img {
-  filter: invert(24%) sepia(0%) saturate(2574%) hue-rotate(155deg) brightness(113%) contrast(77%);
+  filter: invert(24%) sepia(0%) saturate(2574%) hue-rotate(155deg)
+    brightness(113%) contrast(77%);
 }
 
 .repo-link:hover img {
@@ -282,4 +283,35 @@ h4::before {
 
 #search-input {
   margin: 0;
+}
+
+blockquote {
+  font-size: 1.25em;
+  width: 80%;
+  margin: 64px auto;
+  font-family: Open Sans;
+  font-style: italic;
+  color: #555555;
+  padding: 1.2em 30px 1.2em 75px;
+  border-left: 6px solid lightgray;
+  line-height: 1.6;
+  position: relative;
+  background: ghostwhite;
+  border-radius: 4px;
+}
+
+blockquote::before {
+  font-family: Merriweather, serif !important;
+  content: "\201C";
+  content: "\275D";
+  content: "\201C";
+  color: lightgray;
+  font-size: 2.5em;
+  position: absolute;
+  left: 1rem;
+  top: 0.25rem;
+}
+
+blockquote::after {
+  content: "";
 }
