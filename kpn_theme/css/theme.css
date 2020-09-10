@@ -37,11 +37,11 @@ span code,
 table code,
 li code,
 p code {
-  border: 0.1px solid;
-  background-color: #e3e3e3;
-  border-radius: 0.1rem;
-  padding: 0 0.27rem;
-  color: #535353;
+  padding: .2em .4em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(27,31,35,.05);
+  border-radius: 6px;
 }
 
 pre {
