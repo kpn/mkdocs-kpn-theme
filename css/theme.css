@@ -174,8 +174,9 @@ kbd {
 .kpn-style {
   min-height: 82vh;
   max-width: 850px;
-  padding: 3rem;
+  padding: 1rem;
   background-color: white;
+  width: 100%;
 }
 
 table {
@@ -190,6 +191,14 @@ table {
 
   .content-block {
     margin-right: 12.1rem;
+  }
+
+  .kpn-style {
+    min-height: 82vh;
+    max-width: 850px;
+    padding: 3rem;
+    background-color: white;
+    width: inherit;
   }
 }
 
