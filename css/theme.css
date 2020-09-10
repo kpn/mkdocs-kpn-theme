@@ -178,9 +178,6 @@ kbd {
   background-color: white;
 }
 
-.title-bar {
-  position: sticky;
-}
 table {
   display: block;
   overflow-x: auto;
