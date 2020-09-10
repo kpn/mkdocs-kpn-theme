@@ -1,3 +1,9 @@
+## v0.23.3 (2020-09-10)
+
+### Fix
+
+- improve content on mobile
+
 ## v0.23.2 (2020-09-10)
 
 ### Fix
