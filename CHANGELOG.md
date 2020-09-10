@@ -1,3 +1,9 @@
+## v0.23.1 (2020-09-10)
+
+### Fix
+
+- remove title bar position sticky
+
 ## v0.23.0 (2020-09-10)
 
 ### Feat
