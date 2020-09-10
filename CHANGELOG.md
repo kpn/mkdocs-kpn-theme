@@ -1,3 +1,9 @@
+## v0.23.0 (2020-09-10)
+
+### Feat
+
+- add bg white to content + responsive fixes
+
 ## v0.22.1 (2020-09-02)
 
 ### Fix
