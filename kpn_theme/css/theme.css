@@ -174,6 +174,16 @@ kbd {
 .kpn-style {
   min-height: 82vh;
   max-width: 850px;
+  padding: 3rem;
+  background-color: white;
+}
+
+.title-bar {
+  position: sticky;
+}
+table {
+  display: block;
+  overflow-x: auto;
 }
 
 @media only screen and (min-width: 992px) {
