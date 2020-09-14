@@ -37,10 +37,10 @@ span code,
 table code,
 li code,
 p code {
-  padding: .2em .4em;
+  padding: 0.2em 0.4em;
   margin: 0;
   font-size: 85%;
-  background-color: rgba(27,31,35,.05);
+  background-color: rgba(27, 31, 35, 0.05);
   border-radius: 6px;
 }
 
@@ -141,10 +141,6 @@ kbd {
 
 /* Secondary side-bar */
 
-.container {
-  padding-right: 48px;
-}
-
 .sidebar--secondary {
   right: 0px;
   position: fixed;
@@ -174,11 +170,13 @@ kbd {
 .kpn-style {
   min-height: 82vh;
   max-width: 850px;
-  padding: 1rem;
-  background-color: white;
+  /* padding: 1rem;
+  background-color: white; */
   width: 100%;
 }
-
+.card {
+  width: 100%;
+}
 table {
   display: block;
   overflow-x: auto;
@@ -196,9 +194,16 @@ table {
   .kpn-style {
     min-height: 82vh;
     max-width: 850px;
-    padding: 3rem;
-    background-color: white;
+    /* 
+    background-color: white; */
+  }
+  .card {
     width: inherit;
+    padding: 1rem;
+  }
+
+  .container {
+    padding-right: 62px;
   }
 }
 
