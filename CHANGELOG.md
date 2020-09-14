@@ -1,3 +1,9 @@
+## v0.24.0 (2020-09-14)
+
+### Feat
+
+- add card wrapping content
+
 ## v0.23.3 (2020-09-10)
 
 ### Fix
