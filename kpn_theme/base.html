@@ -243,9 +243,14 @@
       {% endif %}
       <div class="container content-block">
         <div class="kpn-style">
-          {% block content %}
-            {{ page.content }}
-          {% endblock %}
+          <div class="card">
+            <div class="card__body">
+
+              {% block content %}
+              {{ page.content }}
+              {% endblock %}
+            </div>
+          </div>
         </div>
       </div>
     </main>
