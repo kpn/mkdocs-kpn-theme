@@ -1,3 +1,9 @@
+## v0.24.1 (2020-12-14)
+
+### Fix
+
+- move font files to a folder called 1.17.0
+
 ## v0.24.0 (2020-09-14)
 
 ### Feat
