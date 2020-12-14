@@ -27,64 +27,6 @@
   -->
   <link rel="shortcut icon" href="../img/favicon.ico">
 
-  <style type="text/css">
-  @font-face {
-    font-family: kpn-metric;
-    font-style: normal;
-    font-weight: 300;
-    src: url('../css/kpn-metric-light.eot');
-    src: url('../css/kpn-metric-light.eot?#iefix')
-        format("embedded-opentype"),
-      url('../css/kpn-metric-light.wof') format("woff"),
-      url('../css/kpn-metric-light.ttf') format("truetype"),
-      url('../css/kpn-metric-light.svg#kpn-metric') format("svg");
-  }
-  @font-face {
-    font-family: kpn-metric;
-    font-style: normal;
-    font-weight: 400;
-    src: url('../css/kpn-metric-normal.eot');
-    src: url('../css/kpn-metric-normal.eot?#iefix')
-        format("embedded-opentype"),
-      url('../css/kpn-metric-normal.woff') format("woff"),
-      url('../css/kpn-metric-normal.ttf') format("truetype"),
-      url('../css/kpn-metric-normal.svg#kpn-metric') format("svg");
-  }
-  @font-face {
-    font-family: kpn-metric;
-    font-style: normal;
-    font-weight: 700;
-    src: url('../css/kpn-metric-bold.eot');
-    src: url('../css/kpn-metric-bold.eot?#iefix')
-        format("embedded-opentype"),
-      url('../css/kpn-metric-bold.woff') format("woff"),
-      url('../css/kpn-metric-bold.ttf') format("truetype"),
-      url('../css/kpn-metric-bold.svg#kpn-metric') format("svg");
-  }
-  @font-face {
-    font-family: kpn-ui-icons;
-    font-style: normal;
-    font-weight: 400;
-    src: url('../css/kpn-ui-icons.eot');
-    src: url('../css/kpn-ui-icons.eot?#iefix')
-        format("embedded-opentype"),
-      url('../css/kpn-ui-icons.woff') format("woff"),
-      url('../css/kpn-ui-icons.ttf') format("truetype"),
-      url('../css/kpn-ui-icons.svg#kpn-ui-icons') format("svg");
-  }
-  @font-face {
-    font-family: kpn-service-icons;
-    font-style: normal;
-    font-weight: 400;
-    src: url('../css/kpn-service-icons.eot');
-    src: url('../css/kpn-service-icons.eot?#iefix')
-        format("embedded-opentype"),
-      url('../css/kpn-service-icons.woff') format("woff"),
-      url('../css/kpn-service-icons.ttf') format("truetype"),
-      url('../css/kpn-service-icons.svg#kpn-service-icons')
-        format("svg");
-  }
-  </style>
 
   <link rel="stylesheet" href="../css/bundle.css">
   <link rel="stylesheet" href="../css/theme.css">
@@ -280,7 +222,6 @@ project.</p>
 <div class="codehilite"><pre><span></span><code>python -m pip install mkdocs mkdocs-kpn
 </code></pre></div>
 
-
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <h3 id="creating-a-configuration">Creating a configuration<a class="headerlink" href="#creating-a-configuration" title="Permanent link">&para;</a></h3>
 <p>In the root of your project create a file called <code>mkdocs.yml</code>
@@ -295,7 +236,6 @@ and put this initial configuration:</p>
       <span class="nt">guess_lang</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
 </code></pre></div>
 
-
 <p>For more settings check the Full Example at the bottom of the page.</p>
 <h3 id="add-search-support">Add search support<a class="headerlink" href="#add-search-support" title="Permanent link">&para;</a></h3>
 <p>Just add to the <code>mkdocs.yml</code> the following:</p>
@@ -304,19 +244,16 @@ and put this initial configuration:</p>
       <span class="nt">prebuild_index</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
 </code></pre></div>
 
-
 <p>A search input will appear. The search index is offline, so no backend is required.</p>
 <h3 id="running-commands">Running commands<a class="headerlink" href="#running-commands" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>python -m mkdocs build
 </code></pre></div>
-
 
 <p>Will output the generated website into a <code>site/</code> folder. Remember to add it
 to your <code>.gitignore</code>, the idea is for CI's to automatically build it.</p>
 <hr />
 <div class="codehilite"><pre><span></span><code>python -m mkdocs serve
 </code></pre></div>
-
 
 <p>This command will run a webserver which will reload your browser as soon as you
 make a change. This is useful to see your documentation while you are writing it.</p>
@@ -405,7 +342,7 @@ make a change. This is useful to see your documentation while you are writing it
 
   <!--
   MkDocs version      : 1.1.2
-  Docs Build Date UTC : 2020-09-14 06:50:45.435908+00:00
+  Docs Build Date UTC : 2020-12-14 13:48:28.448455+00:00
   -->
 
   <!--
