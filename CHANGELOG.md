@@ -1,3 +1,9 @@
+## v0.24.3 (2020-12-14)
+
+### Fix
+
+- **again**: move font files to a folder called static/1.17.1
+
 ## v0.24.2 (2020-12-14)
 
 ### Fix
