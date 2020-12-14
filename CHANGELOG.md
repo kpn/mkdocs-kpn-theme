@@ -1,3 +1,9 @@
+## v0.24.5 (2020-12-14)
+
+### Fix
+
+- **again**: move fonts files to a folder called fonts
+
 ## v0.24.4 (2020-12-14)
 
 ### Fix
