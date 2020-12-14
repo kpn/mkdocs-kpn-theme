@@ -1,3 +1,9 @@
+## v0.24.2 (2020-12-14)
+
+### Fix
+
+- **again**: move font files to a folder called 1.17.0 out of css folder
+
 ## v0.24.1 (2020-12-14)
 
 ### Fix
