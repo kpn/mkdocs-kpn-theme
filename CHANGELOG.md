@@ -1,3 +1,9 @@
+## v0.24.6 (2020-12-14)
+
+### Fix
+
+- **again**: add a fonts folder on top to prevent more issues
+
 ## v0.24.5 (2020-12-14)
 
 ### Fix
