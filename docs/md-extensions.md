@@ -215,3 +215,76 @@ text~a\ subscript~
 Read more about the extensions in [pymdown-extensions][pymdown-extensions]
 
 [pymdown-extensions]: https://facelessuser.github.io/pymdown-extensions/extensions/
+
+
+## PlantUML diagrams
+
+This is a C4 model example
+
+```plantuml format="png" classes="uml myDiagram" alt="My super diagram placeholder" title="C4 Model"
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+!define DEVICONS https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/devicons
+!define FONTAWESOME https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/font-awesome-5
+!include DEVICONS/react.puml
+!include DEVICONS/python.puml
+!include DEVICONS/postgresql.puml
+!include FONTAWESOME/users.puml
+
+LAYOUT_WITH_LEGEND()
+
+Person(user, "Customer", "People that need products", $sprite="users")
+Container(spa, "SPA", "react", "The main interface that the customer interacts with", $sprite="react")
+Container(api, "API", "python", "Handles all business logic", $sprite="python")
+ContainerDb(db, "Database", "Postgres SQL", "Holds product, order and invoice information", $sprite="postgresql")
+
+Rel(user, spa, "Uses", "https")
+Rel(spa, api, "Uses", "https")
+Rel_R(api, db, "Reads/Writes")
+@enduml
+```
+
+````
+```plantuml format="png" classes="uml myDiagram" alt="My super diagram placeholder" title="C4 Model"
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+!define DEVICONS https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/devicons
+!define FONTAWESOME https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/font-awesome-5
+!include DEVICONS/react.puml
+!include DEVICONS/python.puml
+!include DEVICONS/postgresql.puml
+!include FONTAWESOME/users.puml
+
+LAYOUT_WITH_LEGEND()
+
+Person(user, "Customer", "People that need products", $sprite="users")
+Container(spa, "SPA", "react", "The main interface that the customer interacts with", $sprite="react")
+Container(api, "API", "python", "Handles all business logic", $sprite="python")
+ContainerDb(db, "Database", "Postgres SQL", "Holds product, order and invoice information", $sprite="postgresql")
+
+Rel(user, spa, "Uses", "https")
+Rel(spa, api, "Uses", "https")
+Rel_R(api, db, "Reads/Writes")
+@enduml
+```
+````
+
+Add to `mkdocs.yml`
+
+```yaml
+markdown_extensions:
+- plantuml_markdown:
+      server: http://www.plantuml.com/plantuml
+```
+
+Check `plantum-markdown` is installed by running: `pip freeze | grep plantuml-markdown`
+
+If not present, run:
+
+```bash
+pip install -U plantuml-markdown
+```
+
+[VS code extension for PlantUML](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml)
