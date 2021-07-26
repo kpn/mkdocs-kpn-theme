@@ -1,3 +1,9 @@
+## v0.25.0 (2021-07-26)
+
+### Feat
+
+- add support for plantuml and C4
+
 ## v0.24.6 (2020-12-14)
 
 ### Fix
