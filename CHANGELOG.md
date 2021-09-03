@@ -1,3 +1,17 @@
+## v0.28.0 (2021-09-03)
+
+### Refactor
+
+- import highlight css and js from host
+
+### Feat
+
+- add support for superfences and deprecate codehilite
+
+### Fix
+
+- footer dimensions
+
 ## v0.27.0 (2021-09-03)
 
 ### Feat
