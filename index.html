@@ -27,11 +27,10 @@
   -->
   <link rel="shortcut icon" href="img/favicon.ico">
 
-
   <link rel="stylesheet" href="css/colors.css">
   <link rel="stylesheet" href="css/bundle.css">
   <link rel="stylesheet" href="css/theme.css">
-  <link rel="stylesheet" href="css/codehilite.css">
+  <link media="print" onload="this.media='all'" rel="stylesheet" href="css/ir-black.min.css">
 
   <!--
     extra_ess contains paths to CSS files in the users
@@ -211,14 +210,12 @@
 It is built using <a href="https://style.kpn.com/">KPN Styles</a>.</p>
 <h2 id="quickstart">Quickstart<a class="headerlink" href="#quickstart" title="Permanent link">&para;</a></h2>
 <p>Install the latest version of KPN theme with pip:</p>
-<div class="codehilite"><pre><span></span><code>pip install mkdocs-kpn
+<div class="highlight"><pre><span></span><code>pip install mkdocs-kpn
 </code></pre></div>
-
 <p>Append the following line to your project's mkdocs.yml:</p>
-<div class="codehilite"><pre><span></span><code><span class="nt">theme</span><span class="p">:</span>
+<div class="highlight"><pre><span></span><code><span class="nt">theme</span><span class="p">:</span>
   <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;kpn&#39;</span>
 </code></pre></div>
-
 <h2 id="what-to-expect">What to expect<a class="headerlink" href="#what-to-expect" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Responsive design and fluid layout for all kinds of screens and devices,
@@ -237,9 +234,9 @@ designed to serve your project documentation in a user-friendly way.</li>
       <div class="footer__body">
         
         <div class="row">
-          <div class="col col--s-4">
+          <div class="col col--s-4 col--m-3 col--l-2">
           </div>
-          <div class="col col--s-4 space-between">
+          <div class="col col--s-4 col--m space-between">
             
               &#8592; Previous Page
             
@@ -256,7 +253,7 @@ designed to serve your project documentation in a user-friendly way.</li>
               </a>
             
           </div>
-          <div class="col col--s-4">
+          <div class="col col--s-4 col--m-3 ">
           </div>
         </div>
         
@@ -267,7 +264,7 @@ designed to serve your project documentation in a user-friendly way.</li>
 
   <!--
   MkDocs version      : 1.2.2
-  Docs Build Date UTC : 2021-09-03 12:54:17.283957+00:00
+  Docs Build Date UTC : 2021-09-03 14:15:29.943511+00:00
   -->
 
   <!--
@@ -275,8 +272,9 @@ designed to serve your project documentation in a user-friendly way.</li>
     . beforehand which will be the relative path to
     the root of the documentation.
   -->
-  <script src="js/theme.js"></script>
-  <script src="js/detail.js"></script>
+  <script async src="js/highlight.min.js"></script>
+  <script async src="js/theme.js"></script>
+  <script async src="js/detail.js"></script>
   <!--
     extra_javascript contains paths to JavaScript files in the
     users documentation directory or a list of JavaScript files

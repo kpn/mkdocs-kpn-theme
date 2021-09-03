@@ -27,11 +27,10 @@
   -->
   <link rel="shortcut icon" href="../img/favicon.ico">
 
-
   <link rel="stylesheet" href="../css/colors.css">
   <link rel="stylesheet" href="../css/bundle.css">
   <link rel="stylesheet" href="../css/theme.css">
-  <link rel="stylesheet" href="../css/codehilite.css">
+  <link media="print" onload="this.media='all'" rel="stylesheet" href="../css/ir-black.min.css">
 
   <!--
     extra_ess contains paths to CSS files in the users
@@ -228,14 +227,13 @@ HTML website to the <code>site/</code> folder.</p>
 <h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
 <p>If you are starting from the ground up, you need to install <code>mkdocs</code> in your
 project.</p>
-<div class="codehilite"><pre><span></span><code>python -m pip install mkdocs mkdocs-kpn
+<div class="highlight"><pre><span></span><code>python -m pip install mkdocs mkdocs-kpn
 </code></pre></div>
-
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <h3 id="creating-a-configuration">Creating a configuration<a class="headerlink" href="#creating-a-configuration" title="Permanent link">&para;</a></h3>
 <p>In the root of your project create a file called <code>mkdocs.yml</code>
 and put this initial configuration:</p>
-<div class="codehilite"><pre><span></span><code><span class="nt">site_name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">&lt;My Website Name&gt;</span>
+<div class="highlight"><pre><span></span><code><span class="nt">site_name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">&lt;My Website Name&gt;</span>
 
 <span class="nt">theme</span><span class="p">:</span>
   <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">kpn</span>
@@ -244,31 +242,27 @@ and put this initial configuration:</p>
   <span class="p p-Indicator">-</span> <span class="nt">codehilite</span><span class="p">:</span>
       <span class="nt">guess_lang</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
 </code></pre></div>
-
 <p>For more settings check the Full Example at the bottom of the page.</p>
 <h3 id="add-search-support">Add search support<a class="headerlink" href="#add-search-support" title="Permanent link">&para;</a></h3>
 <p>Just add to the <code>mkdocs.yml</code> the following:</p>
-<div class="codehilite"><pre><span></span><code><span class="nt">plugins</span><span class="p">:</span>
+<div class="highlight"><pre><span></span><code><span class="nt">plugins</span><span class="p">:</span>
   <span class="p p-Indicator">-</span> <span class="nt">search</span><span class="p">:</span>
       <span class="nt">prebuild_index</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
 </code></pre></div>
-
 <p>A search input will appear. The search index is offline, so no backend is required.</p>
 <h3 id="running-commands">Running commands<a class="headerlink" href="#running-commands" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code>python -m mkdocs build
+<div class="highlight"><pre><span></span><code>python -m mkdocs build
 </code></pre></div>
-
 <p>Will output the generated website into a <code>site/</code> folder. Remember to add it
 to your <code>.gitignore</code>, the idea is for CI's to automatically build it.</p>
 <hr />
-<div class="codehilite"><pre><span></span><code>python -m mkdocs serve
+<div class="highlight"><pre><span></span><code>python -m mkdocs serve
 </code></pre></div>
-
 <p>This command will run a webserver which will reload your browser as soon as you
 make a change. This is useful to see your documentation while you are writing it.</p>
 <h2 id="full-configuration-example">Full configuration example<a class="headerlink" href="#full-configuration-example" title="Permanent link">&para;</a></h2>
 <p>Full <code>mkdocs.yml</code> example:</p>
-<div class="codehilite"><pre><span></span><code><span class="c1"># Project information</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># Project information</span>
 <span class="nt">site_name</span><span class="p">:</span> <span class="s">&#39;KPN</span><span class="nv"> </span><span class="s">Theme&#39;</span>
 <span class="nt">site_description</span><span class="p">:</span> <span class="s">&#39;A</span><span class="nv"> </span><span class="s">KPN</span><span class="nv"> </span><span class="s">theme</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">MkDocs&#39;</span>
 <span class="nt">site_author</span><span class="p">:</span> <span class="s">&#39;Jon</span><span class="nv"> </span><span class="s">Doe&#39;</span>
@@ -317,9 +311,9 @@ make a change. This is useful to see your documentation while you are writing it
       <div class="footer__body">
         
         <div class="row">
-          <div class="col col--s-4">
+          <div class="col col--s-4 col--m-3 col--l-2">
           </div>
-          <div class="col col--s-4 space-between">
+          <div class="col col--s-4 col--m space-between">
             
               <a class="footer__link padding-top-0 navigation-prev"
                 href=".."
@@ -340,7 +334,7 @@ make a change. This is useful to see your documentation while you are writing it
               </a>
             
           </div>
-          <div class="col col--s-4">
+          <div class="col col--s-4 col--m-3 ">
           </div>
         </div>
         
@@ -351,7 +345,7 @@ make a change. This is useful to see your documentation while you are writing it
 
   <!--
   MkDocs version      : 1.2.2
-  Docs Build Date UTC : 2021-09-03 12:54:17.285644+00:00
+  Docs Build Date UTC : 2021-09-03 14:15:29.945330+00:00
   -->
 
   <!--
@@ -359,8 +353,9 @@ make a change. This is useful to see your documentation while you are writing it
     .. beforehand which will be the relative path to
     the root of the documentation.
   -->
-  <script src="../js/theme.js"></script>
-  <script src="../js/detail.js"></script>
+  <script async src="../js/highlight.min.js"></script>
+  <script async src="../js/theme.js"></script>
+  <script async src="../js/detail.js"></script>
   <!--
     extra_javascript contains paths to JavaScript files in the
     users documentation directory or a list of JavaScript files
