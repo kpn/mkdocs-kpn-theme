@@ -50,7 +50,7 @@
   <link rel="stylesheet" href="{{ "css/bundle.css"|url }}">
   <link rel="stylesheet" href="{{ "css/theme.css"|url }}">
   <link media="print" onload="this.media='all'" rel="stylesheet" href="{{ "css/ir-black.min.css"|url }}">
-
+  <script async src="{{ "js/theme.js"|url }}"></script>
   <!--
     extra_ess contains paths to CSS files in the users
     documentation directory or a list of CSS files defined in
@@ -256,8 +256,10 @@
     {{ base_url }} beforehand which will be the relative path to
     the root of the documentation.
   -->
-  <script async src="{{ "js/highlight.min.js"|url }}"></script>
-  <script async src="{{ "js/theme.js"|url }}"></script>
+  <script src="{{ "js/highlight.min.js"|url }}"></script>
+  <script>
+    hljs.highlightAll();
+  </script>
   <script async src="{{ "js/detail.js"|url }}"></script>
   <!--
     extra_javascript contains paths to JavaScript files in the
