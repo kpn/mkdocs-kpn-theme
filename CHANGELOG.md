@@ -1,3 +1,9 @@
+## v0.26.0 (2021-09-03)
+
+### Feat
+
+- **extensions**: add support for content tabs
+
 ## v0.25.1 (2021-07-26)
 
 ### Fix
