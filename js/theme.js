@@ -83,6 +83,23 @@ const addNavigationControl = (navigationClass, keyCode) => {
 const KEY_LEFT = 37;
 const KEY_RIGHT = 39;
 
+function loadDarkMode() {
+  let checked = JSON.parse(localStorage.getItem("dark-mode"));
+  document.getElementById("dark-mode").checked = checked;
+}
+
+function saveDarkMode(value) {
+  let checkbox = document.getElementById("dark-mode");
+  localStorage.setItem("dark-mode", value);
+}
+
+function startDarkMode() {
+  let checkbox = document.getElementById("dark-mode");
+  checkbox.onclick = () => {
+    saveDarkMode(checkbox.checked)
+  }
+}
+
 docReady(() => {
   // Attaching the event listener function to window's resize event
   window.addEventListener("resize", updateSecondarySideBarHeight);
@@ -94,4 +111,6 @@ docReady(() => {
   closeSideBarMenu();
   addNavigationControl("navigation-prev", KEY_LEFT);
   addNavigationControl("navigation-next", KEY_RIGHT);
+  loadDarkMode();
+  startDarkMode();
 });

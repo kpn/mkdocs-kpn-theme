@@ -28,6 +28,7 @@
   <link rel="shortcut icon" href="../img/favicon.ico">
 
 
+  <link rel="stylesheet" href="../css/colors.css">
   <link rel="stylesheet" href="../css/bundle.css">
   <link rel="stylesheet" href="../css/theme.css">
   <link rel="stylesheet" href="../css/codehilite.css">
@@ -53,14 +54,15 @@
 
 </head>
 
-<body class="app-body">
+<body>
+<input id="dark-mode" type="checkbox" />
+<div class="app-body">
   <!-- KPN STYLE Beginning -->
-
-  <div class="app-layout">
+  <div class="app-layout ">
     <!-- Top Bar -->
     <nav class="app-layout__top-bar top-bar">
       <a class="top-bar__logo">
-        <img alt="KPN Logo" src="../img/logo-kpn.png" />
+        <img alt="KPN Logo" src="../img/logo-kpn.svg" />
       </a>
       <div class="top-bar__title">KPN Theme</div>
       <ul class="top-bar__menu">
@@ -75,7 +77,7 @@
 
             <span role="search" id="search-input-wrapper">
               <form action="../search.html" method="get">
-                <input type="text" class="input" id="search-input" name="q" placeholder="Search" />
+                <input type="text" class="input" id="search-input" name="q" placeholder="Search..." />
               </form>
             </span >
           </li>
@@ -85,11 +87,18 @@
 
         <li class="top-bar__item">
           
-            <a class="top-bar__link repo-link"
-            href="https://github.com/kpn/mkdocs-kpn-theme/" target="_blank" rel="noopener noreferrer"">
-              <img height="25" alt="kpn/mkdocs-kpn-theme" src="../img/git-icon-black.png" />
+            <a class="top-bar__link repo-link" title="Repository"
+            href="https://github.com/kpn/mkdocs-kpn-theme/" target="_blank" rel="noopener noreferrer">
+              <img height="24" alt="kpn/mkdocs-kpn-theme" src="../img/git-icon-black.png" />
             </a>
           
+        </li>
+        <li class="top-bar__item">
+            <label class="top-bar__link" id="label-dark-mode" for="dark-mode" title="Dark mode">
+              <svg alt="dark mode" width="24" height="24">
+                <image xlink:href="../img/ui-bulb.svg" width="24" height="24"/>
+            </svg>
+            </label>
         </li>
         <li class="top-bar__item top-bar__item--trigger"></li>
         <!-- <li class="top-bar__item">
@@ -342,7 +351,7 @@ make a change. This is useful to see your documentation while you are writing it
 
   <!--
   MkDocs version      : 1.2.2
-  Docs Build Date UTC : 2021-09-03 08:01:14.166693+00:00
+  Docs Build Date UTC : 2021-09-03 12:54:17.285644+00:00
   -->
 
   <!--
@@ -362,5 +371,6 @@ make a change. This is useful to see your documentation while you are writing it
   
     <script src="../search/main.js"></script>
   
+</div>
 </body>
 </html>
