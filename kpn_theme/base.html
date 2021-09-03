@@ -143,14 +143,15 @@
 
 </head>
 
-<body class="app-body">
+<body>
+<input id="dark-mode" type="checkbox" />
+<div class="app-body">
   <!-- KPN STYLE Beginning -->
-
-  <div class="app-layout">
+  <div class="app-layout ">
     <!-- Top Bar -->
     <nav class="app-layout__top-bar top-bar">
       <a class="top-bar__logo">
-        <img alt="KPN Logo" src="{{ "img/logo-kpn.png"|url }}" />
+        <img alt="KPN Logo" src="{{ "img/logo-kpn.svg"|url }}" />
       </a>
       <div class="top-bar__title">{{ config.site_name }}</div>
       <ul class="top-bar__menu">
@@ -167,7 +168,7 @@
 
             <span role="search" id="search-input-wrapper">
               <form action="{{ "search.html"|url }}" method="get">
-                <input type="text" class="input" id="search-input" name="q" placeholder="Search" />
+                <input type="text" class="input" id="search-input" name="q" placeholder="Search..." />
               </form>
             </span >
           </li>
@@ -178,16 +179,23 @@
 
         <li class="top-bar__item">
           {% if config.repo_url and not config.extra.use_edit_url %}
-            <a class="top-bar__link repo-link"
-            href="{{ config.repo_url }}" target="_blank" rel="noopener noreferrer"">
-              <img height="25" alt="{{ config.repo_name }}" src="{{ "img/git-icon-black.png"|url }}" />
+            <a class="top-bar__link repo-link" title="Repository"
+            href="{{ config.repo_url }}" target="_blank" rel="noopener noreferrer">
+              <img height="24" alt="{{ config.repo_name }}" src="{{ "img/git-icon-black.png"|url }}" />
             </a>
           {% elif page and page.edit_url %}
-            <a class="top-bar__link repo-link"
-              href="{{ config.edit_url }}" target="_blank" rel="noopener noreferrer"">
-              <img height="25" alt="{{ config.repo_name }}" src="{{ "img/git-icon-black.png"|url }}" />
+            <a class="top-bar__link repo-link" title="Edit URL"
+              href="{{ config.edit_url }}" target="_blank" rel="noopener noreferrer">
+              <img height="24" alt="{{ config.repo_name }}" src="{{ "img/git-icon-black.png"|url }}" />
             </a>
           {% endif %}
+        </li>
+        <li class="top-bar__item">
+            <label class="top-bar__link" id="label-dark-mode" for="dark-mode" title="Dark mode">
+              <svg alt="dark mode" width="24" height="24">
+                <image xlink:href="{{ "img/ui-bulb.svg"|url }}" width="24" height="24"/>
+            </svg>
+            </label>
         </li>
         <li class="top-bar__item top-bar__item--trigger"></li>
         <!-- <li class="top-bar__item">
@@ -319,5 +327,6 @@
   {% for path in config.extra_javascript %}
     <script src="{{ path|url }}"></script>
   {% endfor %}
+</div>
 </body>
 </html>
