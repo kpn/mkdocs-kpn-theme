@@ -1,3 +1,41 @@
+:root {
+  --green-subtle: #f4fae3;
+  --green-light: #ccdd77;
+  --green-bright: #99cc00;
+  --green: #009900;
+  --green-dark: #007700;
+  --green-darkest: #005500;
+
+  --blue-subtle: #dbecf9;
+  --blue-light: #99ccff;
+  --blue: #0099ff;
+  --blue-dark: #0077cc;
+  --blue-darkest: #005599;
+
+  --orange-subtle: #feeacc;
+  --orange-light: #ffbb55;
+  --orange: #ff9900;
+  --orange-dark: #ee7700;
+
+  --red: #ff3333;
+  --red-dark: #e52e2e;
+
+  --grey-white: #ffffff;
+  --grey-subtle: #f3f3f3;
+  --grey-light: #e3e3e3;
+  --grey-light-silver: #d3d3d3;
+  --grey-silver: #b3b3b3;
+  --grey-medium: #939393;
+  --grey: #737373;
+  --grey-dove: #535353;
+  --grey-dark: #333333;
+  --grey-black: #131313;
+
+  --shadow: 0 1px 2px 0 rgba(0,0,0,0.05);
+  --ring-offset-shadow: 0 0 transparent;
+  --ring-shadow: 0 0 transparent;
+}
+
 pre {
   padding: 0.5em;
 }
@@ -12,13 +50,13 @@ pre {
 }
 
 ins.critic {
-  background-color: #99cc00;
+  background-color: var(--green-bright);
 }
 del.critic {
-  background-color: #ff3333;
+  background-color: var(--red);
 }
 .critic.comment {
-  background-color: #99ccff;
+  background-color: var(--blue-light);
 }
 
 /* Emojis */
@@ -149,7 +187,7 @@ kbd {
   height: 100%;
   overflow-y: auto;
   font-size: 0.9rem;
-  border-left: 1px solid #d3d3d3;
+  border-left: 1px solid var(--grey-light-silver);
   background-color: white;
 }
 
@@ -194,7 +232,7 @@ table {
   .kpn-style {
     min-height: 82vh;
     max-width: 850px;
-    /* 
+    /*
     background-color: white; */
   }
   .card {
@@ -335,4 +373,45 @@ blockquote::before {
 
 blockquote::after {
   content: "";
+}
+
+.tabbed-set {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  /* margin-top: 30px; */
+}
+
+.tabbed-set .tabbed-content {
+  display: none;
+  order: 99;
+  width: 100%;
+  border-top: 1px solid transparent;
+  border-color: var(--grey-light);
+  padding-top: 8px;
+  z-index: 1;
+}
+
+.tabbed-set input {
+  position: absolute;
+  opacity: 0;
+}
+
+.tabbed-set label {
+  padding: 16px 8px;
+  margin-right: 16px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  line-height: 1;
+  z-index: 10;
+}
+
+.tabbed-set input:nth-child(n + 1):checked + label {
+  font-weight: 700;
+  border-bottom: 2px solid transparent;
+  border-color: var(--green);
+}
+
+.tabbed-set input:nth-child(n + 1):checked + label + .tabbed-content {
+  display: block;
 }
