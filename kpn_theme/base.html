@@ -269,9 +269,9 @@
       <div class="footer__body">
         {% if page.next_page or page.previous_page %}
         <div class="row">
-          <div class="col col--s-4">
+          <div class="col col--s-4 col--m-3 col--l-2">
           </div>
-          <div class="col col--s-4 space-between">
+          <div class="col col--s-4 col--m space-between">
             {% if page.previous_page %}
               <a class="footer__link padding-top-0 navigation-prev"
                 href="{{ page.previous_page.url|url }}"
@@ -296,7 +296,7 @@
                 Next Page &#8594;
             {% endif %}
           </div>
-          <div class="col col--s-4">
+          <div class="col col--s-4 col--m-3 ">
           </div>
         </div>
         {% endif %}
