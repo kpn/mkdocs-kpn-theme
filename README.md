@@ -5,7 +5,9 @@ Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg?st
 [![PyPI Package latest
 release](https://img.shields.io/pypi/v/mkdocs-kpn.svg?style=flat-square)](https://pypi.org/project/mkdocs-kpn/)
 
-![theme image](docs/images/example.png)
+![theme light image](docs/images/example-light.png)
+
+![theme dark image](docs/images/example-dark.png)
 
 ## Create a beautiful KPN project documentation
 
