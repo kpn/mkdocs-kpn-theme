@@ -12,8 +12,6 @@ copyright: 'Copyright &copy; KPN'
 
 markdown_extensions:
   - admonition
-  - codehilite:
-      guess_lang: false
   - toc:
       permalink: true
   - footnotes
@@ -25,10 +23,10 @@ markdown_extensions:
   - pymdownx.tasklist
   - pymdownx.tilde
   - pymdownx.highlight
+  - pymdownx.superfences
   - plantuml_markdown:
       server: http://www.plantuml.com/plantuml
   - pymdownx.tabbed
-
 plugins:
   - search:
       prebuild_index: true

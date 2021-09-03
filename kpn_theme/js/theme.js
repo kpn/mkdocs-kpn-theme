@@ -113,4 +113,6 @@ docReady(() => {
   addNavigationControl("navigation-next", KEY_RIGHT);
   loadDarkMode();
   startDarkMode();
+    hljs.highlightAll()
+
 });

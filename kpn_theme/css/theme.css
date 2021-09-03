@@ -4,8 +4,9 @@ body {
 }
 
 pre {
-  padding: 0.5em;
+  padding-bottom: 0.5em;
 }
+
 .codehilitetable tr {
   background-color: #272822;
   color: white;
@@ -428,4 +429,8 @@ label[for="dark-mode"] {
 
 .top-bar .top-bar__title {
   font-weight: 600;
+}
+
+.hljs {
+	border-radius: 0.25rem;
 }

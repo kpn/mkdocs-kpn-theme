@@ -10,18 +10,20 @@ Coming up next we'll see some examples
 
 In order to add a code block you need to wrap your coude around 3 backticks
 
-\```python
+    ```python
+    @requires_authorization(roles=["ADMIN"])
+    def somefunc(param1='', param2=0):
+        r'''A docstring'''
+        if param1 > param2: # interesting
+            print 'Gre\'ater'
+        return (param2 - param1 + 1 + 0b10l) or None
 
-def hello():
+    class SomeClass:
+        pass
 
-\ print("hello")
-
-\```
-
-```python
-def hello():
-    print("hello")
-```
+    >>> message = '''interpreter
+    ... prompt'''
+    ```
 
 ## Image
 

@@ -54,12 +54,13 @@ markdown_extensions:
     This is an admonition box.
 ```
 
-## Codehilite - Language highlight
+## Language highlight
 
 ```yaml
 # location: mkdocs.yml
 markdown_extensions:
-  - codehilite
+  - pymdownx.highlight
+  - pymdownx.superfences
 ```
 
 ```python
@@ -68,7 +69,7 @@ def fun():
 ```
 
 ```bash
-some comment
+kubectl apply -f manifest.yml
 ```
 
 ## Line highlight
