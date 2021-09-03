@@ -1,3 +1,10 @@
+## v0.27.0 (2021-09-03)
+
+### Feat
+
+- add dark mode
+- add new branding colors
+
 ## v0.26.0 (2021-09-03)
 
 ### Feat
