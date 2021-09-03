@@ -83,27 +83,31 @@ const addNavigationControl = (navigationClass, keyCode) => {
 const KEY_LEFT = 37;
 const KEY_RIGHT = 39;
 
-function loadDarkMode() {
-  let checked = JSON.parse(localStorage.getItem("dark-mode"));
+function loadColorScheme() {
+  const isSystemDark = window.matchMedia('(prefers-color-scheme: dark)').media !== 'not all';
+  const checked = JSON.parse(localStorage.getItem("dark-mode")) || isSystemDark;
   document.getElementById("dark-mode").checked = checked;
 }
 
-function saveDarkMode(value) {
-  let checkbox = document.getElementById("dark-mode");
+function saveColorScheme(value) {
+  const checkbox = document.getElementById("dark-mode");
   localStorage.setItem("dark-mode", value);
 }
 
-function startDarkMode() {
-  let checkbox = document.getElementById("dark-mode");
+function startColorScheme() {
+  const checkbox = document.getElementById("dark-mode");
   checkbox.onclick = () => {
-    saveDarkMode(checkbox.checked)
+    saveColorScheme(checkbox.checked)
   }
 }
 
 docReady(() => {
+  // load prefered mode
+  loadColorScheme();
+  startColorScheme();
+
   // Attaching the event listener function to window's resize event
   window.addEventListener("resize", updateSecondarySideBarHeight);
-
   // Initializing functions
   updateSecondarySideBarHeight();
   sideBarNavigationLinks();
@@ -111,8 +115,4 @@ docReady(() => {
   closeSideBarMenu();
   addNavigationControl("navigation-prev", KEY_LEFT);
   addNavigationControl("navigation-next", KEY_RIGHT);
-  loadDarkMode();
-  startDarkMode();
-    hljs.highlightAll()
-
 });

@@ -31,7 +31,7 @@
   <link rel="stylesheet" href="css/bundle.css">
   <link rel="stylesheet" href="css/theme.css">
   <link media="print" onload="this.media='all'" rel="stylesheet" href="css/ir-black.min.css">
-
+  <script async src="js/theme.js"></script>
   <!--
     extra_ess contains paths to CSS files in the users
     documentation directory or a list of CSS files defined in
@@ -264,7 +264,7 @@ designed to serve your project documentation in a user-friendly way.</li>
 
   <!--
   MkDocs version      : 1.2.2
-  Docs Build Date UTC : 2021-09-03 14:15:29.943511+00:00
+  Docs Build Date UTC : 2021-09-03 16:57:40.179845+00:00
   -->
 
   <!--
@@ -272,8 +272,10 @@ designed to serve your project documentation in a user-friendly way.</li>
     . beforehand which will be the relative path to
     the root of the documentation.
   -->
-  <script async src="js/highlight.min.js"></script>
-  <script async src="js/theme.js"></script>
+  <script src="js/highlight.min.js"></script>
+  <script>
+    hljs.highlightAll();
+  </script>
   <script async src="js/detail.js"></script>
   <!--
     extra_javascript contains paths to JavaScript files in the
