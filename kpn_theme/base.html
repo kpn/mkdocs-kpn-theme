@@ -46,11 +46,10 @@
   -->
   <link rel="shortcut icon" href="{{ "img/favicon.ico"|url }}">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/ir-black.min.css">
   <link rel="stylesheet" href="{{ "css/colors.css"|url }}">
   <link rel="stylesheet" href="{{ "css/bundle.css"|url }}">
   <link rel="stylesheet" href="{{ "css/theme.css"|url }}">
-  <link rel="stylesheet" href="{{ "css/codehilite.css"|url }}">
+  <link media="print" onload="this.media='all'" rel="stylesheet" href="{{ "css/ir-black.min.css"|url }}">
 
   <!--
     extra_ess contains paths to CSS files in the users
@@ -257,9 +256,9 @@
     {{ base_url }} beforehand which will be the relative path to
     the root of the documentation.
   -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
-  <script src="{{ "js/theme.js"|url }}"></script>
-  <script src="{{ "js/detail.js"|url }}"></script>
+  <script async src="{{ "js/highlight.min.js"|url }}"></script>
+  <script async src="{{ "js/theme.js"|url }}"></script>
+  <script async src="{{ "js/detail.js"|url }}"></script>
   <!--
     extra_javascript contains paths to JavaScript files in the
     users documentation directory or a list of JavaScript files
