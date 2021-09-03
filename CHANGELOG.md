@@ -1,3 +1,13 @@
+## v0.29.0 (2021-09-03)
+
+### Fix
+
+- text color on dark mode less bright
+
+### Feat
+
+- support system's color-scheme (dark or light)
+
 ## v0.28.0 (2021-09-03)
 
 ### Refactor
