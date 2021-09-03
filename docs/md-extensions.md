@@ -1,6 +1,7 @@
 ---
 title: Extensions
 ---
+
 ## Admonition - Block styled content
 
 ```yaml
@@ -216,6 +217,52 @@ Read more about the extensions in [pymdown-extensions][pymdown-extensions]
 
 [pymdown-extensions]: https://facelessuser.github.io/pymdown-extensions/extensions/
 
+## Content tabs
+
+```yaml
+# location: mkdocs.yml
+markdown_extensions:
+  - pymdownx.tabbed
+```
+
+```md
+=== "JS"
+
+    ```js
+    date = new Date()
+    ```
+
+=== "Python"
+
+    ```python
+    import datetime
+    datetime.datetime.now()
+    ```
+
+=== "List"
+    More Markdown **content**.
+
+    - list item a
+    - list item b
+```
+
+=== "JS"
+    ```
+    date = new Date()
+    ```
+
+=== "Python"
+    ```python
+    import datetime
+    datetime.datetime.now()
+    ```
+
+=== "List"
+    More `Markdown` **content**.
+
+    - list item a
+    - list item b
+
 
 ## PlantUML diagrams
 
@@ -288,3 +335,4 @@ pip install -U plantuml-markdown
 ```
 
 [VS code extension for PlantUML](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml)
+
