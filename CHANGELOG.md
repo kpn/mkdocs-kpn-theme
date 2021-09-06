@@ -1,3 +1,14 @@
+## v1.0.0 (2021-09-06)
+
+### Feat
+
+- add support for repo_icon in settings
+- add gitea and bitbucket icons
+
+### BREAKING CHANGE
+
+- ready for 1.0.0
+
 ## v0.30.0 (2021-09-06)
 
 ### Fix
