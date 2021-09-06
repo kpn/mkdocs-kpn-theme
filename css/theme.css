@@ -220,6 +220,11 @@ table {
     filter: invert(29%) sepia(85%) saturate(2054%) hue-rotate(95deg)
       brightness(99%) contrast(102%);
   }
+
+  .repo-link {
+    margin-left: 10px;
+  }
+
 }
 
 @media only screen and (min-width: 1200px) {
