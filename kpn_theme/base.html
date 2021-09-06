@@ -122,7 +122,16 @@
           {% if config.repo_url and not config.extra.use_edit_url %}
             <a class="top-bar__link repo-link" title="Repository"
             href="{{ config.repo_url }}" target="_blank" rel="noopener noreferrer">
-              <img height="24" alt="{{ config.repo_name }}" src="{{ "img/git-icon-black.png"|url }}" />
+              {% set repo_icon = namespace() %}
+              {% set repo_icon.img = 'img/git.svg' %}
+              {% if 'github' in config.repo_url %}
+                  {% set repo_icon.img = 'img/logo-github.svg' %}
+              {% elif 'gitlab' in config.repo_url %}
+                  {% set repo_icon.img = 'img/logo-gitlab.svg' %}
+              {% endif %}
+              <svg alt="{{ config.repo_name }}" width="25" height="25">
+                <image xlink:href="{{ repo_icon.img|url }}" width="25" height="25"/>
+              </svg>
             </a>
           {% elif page and page.edit_url %}
             <a class="top-bar__link repo-link" title="Edit URL"
