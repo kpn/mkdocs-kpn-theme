@@ -85,7 +85,8 @@ const KEY_RIGHT = 39;
 
 function loadColorScheme() {
   const isSystemDark = window.matchMedia('(prefers-color-scheme: dark)').media !== 'not all';
-  const checked = JSON.parse(localStorage.getItem("dark-mode")) || isSystemDark;
+  const loadSettings = localStorage.getItem("dark-mode");
+  const checked = loadSettings !== null ? JSON.parse(loadSettings) : isSystemDark;
   document.getElementById("dark-mode").checked = checked;
 }
 
