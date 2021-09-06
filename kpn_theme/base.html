@@ -133,7 +133,9 @@
               {% elif 'gitea' in config.repo_url %}
                 {% set repo_conf.img = 'img/logo-gitea.svg' %}
               {% endif %}
-
+              {% if config.extra.repo_icon %}
+                {% set repo_conf.img = 'img/logo-' + config.extra.repo_icon + '.svg' %}
+              {% endif %}
               <svg alt="{{ config.repo_name }}" width="25" height="25">
                 <image xlink:href="{{ repo_conf.img|url }}" width="25" height="25"/>
               </svg>

@@ -26,4 +26,12 @@ theme:
 designed to serve your project documentation in a user-friendly way.
 - Support for a lot of markdown extensions.
 
+## Change repo icon
+
+```yaml
+# options: github | gitlab | bitbucket | gitea
+extra:
+  repo_icon: 'github'
+```
+
 [kpn_styles]: https://style.kpn.com/
