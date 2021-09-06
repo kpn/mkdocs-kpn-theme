@@ -1,3 +1,13 @@
+## v0.30.0 (2021-09-06)
+
+### Fix
+
+- saved preferences for light/dark mode
+
+### Feat
+
+- add github and gitlab icons and use svg for git icon
+
 ## v0.29.0 (2021-09-03)
 
 ### Fix
