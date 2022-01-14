@@ -241,21 +241,21 @@ project.</p>
 <h3 id="creating-a-configuration">Creating a configuration<a class="headerlink" href="#creating-a-configuration" title="Permanent link">&para;</a></h3>
 <p>In the root of your project create a file called <code>mkdocs.yml</code>
 and put this initial configuration:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">site_name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">&lt;My Website Name&gt;</span>
+<div class="highlight"><pre><span></span><code><span class="nt">site_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;My Website Name&gt;</span><span class="w"></span>
 
-<span class="nt">theme</span><span class="p">:</span>
-  <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">kpn</span>
+<span class="nt">theme</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">kpn</span><span class="w"></span>
 
-<span class="nt">markdown_extensions</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="nt">codehilite</span><span class="p">:</span>
-      <span class="nt">guess_lang</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="nt">markdown_extensions</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">codehilite</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="nt">guess_lang</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span><span class="w"></span>
 </code></pre></div>
 <p>For more settings check the Full Example at the bottom of the page.</p>
 <h3 id="add-search-support">Add search support<a class="headerlink" href="#add-search-support" title="Permanent link">&para;</a></h3>
 <p>Just add to the <code>mkdocs.yml</code> the following:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">plugins</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="nt">search</span><span class="p">:</span>
-      <span class="nt">prebuild_index</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+<div class="highlight"><pre><span></span><code><span class="nt">plugins</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">search</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="nt">prebuild_index</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
 </code></pre></div>
 <p>A search input will appear. The search index is offline, so no backend is required.</p>
 <h3 id="running-commands">Running commands<a class="headerlink" href="#running-commands" title="Permanent link">&para;</a></h3>
@@ -270,42 +270,42 @@ to your <code>.gitignore</code>, the idea is for CI's to automatically build it.
 make a change. This is useful to see your documentation while you are writing it.</p>
 <h2 id="full-configuration-example">Full configuration example<a class="headerlink" href="#full-configuration-example" title="Permanent link">&para;</a></h2>
 <p>Full <code>mkdocs.yml</code> example:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Project information</span>
-<span class="nt">site_name</span><span class="p">:</span> <span class="s">&#39;KPN</span><span class="nv"> </span><span class="s">Theme&#39;</span>
-<span class="nt">site_description</span><span class="p">:</span> <span class="s">&#39;A</span><span class="nv"> </span><span class="s">KPN</span><span class="nv"> </span><span class="s">theme</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">MkDocs&#39;</span>
-<span class="nt">site_author</span><span class="p">:</span> <span class="s">&#39;Jon</span><span class="nv"> </span><span class="s">Doe&#39;</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># Project information</span><span class="w"></span>
+<span class="nt">site_name</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;KPN</span><span class="nv"> </span><span class="s">Theme&#39;</span><span class="w"></span>
+<span class="nt">site_description</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;A</span><span class="nv"> </span><span class="s">KPN</span><span class="nv"> </span><span class="s">theme</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">MkDocs&#39;</span><span class="w"></span>
+<span class="nt">site_author</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Jon</span><span class="nv"> </span><span class="s">Doe&#39;</span><span class="w"></span>
 
-<span class="c1"># Repository</span>
-<span class="nt">repo_name</span><span class="p">:</span> <span class="s">&#39;kpn/mkdocs-kpn-theme&#39;</span>
-<span class="nt">repo_url</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">https://github.com/kpn/mkdocs-kpn-theme</span>
+<span class="c1"># Repository</span><span class="w"></span>
+<span class="nt">repo_name</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;kpn/mkdocs-kpn-theme&#39;</span><span class="w"></span>
+<span class="nt">repo_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://github.com/kpn/mkdocs-kpn-theme</span><span class="w"></span>
 
-<span class="c1"># Copyright</span>
-<span class="nt">copyright</span><span class="p">:</span> <span class="s">&#39;Copyright</span><span class="nv"> </span><span class="s">&amp;copy;</span><span class="nv"> </span><span class="s">KPN&#39;</span>
+<span class="c1"># Copyright</span><span class="w"></span>
+<span class="nt">copyright</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Copyright</span><span class="nv"> </span><span class="s">&amp;copy;</span><span class="nv"> </span><span class="s">KPN&#39;</span><span class="w"></span>
 
-<span class="c1"># Google Analytics Disabled by default</span>
-<span class="nt">google_analytics</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="s">&#39;UA-XXXXXXXX-X&#39;</span>
-  <span class="p p-Indicator">-</span> <span class="s">&#39;auto&#39;</span>
+<span class="c1"># Google Analytics Disabled by default</span><span class="w"></span>
+<span class="nt">google_analytics</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&#39;UA-XXXXXXXX-X&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&#39;auto&#39;</span><span class="w"></span>
 
-<span class="nt">extra</span><span class="p">:</span>
-  <span class="c1"># Use the repo edit url instead of the link to the repo</span>
-  <span class="nt">use_edit_url</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="nt">extra</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="c1"># Use the repo edit url instead of the link to the repo</span><span class="w"></span>
+<span class="w">  </span><span class="nt">use_edit_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span><span class="w"></span>
 
-<span class="c1"># Extensions</span>
-<span class="nt">markdown_extensions</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">admonition</span>
-  <span class="p p-Indicator">-</span> <span class="nt">codehilite</span><span class="p">:</span>
-      <span class="nt">guess_lang</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
-  <span class="p p-Indicator">-</span> <span class="nt">toc</span><span class="p">:</span>
-      <span class="nt">permalink</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">footnotes</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.critic</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.emoji</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.keys</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.mark</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.smartsymbols</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.tasklist</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.tilde</span>
+<span class="c1"># Extensions</span><span class="w"></span>
+<span class="nt">markdown_extensions</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">admonition</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">codehilite</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="nt">guess_lang</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">toc</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="nt">permalink</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">footnotes</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.critic</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.emoji</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.keys</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.mark</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.smartsymbols</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.tasklist</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.tilde</span><span class="w"></span>
 </code></pre></div>
               
             </div>
@@ -352,8 +352,8 @@ make a change. This is useful to see your documentation while you are writing it
 
 
   <!--
-  MkDocs version      : 1.2.2
-  Docs Build Date UTC : 2021-09-06 13:34:35.723699+00:00
+  MkDocs version      : 1.2.3
+  Docs Build Date UTC : 2022-01-14 14:10:21.181032+00:00
   -->
 
   <!--
@@ -373,6 +373,8 @@ make a change. This is useful to see your documentation while you are writing it
 
     http://www.mkdocs.org/user-guide/configuration/#extra_javascript
   -->
+  
+    <script src="https://unpkg.com/mermaid@8.13.5/dist/mermaid.min.js"></script>
   
     <script src="../search/main.js"></script>
   
