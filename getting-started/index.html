@@ -353,7 +353,7 @@ make a change. This is useful to see your documentation while you are writing it
 
   <!--
   MkDocs version      : 1.2.3
-  Docs Build Date UTC : 2022-01-14 14:10:21.181032+00:00
+  Docs Build Date UTC : 2022-01-14 15:39:08.463415+00:00
   -->
 
   <!--
@@ -374,10 +374,37 @@ make a change. This is useful to see your documentation while you are writing it
     http://www.mkdocs.org/user-guide/configuration/#extra_javascript
   -->
   
-    <script src="https://unpkg.com/mermaid@8.13.5/dist/mermaid.min.js"></script>
-  
     <script src="../search/main.js"></script>
   
+
+
+  <script>
+  function getMermaidTheme() {
+    if (document.getElementById("dark-mode").checked) {
+      return 'dark'
+    }
+    return 'forest'
+  }
+
+  function initMermaid() {
+    mermaid.initialize({
+      theme: getMermaidTheme(),
+      logLevel: 1,
+    });
+  }
+  var mermaidClass = document.getElementsByClassName('mermaid');
+  if (mermaidClass.length > 0) {
+
+    var mermaidScript = document.createElement('script');
+    mermaidScript.setAttribute("src", "../js/mermaid.min.js");
+    mermaidScript.setAttribute("async", "false");
+    mermaidScript.setAttribute("type", "text/javascript");
+    mermaidScript.onload = initMermaid;
+    document.body.appendChild(mermaidScript)
+
+  }
+  </script>
+
 </div>
 </body>
 </html>
