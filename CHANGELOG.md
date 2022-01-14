@@ -1,3 +1,9 @@
+## v1.1.0 (2022-01-14)
+
+### Feat
+
+- add mermaid support example
+
 ## v1.0.0 (2021-09-06)
 
 ### Feat
