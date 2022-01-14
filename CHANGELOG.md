@@ -1,3 +1,9 @@
+## v1.1.1 (2022-01-14)
+
+### Fix
+
+- load mermaid when class detected
+
 ## v1.1.0 (2022-01-14)
 
 ### Feat
