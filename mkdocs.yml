@@ -23,10 +23,19 @@ markdown_extensions:
   - pymdownx.tasklist
   - pymdownx.tilde
   - pymdownx.highlight
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+          - name: mermaid
+            class: mermaid
+            format: !!python/name:pymdownx.superfences.fence_div_format
   - plantuml_markdown:
       server: http://www.plantuml.com/plantuml
   - pymdownx.tabbed
 plugins:
   - search:
       prebuild_index: true
+
+
+extra_javascript:
+  - https://unpkg.com/mermaid@8.13.5/dist/mermaid.min.js
+
