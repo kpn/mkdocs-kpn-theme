@@ -347,6 +347,14 @@ graph TD;
     C-->D;
 ```
 
+    ```mermaid
+    graph TD;
+        A-->B;
+        A-->C;
+        B-->D;
+        C-->D;
+    ```
+
 You may need to add the following to your configuration if it doesn't work right away
 
 ```yaml
@@ -356,6 +364,4 @@ markdown_extensions:
           - name: mermaid
             class: mermaid
             format: !!python/name:pymdownx.superfences.fence_div_format
-extra_javascript:
-  - https://unpkg.com/mermaid@8.13.5/dist/mermaid.min.js
 ```
