@@ -1,5 +1,5 @@
 mkdocs>=1.0
 Pygments>=2.4
-markdown>=3.2
-pymdown-extensions>=8,<9
+markdown>=3.3.7
+# pymdown-extensions>=9.0
 plantuml-markdown>=3.4.2,<4
