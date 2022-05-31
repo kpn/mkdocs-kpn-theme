@@ -1,3 +1,9 @@
+## v1.1.3 (2022-05-31)
+
+### Fix
+
+- issue in requirements with pymdownx
+
 ## v1.1.2 (2022-05-31)
 
 ### Fix
