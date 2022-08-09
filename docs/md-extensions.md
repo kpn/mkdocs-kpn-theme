@@ -31,6 +31,9 @@ markdown_extensions:
 !!! danger "Failure"
     This is an admonition box.
 
+!!! Example "Default"
+    This is the default box
+
 ```bash
 !!! info "Info"
     This is an admonition box.
@@ -52,6 +55,9 @@ markdown_extensions:
 
 !!! danger "Failure"
     This is an admonition box.
+
+!!! Example "Default"
+    This is the default box
 ```
 
 ## Language highlight
