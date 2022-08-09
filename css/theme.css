@@ -69,6 +69,14 @@ kbd {
   background-color: var(--grey-white);
   margin-bottom: 15px;
   border-radius: 0.25rem;
+  border: 2px solid var(--green-bright);
+}
+.admonition .admonition-title {
+  background-color: var(--green-bright);
+}
+
+.admonition.highlight {
+  padding: 0 10px;
 }
 
 .admonition p {
