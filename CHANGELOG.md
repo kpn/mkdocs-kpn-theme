@@ -1,3 +1,9 @@
+## v1.2.0 (2022-08-09)
+
+### Feat
+
+- add default css for admonition
+
 ## v1.1.3 (2022-05-31)
 
 ### Fix
