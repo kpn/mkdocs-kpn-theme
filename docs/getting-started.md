@@ -119,3 +119,7 @@ markdown_extensions:
 
 [mkdocs]: https://www.mkdocs.org/
 [adding-pages]: https://www.mkdocs.org/#adding-pages
+
+## API Documentation
+
+To document your API we recommend using [mkdocstrings](https://github.com/mkdocstrings/mkdocstrings).
