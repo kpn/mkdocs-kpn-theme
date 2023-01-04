@@ -50,4 +50,22 @@ In order to add a code block you need to wrap your coude around 3 backticks
 
 > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut tortor sed lorem auctor vulputate id hendrerit quam. Integer maximus molestie elit, non elementum libero rutrum ac. Suspendisse a gravida massa, vitae ullamcorper urna. Quisque varius finibus leo, et ornare est bibendum et. Donec feugiat vitae ipsum fringilla volutpat. Duis hendrerit iaculis pellentesque. Nullam sed egestas nisi. Proin aliquet faucibus mi lacinia maximus. Integer urna ligula, malesuada in purus et, cursus tincidunt tortor. Donec et nunc consectetur, gravida nulla eu, viverra lorem. Nullam suscipit nibh sed nisl fringilla, sit amet tristique ante vulputate. Sed ultrices purus vel erat lacinia pellentesque. Phasellus elit mi, auctor eget nisl vehicula, sollicitudin ultrices risus. Etiam venenatis tempus arcu at dignissim.
 
+## Titles
+
+# H1
+
+header 1
+
+## H2
+
+header 2
+
+### H3
+
+header 3
+
+#### h4
+
+header 4
+
 [cheatsheet]: https://www.markdownguide.org/cheat-sheet/
