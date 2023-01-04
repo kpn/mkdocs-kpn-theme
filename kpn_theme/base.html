@@ -199,10 +199,12 @@
         <h4>Table of contents</h4>
         <ul>
         {% for toc_item in page.toc %}
-            <li><a class="a" href="{{ toc_item.url }}">{{ toc_item.title }}</a></li>
-            {% for toc_item in toc_item.children %}
-                <li class="child-li"><a class="a child" href="{{ toc_item.url }}">{{ toc_item.title }}</a></li>
-            {% endfor %}
+          {% for toc_item in toc_item.children %}
+              <li><a class="a" href="{{ toc_item.url }}">{{ toc_item.title }}</a></li>
+              {% for toc_item in toc_item.children %}
+                  <li class="child-li"><a class="a child" href="{{ toc_item.url }}">{{ toc_item.title }}</a></li>
+              {% endfor %}
+          {% endfor %}
         {% endfor %}
         </ul>
       </div>
