@@ -1,3 +1,10 @@
+## v1.2.1 (2023-01-04)
+
+### Fix
+
+- improve side bar by showing h2, h3
+- headers margin top
+
 ## v1.2.0 (2022-08-09)
 
 ### Feat
