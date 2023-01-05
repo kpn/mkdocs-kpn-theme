@@ -105,7 +105,6 @@
           requirement here is that there is a text input with the name 'q' and the
           action and methods match below.
         -->
-        <!-- SEARCH IS DISABLED UNTIL WE HAVE AN IMPLEMENTATION -->
 
         {%- if 'search' in config['plugins'] %}
           <li class="top-bar__item">
@@ -118,9 +117,18 @@
           </li>
         {%- endif %}
         <!--
+          Versioning support
+        -->
+        {% if config.extra.version.provider == "manual" %}
+        <li class="top-bar__item top-bar__item__version">
+          <label class="top-bar__version text-sm" title="Current version">
+            {{ config.extra.version.version }}
+          </label>
+        </li>
+        {% endif %}
+        <!--
           Support repo URL
         -->
-
         <li class="top-bar__item">
           {% if config.repo_url and not config.extra.use_edit_url %}
             <a class="top-bar__link repo-link" title="Repository"
@@ -150,6 +158,7 @@
             </a>
           {% endif %}
         </li>
+
         <li class="top-bar__item">
             <label class="top-bar__link" id="label-dark-mode" for="dark-mode" title="Dark mode">
               <svg alt="dark mode" width="24" height="24">
@@ -158,6 +167,7 @@
             </label>
         </li>
         <li class="top-bar__item top-bar__item--trigger"></li>
+
         <!-- <li class="top-bar__item">
 
           <a class="top-bar__link top-bar__link--active">Home</a>
@@ -183,6 +193,14 @@
     <nav class="app-layout__side-bar side-bar">
       <div class="side-bar__action-bar">
         <a class="side-bar__link" href="/">{{ config.site_name }}</a>
+        <!--
+          Versioning support
+        -->
+        {% if config.extra.version.provider == "manual" %}
+        <label class="side-bar__version text-sm" title="Current version">
+          {{ config.extra.version.version }}
+        </label>
+        {% endif %}
         <button class="side-bar__close"></button>
       </div>
       <ul class="side-bar__menu">

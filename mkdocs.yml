@@ -8,6 +8,11 @@ theme:
 repo_name: 'kpn/mkdocs-kpn-theme'
 repo_url: https://github.com/kpn/mkdocs-kpn-theme/
 
+extra:
+  version:
+    provider: 'manual'
+    version: 1.2.2
+
 copyright: 'Copyright &copy; KPN'
 
 markdown_extensions:

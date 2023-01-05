@@ -34,4 +34,17 @@ extra:
   repo_icon: 'github'
 ```
 
+## Add version to site
+
+Edit `mkdocs.yml` with
+
+```yaml
+extra:
+  version:
+    provider: 'manual'
+    version: 1.2.2
+```
+
+**TODO**: Add support for [mike](https://github.com/jimporter/mike/) versioning
+
 [kpn_styles]: https://style.kpn.com/
