@@ -8,7 +8,7 @@
     The page_title contains the title for a page as shown in the navigation.
     Site name contains the name as defined in the mkdocs.yml
   -->
-  <title>KPN Theme</title>
+  <title>Sample2 - KPN Theme</title>
 
   <!-- Page description -->
   
@@ -17,18 +17,20 @@
 
   <!-- Redirect -->
   
+    <link rel="canonical" href="https://kpn.github.io/mkdocs-kpn-theme/nested/sample2/" />
+  
 
   <!-- Page author -->
   
   <!--
     Just add a favicon.ico image to the docs.
   -->
-  <link rel="shortcut icon" href="./img/favicon.ico">
+  <link rel="shortcut icon" href="../../img/favicon.ico">
 
-  <link rel="stylesheet" href="./css/colors.css">
-  <link rel="stylesheet" href="./css/bundle.css">
-  <link rel="stylesheet" href="./css/theme.css">
-  <link media="print" onload="this.media='all'" rel="stylesheet" href="./css/ir-black.min.css">
+  <link rel="stylesheet" href="../../css/colors.css">
+  <link rel="stylesheet" href="../../css/bundle.css">
+  <link rel="stylesheet" href="../../css/theme.css">
+  <link media="print" onload="this.media='all'" rel="stylesheet" href="../../css/ir-black.min.css">
   <!--
     extra_ess contains paths to CSS files in the users
     documentation directory or a list of CSS files defined in
@@ -39,8 +41,7 @@
   
 
   
-  <script>var base_url = '.';</script>
-
+  
 
   <!--
     Include Google Analytics tracking code.
@@ -56,14 +57,14 @@
 <!--
   The JS has to be loaded here for maximum performance, right after the #dark-mode
 -->
-<script src="./js/theme.js"></script>
+<script src="../../js/theme.js"></script>
 <div class="app-body">
   <!-- KPN STYLE Beginning -->
   <div class="app-layout ">
     <!-- Top Bar -->
     <nav class="app-layout__top-bar top-bar">
       <a class="top-bar__logo">
-        <img alt="KPN Logo" src="./img/logo-kpn.svg" />
+        <img alt="KPN Logo" src="../../img/logo-kpn.svg" />
       </a>
       <div class="top-bar__title">KPN Theme</div>
       <ul class="top-bar__menu">
@@ -77,7 +78,7 @@
           <li class="top-bar__item">
 
             <span role="search" id="search-input-wrapper">
-              <form action="./search.html" method="get">
+              <form action="../../search.html" method="get">
                 <input type="text" class="input" id="search-input" name="q" placeholder="Search..." />
               </form>
             </span >
@@ -97,7 +98,7 @@
               
               
               <svg alt="kpn/mkdocs-kpn-theme" width="25" height="25">
-                <image xlink:href="./img/logo-github.svg" width="25" height="25"/>
+                <image xlink:href="../../img/logo-github.svg" width="25" height="25"/>
               </svg>
             </a>
           
@@ -105,7 +106,7 @@
         <li class="top-bar__item">
             <label class="top-bar__link" id="label-dark-mode" for="dark-mode" title="Dark mode">
               <svg alt="dark mode" width="24" height="24">
-                <image xlink:href="./img/ui-bulb.svg" width="24" height="24"/>
+                <image xlink:href="../../img/ui-bulb.svg" width="24" height="24"/>
             </svg>
             </label>
         </li>
@@ -144,7 +145,7 @@
 -->
 
 <li>
-  <a href="./." class="side-bar__link ">
+  <a href="../.." class="side-bar__link ">
     KPN for MkDocs
   </a>
 </li>
@@ -155,7 +156,7 @@
 -->
 
 <li>
-  <a href="./getting-started/" class="side-bar__link ">
+  <a href="../../getting-started/" class="side-bar__link ">
     Getting started
   </a>
 </li>
@@ -166,7 +167,7 @@
 -->
 
 <li>
-  <a href="./md-extensions/" class="side-bar__link ">
+  <a href="../../md-extensions/" class="side-bar__link ">
     Extensions
   </a>
 </li>
@@ -177,7 +178,7 @@
 -->
 
 <li>
-  <a href="./usage/" class="side-bar__link ">
+  <a href="../../usage/" class="side-bar__link ">
     Markdown usage
   </a>
 </li>
@@ -188,17 +189,17 @@
 -->
 
   <li>
-    <span class="side-bar__link side-bar__link--collapsed">
+    <span class="side-bar__link side-bar__link--expanded side-bar__link--active">
       Nested
     </span>
-    <ul class="side-bar__sub-menu ">
+    <ul class="side-bar__sub-menu side-bar__sub-menu--visible">
         
             <!--
 
 -->
 
 <li>
-  <a href="./nested/sample1/" class="side-bar__link ">
+  <a href="../sample1/" class="side-bar__link ">
     Sample1
   </a>
 </li>
@@ -209,7 +210,7 @@
 -->
 
 <li>
-  <a href="./nested/sample2/" class="side-bar__link ">
+  <a href="./" class="side-bar__link side-bar__link--active">
     Sample2
   </a>
 </li>
@@ -225,7 +226,7 @@
     <!-- MAIN BLOCK -->
     <main class="app-layout__main main">
       <div class="app-layout__title-bar title-bar">
-        <div class="title-bar__title"></div>
+        <div class="title-bar__title">Sample2</div>
       </div>
       
       <div class="container content-block">
@@ -234,19 +235,8 @@
             <div class="card__body">
 
               
-
-  <h1 id="search">Search Results</h1>
-
-  <form id="content_search" action="search.html">
-    <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
-    <input name="q" id="mkdocs-search-query" type="text" class="input " placeholder="Search the Docs" autocomplete="off">
-  </form>
-
-  <div id="mkdocs-search-results">
-    Sorry, page not found.
-  </div>
-
-
+              
+              
             </div>
           </div>
         </div>
@@ -257,6 +247,30 @@
     <footer class="footer">
       <div class="footer__body">
         
+        <div class="row">
+          <div class="col col--s-4 col--m-3 col--l-2">
+          </div>
+          <div class="col col--s-4 col--m space-between">
+            
+              <a class="footer__link padding-top-0 navigation-prev"
+                href="../sample1/"
+                title="Sample1">
+                &#8592; Previous Page
+              </a>
+            
+            
+              <div>
+                Copyright &copy; KPN
+              </div>
+            
+            
+                Next Page &#8594;
+            
+          </div>
+          <div class="col col--s-4 col--m-3 ">
+          </div>
+        </div>
+        
       </div>
     </footer>
   </div>
@@ -264,19 +278,19 @@
 
   <!--
   MkDocs version      : 1.4.2
-  Docs Build Date UTC : 2023-01-05 17:57:57.590331+00:00
+  Docs Build Date UTC : 2023-01-05 17:57:57.607954+00:00
   -->
 
   <!--
     To include static assets from our theme, just add
-    . beforehand which will be the relative path to
+    ../.. beforehand which will be the relative path to
     the root of the documentation.
   -->
-  <script src="./js/highlight.min.js"></script>
+  <script src="../../js/highlight.min.js"></script>
   <script>
     hljs.highlightAll();
   </script>
-  <script async src="./js/detail.js"></script>
+  <script async src="../../js/detail.js"></script>
   <!--
     extra_javascript contains paths to JavaScript files in the
     users documentation directory or a list of JavaScript files
@@ -285,7 +299,7 @@
     http://www.mkdocs.org/user-guide/configuration/#extra_javascript
   -->
   
-    <script src="./search/main.js"></script>
+    <script src="../../search/main.js"></script>
   
 
 
@@ -307,7 +321,7 @@
   if (mermaidClass.length > 0) {
 
     var mermaidScript = document.createElement('script');
-    mermaidScript.setAttribute("src", "./js/mermaid.min.js");
+    mermaidScript.setAttribute("src", "../../js/mermaid.min.js");
     mermaidScript.setAttribute("async", "false");
     mermaidScript.setAttribute("type", "text/javascript");
     mermaidScript.onload = initMermaid;

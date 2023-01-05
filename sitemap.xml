@@ -2,22 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://kpn.github.io/mkdocs-kpn-theme/</loc>
-         <lastmod>2023-01-04</lastmod>
+         <lastmod>2023-01-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://kpn.github.io/mkdocs-kpn-theme/getting-started/</loc>
-         <lastmod>2023-01-04</lastmod>
+         <lastmod>2023-01-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://kpn.github.io/mkdocs-kpn-theme/md-extensions/</loc>
-         <lastmod>2023-01-04</lastmod>
+         <lastmod>2023-01-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://kpn.github.io/mkdocs-kpn-theme/usage/</loc>
-         <lastmod>2023-01-04</lastmod>
+         <lastmod>2023-01-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://kpn.github.io/mkdocs-kpn-theme/nested/sample1/</loc>
+         <lastmod>2023-01-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://kpn.github.io/mkdocs-kpn-theme/nested/sample2/</loc>
+         <lastmod>2023-01-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

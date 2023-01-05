@@ -25,7 +25,6 @@
   -->
   <link rel="shortcut icon" href="/mkdocs-kpn-theme/img/favicon.ico">
 
-  <script src="/mkdocs-kpn-theme/js/theme.js"></script>
   <link rel="stylesheet" href="/mkdocs-kpn-theme/css/colors.css">
   <link rel="stylesheet" href="/mkdocs-kpn-theme/css/bundle.css">
   <link rel="stylesheet" href="/mkdocs-kpn-theme/css/theme.css">
@@ -53,6 +52,10 @@
 
 <body>
 <input id="dark-mode" type="checkbox" />
+<!--
+  The JS has to be loaded here for maximum performance, right after the #dark-mode
+-->
+<script src="/mkdocs-kpn-theme/js/theme.js"></script>
 <div class="app-body">
   <!-- KPN STYLE Beginning -->
   <div class="app-layout ">
@@ -174,9 +177,45 @@
 
 <li>
   <a href="/mkdocs-kpn-theme/usage/" class="side-bar__link ">
-    Markdown
+    Markdown usage
   </a>
 </li>
+
+        
+          <!--
+
+-->
+
+  <li>
+    <span class="side-bar__link side-bar__link--collapsed">
+      Nested
+    </span>
+    <ul class="side-bar__sub-menu ">
+        
+            <!--
+
+-->
+
+<li>
+  <a href="/mkdocs-kpn-theme/nested/sample1/" class="side-bar__link ">
+    Sample1
+  </a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li>
+  <a href="/mkdocs-kpn-theme/nested/sample2/" class="side-bar__link ">
+    Sample2
+  </a>
+</li>
+
+        
+    </ul>
+  </li>
 
         
       </ul>
@@ -213,7 +252,7 @@
 
   <!--
   MkDocs version      : 1.4.2
-  Docs Build Date UTC : 2023-01-04 10:28:11.365182+00:00
+  Docs Build Date UTC : 2023-01-05 17:57:57.564928+00:00
   -->
 
   <!--

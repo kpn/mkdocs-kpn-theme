@@ -27,7 +27,6 @@
   -->
   <link rel="shortcut icon" href="../img/favicon.ico">
 
-  <script src="../js/theme.js"></script>
   <link rel="stylesheet" href="../css/colors.css">
   <link rel="stylesheet" href="../css/bundle.css">
   <link rel="stylesheet" href="../css/theme.css">
@@ -55,6 +54,10 @@
 
 <body>
 <input id="dark-mode" type="checkbox" />
+<!--
+  The JS has to be loaded here for maximum performance, right after the #dark-mode
+-->
+<script src="../js/theme.js"></script>
 <div class="app-body">
   <!-- KPN STYLE Beginning -->
   <div class="app-layout ">
@@ -176,9 +179,45 @@
 
 <li>
   <a href="../usage/" class="side-bar__link ">
-    Markdown
+    Markdown usage
   </a>
 </li>
+
+        
+          <!--
+
+-->
+
+  <li>
+    <span class="side-bar__link side-bar__link--collapsed">
+      Nested
+    </span>
+    <ul class="side-bar__sub-menu ">
+        
+            <!--
+
+-->
+
+<li>
+  <a href="../nested/sample1/" class="side-bar__link ">
+    Sample1
+  </a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li>
+  <a href="../nested/sample2/" class="side-bar__link ">
+    Sample2
+  </a>
+</li>
+
+        
+    </ul>
+  </li>
 
         
       </ul>
@@ -534,7 +573,7 @@ graph TD;
             
               <a class="footer__link padding-top-0 navigation-next"
                 href="../usage/"
-                title="Markdown"/>
+                title="Markdown usage"/>
                 Next Page &#8594;
               </a>
             
@@ -550,7 +589,7 @@ graph TD;
 
   <!--
   MkDocs version      : 1.4.2
-  Docs Build Date UTC : 2023-01-04 10:28:11.370447+00:00
+  Docs Build Date UTC : 2023-01-05 17:57:57.598562+00:00
   -->
 
   <!--

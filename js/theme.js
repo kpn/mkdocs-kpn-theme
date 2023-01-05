@@ -14,8 +14,8 @@ function docReady(fn) {
 /**
  * Behavior for side bar navigation links when clicked
  */
-const sideBarNavigationLinks = () => {
-  const elements = document.getElementsByClassName("side-bar__link");
+const sideBarCollapsedNavigationLinks = () => {
+  const elements = document.getElementsByClassName("side-bar__link--collapsed");
   Array.prototype.map.call(elements, element => {
     element.onclick = () => {
       if (element.classList.contains("side-bar__link--collapsed")) {
@@ -101,17 +101,17 @@ function startColorScheme() {
     saveColorScheme(checkbox.checked)
   }
 }
+// load prefered mode
+loadColorScheme();
 
 docReady(() => {
-  // load prefered mode
-  loadColorScheme();
   startColorScheme();
 
   // Attaching the event listener function to window's resize event
   window.addEventListener("resize", updateSecondarySideBarHeight);
   // Initializing functions
   updateSecondarySideBarHeight();
-  sideBarNavigationLinks();
+  sideBarCollapsedNavigationLinks();
   openSideBarMenu();
   closeSideBarMenu();
   addNavigationControl("navigation-prev", KEY_LEFT);

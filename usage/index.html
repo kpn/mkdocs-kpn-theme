@@ -8,7 +8,7 @@
     The page_title contains the title for a page as shown in the navigation.
     Site name contains the name as defined in the mkdocs.yml
   -->
-  <title>Markdown - KPN Theme</title>
+  <title>Markdown usage - KPN Theme</title>
 
   <!-- Page description -->
   
@@ -27,7 +27,6 @@
   -->
   <link rel="shortcut icon" href="../img/favicon.ico">
 
-  <script src="../js/theme.js"></script>
   <link rel="stylesheet" href="../css/colors.css">
   <link rel="stylesheet" href="../css/bundle.css">
   <link rel="stylesheet" href="../css/theme.css">
@@ -55,6 +54,10 @@
 
 <body>
 <input id="dark-mode" type="checkbox" />
+<!--
+  The JS has to be loaded here for maximum performance, right after the #dark-mode
+-->
+<script src="../js/theme.js"></script>
 <div class="app-body">
   <!-- KPN STYLE Beginning -->
   <div class="app-layout ">
@@ -176,9 +179,45 @@
 
 <li>
   <a href="./" class="side-bar__link side-bar__link--active">
-    Markdown
+    Markdown usage
   </a>
 </li>
+
+        
+          <!--
+
+-->
+
+  <li>
+    <span class="side-bar__link side-bar__link--collapsed">
+      Nested
+    </span>
+    <ul class="side-bar__sub-menu ">
+        
+            <!--
+
+-->
+
+<li>
+  <a href="../nested/sample1/" class="side-bar__link ">
+    Sample1
+  </a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li>
+  <a href="../nested/sample2/" class="side-bar__link ">
+    Sample2
+  </a>
+</li>
+
+        
+    </ul>
+  </li>
 
         
       </ul>
@@ -187,13 +226,16 @@
     <!-- MAIN BLOCK -->
     <main class="app-layout__main main">
       <div class="app-layout__title-bar title-bar">
-        <div class="title-bar__title">Markdown</div>
+        <div class="title-bar__title">Markdown usage</div>
       </div>
       
       <div class="sidebar--secondary hidden-s hidden-xs">
         <h4>Table of contents</h4>
         <ul>
         
+          
+              <li><a class="a" href="#code-blocks-and-links">Code blocks and links</a></li>
+              
           
               <li><a class="a" href="#code-block">Code block</a></li>
               
@@ -230,10 +272,16 @@
             <div class="card__body">
 
               
-              <h1 id="markdown">Markdown<a class="headerlink" href="#markdown" title="Permanent link">&para;</a></h1>
+              <h1 id="markdown-usage">Markdown usage<a class="headerlink" href="#markdown-usage" title="Permanent link">&para;</a></h1>
 <p>Markdown is a simple language that will become HTML.</p>
 <p>The syntax is quite simple, use this <a href="cheatsheet">cheatsheet</a> as reference.</p>
 <p>Coming up next we'll see some examples</p>
+<h2 id="code-blocks-and-links">Code blocks and links<a class="headerlink" href="#code-blocks-and-links" title="Permanent link">&para;</a></h2>
+<p><a href="https://www.kpn.com">a link to kpn</a></p>
+<p><code>
+<a href="mkdocs-kpn-theme/usage/#code-block">a link to kpn also code</a>
+</code></p>
+<p><code>variable = 1</code></p>
 <h2 id="code-block">Code block<a class="headerlink" href="#code-block" title="Permanent link">&para;</a></h2>
 <p>In order to add a code block you need to wrap your coude around 3 backticks</p>
 <div class="highlight"><pre><span></span><code>```python
@@ -316,7 +364,11 @@ class SomeClass:
               </div>
             
             
+              <a class="footer__link padding-top-0 navigation-next"
+                href="../nested/sample1/"
+                title="Sample1"/>
                 Next Page &#8594;
+              </a>
             
           </div>
           <div class="col col--s-4 col--m-3 ">
@@ -330,7 +382,7 @@ class SomeClass:
 
   <!--
   MkDocs version      : 1.4.2
-  Docs Build Date UTC : 2023-01-04 10:28:11.377521+00:00
+  Docs Build Date UTC : 2023-01-05 17:57:57.605856+00:00
   -->
 
   <!--
