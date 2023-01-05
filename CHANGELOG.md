@@ -1,3 +1,9 @@
+## v1.2.2 (2023-01-05)
+
+### Fix
+
+- glitches, like dark-mode flickering, and side menu icon
+
 ## v1.2.1 (2023-01-04)
 
 ### Fix
