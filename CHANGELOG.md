@@ -1,3 +1,9 @@
+## v1.3.1 (2023-01-05)
+
+### Fix
+
+- improve sidebar navigation UX
+
 ## v1.3.0 (2023-01-05)
 
 ### Feat
