@@ -1,3 +1,9 @@
+## v1.3.2 (2023-01-05)
+
+### Fix
+
+- error when no version provided
+
 ## v1.3.1 (2023-01-05)
 
 ### Fix
