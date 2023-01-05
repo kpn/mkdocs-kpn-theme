@@ -200,6 +200,15 @@ table {
 }
 
 @media only screen and (min-width: 992px) {
+
+  .side-bar .side-bar__sub-menu .side-bar__link {
+    line-height: 40px;
+  }
+
+  .side-bar__sub-menu.side-bar__sub-menu--visible {
+    padding-left: 12px;
+  }
+
   .top-bar__item__version {
     display: unset;
   }
@@ -460,10 +469,6 @@ label[for="dark-mode"] {
 
 .hljs {
 	border-radius: 0.25rem;
-}
-
-li .side-bar__sub-menu.side-bar__sub-menu--visible {
-  padding-left: 15px;
 }
 
 .top-bar__version {
