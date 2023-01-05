@@ -1,3 +1,9 @@
+## v1.3.0 (2023-01-05)
+
+### Feat
+
+- add versioning support
+
 ## v1.2.2 (2023-01-05)
 
 ### Fix
