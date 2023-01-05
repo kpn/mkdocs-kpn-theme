@@ -15,26 +15,32 @@ function docReady(fn) {
  * Behavior for side bar navigation links when clicked
  */
 const sideBarCollapsedNavigationLinks = () => {
-  const elements = document.getElementsByClassName("side-bar__link--collapsed");
-  Array.prototype.map.call(elements, element => {
+  const elementsCollapsed = document.getElementsByClassName(
+    "side-bar__link--collapsed"
+  );
+  const elementsExpanded = document.getElementsByClassName(
+    "side-bar__link--expanded"
+  );
+
+  const onElementClick = (element) => {
     element.onclick = () => {
       if (element.classList.contains("side-bar__link--collapsed")) {
         element.classList.remove("side-bar__link--collapsed");
         element.classList.add("side-bar__link--expanded");
-        const submenu = element.parentElement.getElementsByClassName(
-          "side-bar__sub-menu"
-        );
+        const submenu =
+          element.parentElement.getElementsByClassName("side-bar__sub-menu");
         submenu[0].classList.add("side-bar__sub-menu--visible");
       } else {
         element.classList.remove("side-bar__link--expanded");
         element.classList.add("side-bar__link--collapsed");
-        const submenu = element.parentElement.getElementsByClassName(
-          "side-bar__sub-menu"
-        );
+        const submenu =
+          element.parentElement.getElementsByClassName("side-bar__sub-menu");
         submenu[0].classList.remove("side-bar__sub-menu--visible");
       }
     };
-  });
+  };
+  Array.prototype.map.call(elementsCollapsed, onElementClick);
+  Array.prototype.map.call(elementsExpanded, onElementClick);
 };
 
 const openSideBarMenu = () => {
@@ -58,9 +64,8 @@ const updateSecondarySideBarHeight = () => {
   // const w = document.documentElement.clientWidth;
   const h = document.documentElement.clientHeight;
 
-  const secondarySideBar = document.getElementsByClassName(
-    "sidebar--secondary"
-  )[0];
+  const secondarySideBar =
+    document.getElementsByClassName("sidebar--secondary")[0];
   const secondarySideBarExists = !!secondarySideBar;
   if (secondarySideBarExists) {
     secondarySideBar.style["height"] = `${h - 160}px`;
@@ -68,25 +73,26 @@ const updateSecondarySideBarHeight = () => {
 };
 
 const addNavigationControl = (navigationClass, keyCode) => {
-  document.addEventListener("keyup", event => {
+  document.addEventListener("keyup", (event) => {
     if (event.isComposing || event.keyCode !== keyCode) {
       return;
     }
     const elements = document.getElementsByClassName(navigationClass);
-    Array.prototype.map.call(elements, element => {
-        element.click();
+    Array.prototype.map.call(elements, (element) => {
+      element.click();
     });
   });
-
-}
+};
 
 const KEY_LEFT = 37;
 const KEY_RIGHT = 39;
 
 function loadColorScheme() {
-  const isSystemDark = window.matchMedia('(prefers-color-scheme: dark)').media !== 'not all';
+  const isSystemDark =
+    window.matchMedia("(prefers-color-scheme: dark)").media !== "not all";
   const loadSettings = localStorage.getItem("dark-mode");
-  const checked = loadSettings !== null ? JSON.parse(loadSettings) : isSystemDark;
+  const checked =
+    loadSettings !== null ? JSON.parse(loadSettings) : isSystemDark;
   document.getElementById("dark-mode").checked = checked;
 }
 
@@ -98,8 +104,8 @@ function saveColorScheme(value) {
 function startColorScheme() {
   const checkbox = document.getElementById("dark-mode");
   checkbox.onclick = () => {
-    saveColorScheme(checkbox.checked)
-  }
+    saveColorScheme(checkbox.checked);
+  };
 }
 // load prefered mode
 loadColorScheme();
