@@ -74,7 +74,6 @@
           requirement here is that there is a text input with the name 'q' and the
           action and methods match below.
         -->
-        <!-- SEARCH IS DISABLED UNTIL WE HAVE AN IMPLEMENTATION -->
           <li class="top-bar__item">
 
             <span role="search" id="search-input-wrapper">
@@ -84,9 +83,18 @@
             </span >
           </li>
         <!--
+          Versioning support
+        -->
+        
+        <li class="top-bar__item top-bar__item__version">
+          <label class="top-bar__version text-sm" title="Current version">
+            1.3.0
+          </label>
+        </li>
+        
+        <!--
           Support repo URL
         -->
-
         <li class="top-bar__item">
           
             <a class="top-bar__link repo-link" title="Repository"
@@ -103,6 +111,7 @@
             </a>
           
         </li>
+
         <li class="top-bar__item">
             <label class="top-bar__link" id="label-dark-mode" for="dark-mode" title="Dark mode">
               <svg alt="dark mode" width="24" height="24">
@@ -111,6 +120,7 @@
             </label>
         </li>
         <li class="top-bar__item top-bar__item--trigger"></li>
+
         <!-- <li class="top-bar__item">
 
           <a class="top-bar__link top-bar__link--active">Home</a>
@@ -136,6 +146,14 @@
     <nav class="app-layout__side-bar side-bar">
       <div class="side-bar__action-bar">
         <a class="side-bar__link" href="/">KPN Theme</a>
+        <!--
+          Versioning support
+        -->
+        
+        <label class="side-bar__version text-sm" title="Current version">
+          1.3.0
+        </label>
+        
         <button class="side-bar__close"></button>
       </div>
       <ul class="side-bar__menu">
@@ -395,7 +413,7 @@ make a change. This is useful to see your documentation while you are writing it
 
   <!--
   MkDocs version      : 1.4.2
-  Docs Build Date UTC : 2023-01-05 17:57:57.595436+00:00
+  Docs Build Date UTC : 2023-01-05 18:45:06.296460+00:00
   -->
 
   <!--

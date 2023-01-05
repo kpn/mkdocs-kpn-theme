@@ -195,8 +195,15 @@ table {
   display: block;
   overflow-x: auto;
 }
+.top-bar__item__version {
+  display: none;
+}
 
 @media only screen and (min-width: 992px) {
+  .top-bar__item__version {
+    display: unset;
+  }
+
   .sidebar--secondary {
     width: 170px;
   }
@@ -457,4 +464,24 @@ label[for="dark-mode"] {
 
 li .side-bar__sub-menu.side-bar__sub-menu--visible {
   padding-left: 15px;
+}
+
+.top-bar__version {
+  color: var(--green);
+  align-items: center;
+  display: flex;
+  height: inherit;
+  padding-left: space();
+  padding-right: space();
+  margin-left: 10px;
+  user-select: none;
+}
+
+.text-sm {
+  font-size: 0.875rem; /* 12px */
+  line-height: 1.25rem; /* 16px */
+}
+
+.side-bar__version {
+  color: var(--grey-white);
 }
