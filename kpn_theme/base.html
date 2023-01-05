@@ -119,7 +119,7 @@
         <!--
           Versioning support
         -->
-        {% if config.extra.version.provider == "manual" %}
+        {% if config.extra.version and config.extra.version.provider == "manual" %}
         <li class="top-bar__item top-bar__item__version">
           <label class="top-bar__version text-sm" title="Current version">
             {{ config.extra.version.version }}
@@ -196,7 +196,7 @@
         <!--
           Versioning support
         -->
-        {% if config.extra.version.provider == "manual" %}
+        {% if config.extra.version and config.extra.version.provider == "manual" %}
         <label class="side-bar__version text-sm" title="Current version">
           {{ config.extra.version.version }}
         </label>
