@@ -1,10 +1,19 @@
-# Markdown
+# Markdown usage
 
 Markdown is a simple language that will become HTML.
 
 The syntax is quite simple, use this [cheatsheet](cheatsheet) as reference.
 
 Coming up next we'll see some examples
+## Code blocks and links
+
+[a link to kpn](https://www.kpn.com)
+
+<code>
+[a link to kpn also code](mkdocs-kpn-theme/usage/#code-block)
+</code>
+
+`variable = 1`
 
 ## Code block
 

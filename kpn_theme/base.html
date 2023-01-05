@@ -46,7 +46,6 @@
   -->
   <link rel="shortcut icon" href="{{ "img/favicon.ico"|url }}">
 
-  <script src="{{ "js/theme.js"|url }}"></script>
   <link rel="stylesheet" href="{{ "css/colors.css"|url }}">
   <link rel="stylesheet" href="{{ "css/bundle.css"|url }}">
   <link rel="stylesheet" href="{{ "css/theme.css"|url }}">
@@ -86,6 +85,10 @@
 
 <body>
 <input id="dark-mode" type="checkbox" />
+<!--
+  The JS has to be loaded here for maximum performance, right after the #dark-mode
+-->
+<script src="{{ "js/theme.js"|url }}"></script>
 <div class="app-body">
   <!-- KPN STYLE Beginning -->
   <div class="app-layout ">

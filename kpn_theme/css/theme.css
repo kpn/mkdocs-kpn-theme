@@ -437,6 +437,11 @@ label[for="dark-mode"] {
   background-color: inherit;
 }
 
+.kpn-style code a {
+  color:var(--blue);
+  text-decoration: none;
+}
+
 .top-bar .top-bar__logo img {
   height: 55px;
   filter: var(--logo-filter);
@@ -448,4 +453,8 @@ label[for="dark-mode"] {
 
 .hljs {
 	border-radius: 0.25rem;
+}
+
+li .side-bar__sub-menu.side-bar__sub-menu--visible {
+  padding-left: 15px;
 }
