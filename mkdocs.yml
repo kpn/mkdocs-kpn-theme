@@ -27,7 +27,9 @@ markdown_extensions:
   - pymdownx.smartsymbols
   - pymdownx.tasklist
   - pymdownx.tilde
-  - pymdownx.highlight
+  - pymdownx.highlight:
+      anchor_linenums: true
+      use_pygments: false
   - pymdownx.superfences:
       custom_fences:
           - name: mermaid
