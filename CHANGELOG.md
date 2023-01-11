@@ -1,3 +1,9 @@
+## v1.4.0 (2023-01-11)
+
+### Feat
+
+- removed pygements fixing highlight issues
+
 ## v1.3.2 (2023-01-05)
 
 ### Fix
