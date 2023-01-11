@@ -30,7 +30,7 @@
   <link rel="stylesheet" href="../css/colors.css">
   <link rel="stylesheet" href="../css/bundle.css">
   <link rel="stylesheet" href="../css/theme.css">
-  <link media="print" onload="this.media='all'" rel="stylesheet" href="../css/ir-black.min.css">
+  <link media="print" onload="this.media='all'" rel="stylesheet" href="../css/atom-dark-one.min.css">
   <!--
     extra_ess contains paths to CSS files in the users
     documentation directory or a list of CSS files defined in
@@ -88,7 +88,7 @@
         
         <li class="top-bar__item top-bar__item__version">
           <label class="top-bar__version text-sm" title="Current version">
-            1.4.0
+            1.5.0
           </label>
         </li>
         
@@ -151,7 +151,7 @@
         -->
         
         <label class="side-bar__version text-sm" title="Current version">
-          1.4.0
+          1.5.0
         </label>
         
         <button class="side-bar__close"></button>
@@ -261,10 +261,16 @@
               <li><a class="a" href="#image">Image</a></li>
               
           
-              <li><a class="a" href="#code-inside-table">Code inside table</a></li>
+              <li><a class="a" href="#unordered-lists">Unordered Lists</a></li>
+              
+          
+              <li><a class="a" href="#ordered-lists">Ordered Lists</a></li>
               
           
               <li><a class="a" href="#code-inside-a-list">Code inside a list</a></li>
+              
+          
+              <li><a class="a" href="#code-inside-table">Code inside table</a></li>
               
           
               <li><a class="a" href="#quote">Quote</a></li>
@@ -320,11 +326,72 @@ class SomeClass:
 <h2 id="image">Image<a class="headerlink" href="#image" title="Permanent link">&para;</a></h2>
 <pre class="highlight"><code class="language-text">![alternative text](https://www.kpn.com/public/images/logos/logo-kpn-groot.png)</code></pre>
 <p><img alt="alternative text" src="https://www.kpn.com/public/images/logos/logo-kpn-groot.png" /></p>
+<h2 id="unordered-lists">Unordered Lists<a class="headerlink" href="#unordered-lists" title="Permanent link">&para;</a></h2>
+<pre class="highlight"><code class="language-md">- item
+    - item a
+        - other nested
+        - other nested
+    - item b
+    - item b</code></pre>
+<ul>
+<li>item<ul>
+<li>item a<ul>
+<li>other nested</li>
+<li>other nested</li>
+</ul>
+</li>
+<li>item b</li>
+<li>item b</li>
+</ul>
+</li>
+</ul>
+<h2 id="ordered-lists">Ordered Lists<a class="headerlink" href="#ordered-lists" title="Permanent link">&para;</a></h2>
+<pre class="highlight"><code class="language-md">1. item
+    1. item a
+        1. other nested
+        1. other nested
+    1. item b
+    1. item b</code></pre>
+<ol>
+<li>item<ol>
+<li>item a<ol>
+<li>other nested</li>
+<li>other nested</li>
+</ol>
+</li>
+<li>item b</li>
+<li>item b</li>
+</ol>
+</li>
+</ol>
+<h2 id="code-inside-a-list">Code inside a <code>list</code><a class="headerlink" href="#code-inside-a-list" title="Permanent link">&para;</a></h2>
+<pre class="highlight"><code class="language-md">- `name`
+- `list`
+- `name`
+    - `name`
+    - `name`</code></pre>
+<ul>
+<li><code>name</code></li>
+<li><code>list</code></li>
+<li><code>name</code><ul>
+<li><code>name</code></li>
+<li><code>name</code></li>
+</ul>
+</li>
+</ul>
 <h2 id="code-inside-table">Code inside <code>table</code><a class="headerlink" href="#code-inside-table" title="Permanent link">&para;</a></h2>
+<pre class="highlight"><code class="language-md">| Example | Bla      | Foo | Bla      | Bla      |
+| ------- | -------- | --- | -------- | -------- |
+| `name`  | `String` | Bar | `String` | `String` |
+| `name`  | Bar      | Bar | Bar      | Bar      |
+| Bar     | `String` | Bar | `String` | `String` |</code></pre>
 <table>
 <thead>
 <tr>
 <th>Example</th>
+<th>Bla</th>
+<th>Foo</th>
+<th>Bla</th>
 <th>Bla</th>
 </tr>
 </thead>
@@ -332,14 +399,26 @@ class SomeClass:
 <tr>
 <td><code>name</code></td>
 <td><code>String</code></td>
+<td>Bar</td>
+<td><code>String</code></td>
+<td><code>String</code></td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td>Bar</td>
+<td>Bar</td>
+<td>Bar</td>
+<td>Bar</td>
+</tr>
+<tr>
+<td>Bar</td>
+<td><code>String</code></td>
+<td>Bar</td>
+<td><code>String</code></td>
+<td><code>String</code></td>
 </tr>
 </tbody>
 </table>
-<h2 id="code-inside-a-list">Code inside a <code>list</code><a class="headerlink" href="#code-inside-a-list" title="Permanent link">&para;</a></h2>
-<ul>
-<li><code>name</code></li>
-<li><code>list</code></li>
-</ul>
 <h2 id="quote">Quote<a class="headerlink" href="#quote" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut tortor sed lorem auctor vulputate id hendrerit quam. Integer maximus molestie elit, non elementum libero rutrum ac. Suspendisse a gravida massa, vitae ullamcorper urna. Quisque varius finibus leo, et ornare est bibendum et. Donec feugiat vitae ipsum fringilla volutpat. Duis hendrerit iaculis pellentesque. Nullam sed egestas nisi. Proin aliquet faucibus mi lacinia maximus. Integer urna ligula, malesuada in purus et, cursus tincidunt tortor. Donec et nunc consectetur, gravida nulla eu, viverra lorem. Nullam suscipit nibh sed nisl fringilla, sit amet tristique ante vulputate. Sed ultrices purus vel erat lacinia pellentesque. Phasellus elit mi, auctor eget nisl vehicula, sollicitudin ultrices risus. Etiam venenatis tempus arcu at dignissim.</p>
@@ -399,7 +478,7 @@ class SomeClass:
 
   <!--
   MkDocs version      : 1.4.2
-  Docs Build Date UTC : 2023-01-11 13:35:38.300873+00:00
+  Docs Build Date UTC : 2023-01-11 15:00:50.345351+00:00
   -->
 
   <!--
