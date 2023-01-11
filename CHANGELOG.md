@@ -1,3 +1,13 @@
+## v1.5.0 (2023-01-11)
+
+### Feat
+
+- update theme
+
+### Fix
+
+- improve list and table styles
+
 ## v1.4.0 (2023-01-11)
 
 ### Feat
