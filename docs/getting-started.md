@@ -1,3 +1,5 @@
+# Getting started
+
 ## About mkdocs
 
 [Mkdocs][mkdocs] is a project that enables you into writing documentation for

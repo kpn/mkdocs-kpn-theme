@@ -2,6 +2,8 @@
 title: Extensions
 ---
 
+# Extensions
+
 ## Admonition - Block styled content
 
 ```yaml

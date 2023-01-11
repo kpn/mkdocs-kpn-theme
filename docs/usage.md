@@ -42,17 +42,74 @@ In order to add a code block you need to wrap your coude around 3 backticks
 
 ![alternative text](https://www.kpn.com/public/images/logos/logo-kpn-groot.png)
 
+## Unordered Lists
 
-## Code inside `table`
+```md
+- item
+    - item a
+        - other nested
+        - other nested
+    - item b
+    - item b
+```
 
-| Example | Bla      |
-| ------- | -------- |
-| `name`  | `String` |
+- item
+    - item a
+        - other nested
+        - other nested
+    - item b
+    - item b
+
+## Ordered Lists
+
+```md
+1. item
+    1. item a
+        1. other nested
+        1. other nested
+    1. item b
+    1. item b
+```
+
+1. item
+    1. item a
+        1. other nested
+        1. other nested
+    1. item b
+    1. item b
 
 ## Code inside a `list`
+```md
+- `name`
+- `list`
+- `name`
+    - `name`
+    - `name`
+```
 
 - `name`
 - `list`
+- `name`
+    - `name`
+    - `name`
+
+
+## Code inside `table`
+
+```md
+| Example | Bla      | Foo | Bla      | Bla      |
+| ------- | -------- | --- | -------- | -------- |
+| `name`  | `String` | Bar | `String` | `String` |
+| `name`  | Bar      | Bar | Bar      | Bar      |
+| Bar     | `String` | Bar | `String` | `String` |
+```
+
+| Example | Bla      | Foo | Bla      | Bla      |
+| ------- | -------- | --- | -------- | -------- |
+| `name`  | `String` | Bar | `String` | `String` |
+| `name`  | Bar      | Bar | Bar      | Bar      |
+| Bar     | `String` | Bar | `String` | `String` |
+
 
 ## Quote
 

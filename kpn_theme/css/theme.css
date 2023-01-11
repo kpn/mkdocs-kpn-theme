@@ -490,3 +490,21 @@ label[for="dark-mode"] {
 .side-bar__version {
   color: var(--grey-white);
 }
+
+.kpn-style ol ol:not([class]),
+.kpn-style ol ul:not([class]),
+.kpn-style ul ol:not([class]),
+.kpn-style ul ul:not([class]) {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.table, .kpn-style table:not([class]) {
+  border-top: unset;
+}
+
+
+.kpn-style table:not([class]) thead {
+  background-color: var(--grey);
+  color: var(--green);
+}

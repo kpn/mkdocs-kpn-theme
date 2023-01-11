@@ -28,7 +28,6 @@ markdown_extensions:
   - pymdownx.tasklist
   - pymdownx.tilde
   - pymdownx.highlight:
-      anchor_linenums: true
       use_pygments: false
   - pymdownx.superfences:
       custom_fences:
