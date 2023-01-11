@@ -1,3 +1,9 @@
+## v1.5.1 (2023-01-11)
+
+### Fix
+
+- improve quotes styles
+
 ## v1.5.0 (2023-01-11)
 
 ### Feat
