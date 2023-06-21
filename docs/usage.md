@@ -34,6 +34,36 @@ In order to add a code block you need to wrap your coude around 3 backticks
     ... prompt'''
     ```
 
+Other languages:
+
+groovy
+
+```groovy
+stage("hello") {
+
+}
+```
+
+typescript
+
+```ts
+const a = "A";
+```
+
+asciidoc
+
+```asciidoc
+= Title
+```
+
+nix
+
+```nix
+{
+    name = "x";
+}
+```
+
 ## Image
 
 ```text
