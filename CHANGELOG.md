@@ -1,3 +1,9 @@
+## v1.6.0 (2023-06-21)
+
+### Feat
+
+- add support for a few more languages
+
 ## v1.5.2 (2023-01-11)
 
 ### Fix
