@@ -11,7 +11,7 @@ repo_url: https://github.com/kpn/mkdocs-kpn-theme/
 extra:
   version:
     provider: 'manual'
-    version: 1.6.0
+    version: 1.7.0
 
 copyright: 'Copyright &copy; KPN'
 

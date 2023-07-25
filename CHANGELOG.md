@@ -1,3 +1,16 @@
+## v1.7.0 (2023-07-25)
+
+### Feat
+
+- new style for code and blockquote
+- new style for nested side-bar link
+
+### Fix
+
+- icon in nested side bar link
+- hover glitch in dark-mode icon
+- inline code within a quote
+
 ## v1.6.0 (2023-06-21)
 
 ### Feat
