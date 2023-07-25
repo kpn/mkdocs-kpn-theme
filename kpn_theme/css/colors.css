@@ -38,7 +38,8 @@
   --repo-link-invert: 24%;
 
   --dark-mode-label-filter: inherit;
-  --dark-mode-label-filter-hover: brightness(20) sepia(100) hue-rotate(325deg) saturate(6);
+  /* --dark-mode-label-filter-hover: brightness(20) sepia(100) hue-rotate(325deg) saturate(6); */
+  --dark-mode-label-filter-hover: brightness(1.6) sepia(0.1) hue-rotate(290deg);
 
   --logo-filter: inherit;
 }
@@ -57,7 +58,7 @@
   --dark-mode-label-filter: brightness(20) sepia(100) hue-rotate(325deg) saturate(6);
   --dark-mode-label-filter-hover: var(--green);
 
-  --logo-filter: brightness(100);
+  --logo-filter: brightness(50);
 
   color: var(--grey-dove);
 }
