@@ -38,9 +38,14 @@
   --repo-link-invert: 24%;
 
   --dark-mode-label-filter: inherit;
-  --dark-mode-label-filter-hover: brightness(20) sepia(100) hue-rotate(325deg) saturate(6);
+  /* --dark-mode-label-filter-hover: brightness(20) sepia(100) hue-rotate(325deg) saturate(6); */
+  --dark-mode-label-filter-hover: brightness(1.6) sepia(0.1) hue-rotate(290deg);
 
   --logo-filter: inherit;
+  --inline-code-bg: var(--grey-subtle);
+  --inline-code-border: 1px solid var(--grey-light);
+  --blockquote-bg: #fbf8f8;
+  --blockquote-color: var(--grey-dove);
 }
 
 #dark-mode:checked ~ .app-body {
@@ -57,7 +62,12 @@
   --dark-mode-label-filter: brightness(20) sepia(100) hue-rotate(325deg) saturate(6);
   --dark-mode-label-filter-hover: var(--green);
 
-  --logo-filter: brightness(100);
+  --logo-filter: brightness(50);
+  --inline-code-bg: #2a2828;
+  --inline-code-border: 1px solid var(--grey-subtle);
+
+  --blockquote-bg: #444343;
+  --blockquote-color: var(--grey-dove);
 
   color: var(--grey-dove);
 }
