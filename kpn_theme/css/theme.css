@@ -42,12 +42,15 @@ h5 code,
 span code,
 table code,
 li code,
+blockquote code,
 p code {
   padding: 0.2em 0.4em;
   margin: 0;
   font-size: 85%;
   /* background-color: rgba(27, 31, 35, 0.05); */
   border-radius: 6px;
+  background-color: var(--inline-code-bg);
+  border: var(--inline-code-border);
 }
 
 pre {
@@ -363,12 +366,12 @@ blockquote {
   margin: 64px auto;
   font-family: Open Sans;
   font-style: italic;
-  color: #555555;
-  padding: 1.2em 30px 15px 25px !important;
+  color: var(--blockquote-color);
+  padding: 1.2em 30px 10px 25px !important;
   border-left: 6px solid lightgray;
   line-height: 1.6;
   position: relative;
-  background: ghostwhite;
+  background: var(--blockquote-bg);
   border-radius: 4px;
 }
 
@@ -388,10 +391,10 @@ blockquote::after {
   content: "";
 }
 
-blockquote p code {
+/* blockquote p code {
   color: var(--grey-black);
   background-color: var(--grey-silver);
-}
+} */
 
 .tabbed-set {
   display: flex;
