@@ -225,6 +225,8 @@ table {
 
   .content-block {
     margin-right: 12.1rem;
+    display: flex;
+    justify-content: center;
   }
 
   .kpn-style {
@@ -236,10 +238,6 @@ table {
   .card {
     width: inherit;
     padding: 1rem;
-  }
-
-  .container {
-    padding-right: 62px;
   }
 
   label[for="dark-mode"]:hover {
