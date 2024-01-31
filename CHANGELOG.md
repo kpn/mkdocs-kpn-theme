@@ -1,3 +1,9 @@
+## v1.7.2 (2024-01-31)
+
+### Fix
+
+- **ci**: update action setup-python
+
 ## v1.7.1 (2024-01-30)
 
 ### Fix
