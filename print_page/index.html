@@ -8,7 +8,7 @@
     The page_title contains the title for a page as shown in the navigation.
     Site name contains the name as defined in the mkdocs.yml
   -->
-  <title>Extensions - KPN Theme</title>
+  <title>mkdocs KPN theme manual - KPN Theme</title>
 
   <!-- Page description -->
   
@@ -17,7 +17,7 @@
 
   <!-- Redirect -->
   
-    <link rel="canonical" href="https://kpn.github.io/mkdocs-kpn-theme/md-extensions/" />
+    <link rel="canonical" href="https://kpn.github.io/mkdocs-kpn-theme/print_page/" />
   
 
   <!-- Page author -->
@@ -52,7 +52,13 @@
   -->
   
 
-</head>
+
+        <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            remove_material_navigation();remove_mkdocs_theme_navigation();generate_toc();
+        })
+        </script>
+        </head>
 
 <body>
 <input id="dark-mode" type="checkbox" />
@@ -113,12 +119,6 @@
             </a>
           
 
-        </li>
-        
-        <li class="top-bar__item">
-            <a class="top-bar__link repo-link" href="../print_page/" title="Link to Print site" >
-                <img height="25" alt="printer" src="../img/print.svg" />
-            </a>
         </li>
         
 
@@ -195,7 +195,7 @@
 -->
 
 <li>
-  <a href="./" class="side-bar__link side-bar__link--active">
+  <a href="../md-extensions/" class="side-bar__link ">
     Extensions
   </a>
 </li>
@@ -254,7 +254,7 @@
     <!-- MAIN BLOCK -->
     <main class="app-layout__main main">
       <div class="app-layout__title-bar title-bar no-print">
-        <div class="title-bar__title">Extensions</div>
+        <div class="title-bar__title">mkdocs KPN theme manual</div>
       </div>
       
       <div class="sidebar--secondary hidden-s hidden-xs md-sidebar--secondary">
@@ -262,53 +262,31 @@
         <ul>
         
           
+            <li><a class="a" href="#index">1 KPN for MkDocs</a></li>
             
-                <li><a class="a" href="#admonition-block-styled-content">Admonition - Block styled content</a></li>
+          
+        
+          
+            <li><a class="a" href="#getting-started">2 Getting started</a></li>
+            
+          
+        
+          
+            <li><a class="a" href="#md-extensions">3 Extensions</a></li>
+            
+          
+        
+          
+            <li><a class="a" href="#usage">4 Markdown usage</a></li>
+            
+          
+        
+          
+            
+                <li><a class="a" href="#nested-sample1">5.1 Sample1</a></li>
                 
             
-                <li><a class="a" href="#language-highlight">Language highlight</a></li>
-                
-            
-                <li><a class="a" href="#line-highlight">Line highlight</a></li>
-                
-            
-                <li><a class="a" href="#footnotes">Footnotes</a></li>
-                
-            
-                <li><a class="a" href="#keyboard">Keyboard</a></li>
-                
-            
-                <li><a class="a" href="#critics">Critics</a></li>
-                
-            
-                <li><a class="a" href="#emojis">Emojis</a></li>
-                
-            
-                <li><a class="a" href="#mark">Mark</a></li>
-                
-            
-                <li><a class="a" href="#smart-symbols">Smart symbols</a></li>
-                
-            
-                <li><a class="a" href="#tasklist">Tasklist</a></li>
-                
-            
-                <li><a class="a" href="#tilde">Tilde</a></li>
-                
-            
-                <li><a class="a" href="#more">More</a></li>
-                
-            
-                <li><a class="a" href="#content-tabs">Content tabs</a></li>
-                
-            
-                <li><a class="a" href="#plantuml-diagrams">PlantUML diagrams</a></li>
-                
-            
-                <li><a class="a" href="#mermaid-diagrams">Mermaid diagrams</a></li>
-                
-            
-                <li><a class="a" href="#printing-to-pdf">Printing to PDF</a></li>
+                <li><a class="a" href="#nested-sample2">5.2 Basic</a></li>
                 
             
           
@@ -322,8 +300,137 @@
             <div class="card__body">
 
               
-              <h1 id="extensions">Extensions<a class="headerlink" href="#extensions" title="Permanent link">&para;</a></h1>
-<h2 id="admonition-block-styled-content">Admonition - Block styled content<a class="headerlink" href="#admonition-block-styled-content" title="Permanent link">&para;</a></h2>
+              <div id="print-site-page" class="print-site-enumerate-headings print-site-enumerate-figures">
+        <div id="print-site-banner">
+            <p>
+    <em>This box will disappear when printing</em>
+    <span style="float: right"><a href="https://timvink.github.io/mkdocs-print-site-plugin/">mkdocs-print-site-plugin</a></span>
+</p>
+<p>
+    This page has combined all site pages into one. You can export to PDF using <b>File > Print > Save as PDF</b>.
+</p>
+<p>
+    See also <a href="https://timvink.github.io/mkdocs-print-site-plugin/how-to/export-PDF.html">export to PDF</a> and <a href="https://timvink.github.io/mkdocs-print-site-plugin/how-to/export-HTML.html">export to standalone HTML</a>.
+</p>
+        </div>
+        
+        <section class="print-page">
+            <div id="print-page-toc" data-toc-depth="3">
+                <nav role='navigation' class='print-page-toc-nav'>
+                <h1 class='print-page-toc-title'>Table of Contents</h1>
+                </nav>
+            </div>
+        </section>
+        <section class="print-page" id="index" heading-number="1"><h1 id="index-kpn-for-mkdocs">KPN for MkDocs<a class="headerlink" href="#index-kpn-for-mkdocs" title="Permanent link">&para;</a></h1>
+<h2 id="index-create-a-beautiful-kpn-project-documentation">Create a beautiful KPN project documentation<a class="headerlink" href="#index-create-a-beautiful-kpn-project-documentation" title="Permanent link">&para;</a></h2>
+<p>KPN Theme is a theme for MkDocs, an excellent static site generator geared towards project documentation.
+It is built using <a href="https://style.kpn.com/">KPN Styles</a>.</p>
+<h2 id="index-quickstart">Quickstart<a class="headerlink" href="#index-quickstart" title="Permanent link">&para;</a></h2>
+<p>Install the latest version of KPN theme with pip:</p>
+<pre class="highlight"><code class="language-bash">pip install mkdocs-kpn</code></pre>
+<p>Append the following line to your project's mkdocs.yml:</p>
+<pre class="highlight"><code class="language-yaml">theme:
+  name: 'kpn'</code></pre>
+<h2 id="index-what-to-expect">What to expect<a class="headerlink" href="#index-what-to-expect" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Responsive design and fluid layout for all kinds of screens and devices,
+designed to serve your project documentation in a user-friendly way.</li>
+<li>Support for a lot of markdown extensions.</li>
+</ul>
+<h2 id="index-change-repo-icon">Change repo icon<a class="headerlink" href="#index-change-repo-icon" title="Permanent link">&para;</a></h2>
+<pre class="highlight"><code class="language-yaml"># options: github | gitlab | bitbucket | gitea
+extra:
+  repo_icon: 'github'</code></pre>
+<h2 id="index-add-version-to-site">Add version to site<a class="headerlink" href="#index-add-version-to-site" title="Permanent link">&para;</a></h2>
+<p>Edit <code>mkdocs.yml</code> with</p>
+<pre class="highlight"><code class="language-yaml">extra:
+  version:
+    provider: 'manual'
+    version: 1.2.2</code></pre>
+<p><strong>TODO</strong>: Add support for <a href="https://github.com/jimporter/mike/">mike</a> versioning</p></section><section class="print-page" id="getting-started" heading-number="2"><h1 id="getting-started-getting-started">Getting started<a class="headerlink" href="#getting-started-getting-started" title="Permanent link">&para;</a></h1>
+<h2 id="getting-started-about-mkdocs">About mkdocs<a class="headerlink" href="#getting-started-about-mkdocs" title="Permanent link">&para;</a></h2>
+<p><a href="https://www.mkdocs.org/">Mkdocs</a> is a project that enables you into writing documentation for
+your project in a super <strong>fast and easy</strong> way.</p>
+<p>First, you have to create a <code>docs/</code> folder in the root of your project,
+inside it, you can start creating markdown (<code>.md</code>) files.</p>
+<p>The main file of the documentation is called <code>index.md</code>. This can be configured
+by configuring the <a href="https://www.mkdocs.org/#adding-pages">navigation setting</a> in your <code>mkdocs.yml</code> file.</p>
+<p>Once you finish writing your documentation, using the command line,
+<code>mkdocs</code> will get all of these markdown files and will output a rendered
+HTML website to the <code>site/</code> folder.</p>
+<p>That's it!</p>
+<h2 id="getting-started-installation">Installation<a class="headerlink" href="#getting-started-installation" title="Permanent link">&para;</a></h2>
+<p>If you are starting from the ground up, you need to install <code>mkdocs</code> in your
+project.</p>
+<pre class="highlight"><code class="language-bash">python -m pip install mkdocs mkdocs-kpn</code></pre>
+<h2 id="getting-started-usage">Usage<a class="headerlink" href="#getting-started-usage" title="Permanent link">&para;</a></h2>
+<h3 id="getting-started-creating-a-configuration">Creating a configuration<a class="headerlink" href="#getting-started-creating-a-configuration" title="Permanent link">&para;</a></h3>
+<p>In the root of your project create a file called <code>mkdocs.yml</code>
+and put this initial configuration:</p>
+<pre class="highlight"><code class="language-yaml">site_name: &lt;My Website Name&gt;
+
+theme:
+  name: kpn
+
+markdown_extensions:
+  - codehilite:
+      guess_lang: false</code></pre>
+<p>For more settings check the Full Example at the bottom of the page.</p>
+<h3 id="getting-started-add-search-support">Add search support<a class="headerlink" href="#getting-started-add-search-support" title="Permanent link">&para;</a></h3>
+<p>Just add to the <code>mkdocs.yml</code> the following:</p>
+<pre class="highlight"><code class="language-yaml">plugins:
+  - search:
+      prebuild_index: true</code></pre>
+<p>A search input will appear. The search index is offline, so no backend is required.</p>
+<h3 id="getting-started-running-commands">Running commands<a class="headerlink" href="#getting-started-running-commands" title="Permanent link">&para;</a></h3>
+<pre class="highlight"><code class="language-bash">python -m mkdocs build</code></pre>
+<p>Will output the generated website into a <code>site/</code> folder. Remember to add it
+to your <code>.gitignore</code>, the idea is for CI's to automatically build it.</p>
+<hr />
+<pre class="highlight"><code class="language-bash">python -m mkdocs serve</code></pre>
+<p>This command will run a webserver which will reload your browser as soon as you
+make a change. This is useful to see your documentation while you are writing it.</p>
+<h2 id="getting-started-full-configuration-example">Full configuration example<a class="headerlink" href="#getting-started-full-configuration-example" title="Permanent link">&para;</a></h2>
+<p>Full <code>mkdocs.yml</code> example:</p>
+<pre class="highlight"><code class="language-yaml"># Project information
+site_name: 'KPN Theme'
+site_description: 'A KPN theme for MkDocs'
+site_author: 'Jon Doe'
+
+# Repository
+repo_name: 'kpn/mkdocs-kpn-theme'
+repo_url: https://github.com/kpn/mkdocs-kpn-theme
+
+# Copyright
+copyright: 'Copyright &amp;copy; KPN'
+
+# Google Analytics Disabled by default
+google_analytics:
+  - 'UA-XXXXXXXX-X'
+  - 'auto'
+
+extra:
+  # Use the repo edit url instead of the link to the repo
+  use_edit_url: false
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+  - footnotes
+  - pymdownx.critic
+  - pymdownx.emoji
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.tasklist
+  - pymdownx.tilde</code></pre>
+<h2 id="getting-started-api-documentation">API Documentation<a class="headerlink" href="#getting-started-api-documentation" title="Permanent link">&para;</a></h2>
+<p>To document your API we recommend using <a href="https://github.com/mkdocstrings/mkdocstrings">mkdocstrings</a>.</p></section><section class="print-page" id="md-extensions" heading-number="3"><h1 id="md-extensions-extensions">Extensions<a class="headerlink" href="#md-extensions-extensions" title="Permanent link">&para;</a></h1>
+<h2 id="md-extensions-admonition-block-styled-content">Admonition - Block styled content<a class="headerlink" href="#md-extensions-admonition-block-styled-content" title="Permanent link">&para;</a></h2>
 <pre class="highlight"><code class="language-yaml"># location: mkdocs.yml
 markdown_extensions:
   - admonition</code></pre>
@@ -383,7 +490,7 @@ markdown_extensions:
 
 !!! Example "Default"
     This is the default box</code></pre>
-<h2 id="language-highlight">Language highlight<a class="headerlink" href="#language-highlight" title="Permanent link">&para;</a></h2>
+<h2 id="md-extensions-language-highlight">Language highlight<a class="headerlink" href="#md-extensions-language-highlight" title="Permanent link">&para;</a></h2>
 <pre class="highlight"><code class="language-yaml"># location: mkdocs.yml
 markdown_extensions:
   - pymdownx.highlight
@@ -391,25 +498,25 @@ markdown_extensions:
 <pre class="highlight"><code class="language-python">def fun():
     print("holis")</code></pre>
 <pre class="highlight"><code class="language-bash">kubectl apply -f manifest.yml</code></pre>
-<h2 id="line-highlight">Line highlight<a class="headerlink" href="#line-highlight" title="Permanent link">&para;</a></h2>
+<h2 id="md-extensions-line-highlight">Line highlight<a class="headerlink" href="#md-extensions-line-highlight" title="Permanent link">&para;</a></h2>
 <p>You can highlight using <code>the output is like:</code></p>
-<h2 id="footnotes">Footnotes<a class="headerlink" href="#footnotes" title="Permanent link">&para;</a></h2>
+<h2 id="md-extensions-footnotes">Footnotes<a class="headerlink" href="#md-extensions-footnotes" title="Permanent link">&para;</a></h2>
 <pre class="highlight"><code class="language-yaml"># location: mkdocs.yml
 markdown_extensions:
   - footnotes</code></pre>
-<p>All the other pages are for<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> demonstration purposes
+<p>All the other pages are for<sup id="fnref:1"><a class="footnote-ref" href="#md-extensions-fn:1">1</a></sup> demonstration purposes
 with the navigation only.</p>
 <pre class="highlight"><code class="language-bash">All the other pages are for[^1] demonstration purposes
 with the navigation only.
 
 [^1]: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</code></pre>
-<h2 id="keyboard">Keyboard<a class="headerlink" href="#keyboard" title="Permanent link">&para;</a></h2>
+<h2 id="md-extensions-keyboard">Keyboard<a class="headerlink" href="#md-extensions-keyboard" title="Permanent link">&para;</a></h2>
 <pre class="highlight"><code class="language-yaml"># location: mkdocs.yml
 markdown_extensions:
   - pymdownx.keys</code></pre>
 <p>Use keyboard values: <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-alt">Alt</kbd><span>+</span><kbd class="key-delete">Del</kbd></span></p>
 <pre class="highlight"><code class="language-bash">++ctrl+alt+delete++</code></pre>
-<h2 id="critics">Critics<a class="headerlink" href="#critics" title="Permanent link">&para;</a></h2>
+<h2 id="md-extensions-critics">Critics<a class="headerlink" href="#md-extensions-critics" title="Permanent link">&para;</a></h2>
 <pre class="highlight"><code class="language-yaml"># location: mkdocs.yml
 markdown_extensions:
   - pymdownx.critic</code></pre>
@@ -418,18 +525,18 @@ markdown_extensions:
 <hr />
 <p>To insert or remove text you can use <ins class="critic">insert me</ins> and <del class="critic">remove me</del> respectively. You can also denote a substitution with <del class="critic">substitute this</del><ins class="critic">with this</ins>.</p>
 <p>You can also highlight specific text with <mark class="critic">highlight me</mark>. Or even comment, which is generally done by highlighting text and following it with a comment: <mark class="critic">highlight me</mark><span class="critic comment">Add a comment</span>.</p>
-<h2 id="emojis">Emojis<a class="headerlink" href="#emojis" title="Permanent link">&para;</a></h2>
+<h2 id="md-extensions-emojis">Emojis<a class="headerlink" href="#md-extensions-emojis" title="Permanent link">&para;</a></h2>
 <pre class="highlight"><code class="language-yaml"># location: mkdocs.yml
 markdown_extensions:
   - pymdownx.emoji</code></pre>
 <p>You can also use emojis: <img alt="😄" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f604.png" title=":smile:" /> <img alt="❤️" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/2764.png" title=":heart:" /></p>
 <pre class="highlight"><code class="language-bash">:smile: :heart:</code></pre>
-<h2 id="mark">Mark<a class="headerlink" href="#mark" title="Permanent link">&para;</a></h2>
+<h2 id="md-extensions-mark">Mark<a class="headerlink" href="#md-extensions-mark" title="Permanent link">&para;</a></h2>
 <pre class="highlight"><code class="language-yaml"># location: mkdocs.yml
 markdown_extensions:
   - pymdownx.mark</code></pre>
 <p>Ability to add <code>&lt;mark&gt;&lt;/mark&gt;</code> by using <code>==hello==</code> <mark>hello</mark></p>
-<h2 id="smart-symbols">Smart symbols<a class="headerlink" href="#smart-symbols" title="Permanent link">&para;</a></h2>
+<h2 id="md-extensions-smart-symbols">Smart symbols<a class="headerlink" href="#md-extensions-smart-symbols" title="Permanent link">&para;</a></h2>
 <pre class="highlight"><code class="language-yaml"># location: mkdocs.yml
 markdown_extensions:
   - pymdownx.smartsymbols</code></pre>
@@ -437,7 +544,7 @@ markdown_extensions:
 <p>I'd say &plusmn;8</p>
 <pre class="highlight"><code class="language-bash">KPN (tm)
 I'd say +/-8</code></pre>
-<h2 id="tasklist">Tasklist<a class="headerlink" href="#tasklist" title="Permanent link">&para;</a></h2>
+<h2 id="md-extensions-tasklist">Tasklist<a class="headerlink" href="#md-extensions-tasklist" title="Permanent link">&para;</a></h2>
 <pre class="highlight"><code class="language-yaml"># location: mkdocs.yml
 markdown_extensions:
   - pymdownx.tasklist</code></pre>
@@ -456,7 +563,7 @@ markdown_extensions:
 <li class="task-list-item"><input type="checkbox" disabled/> item 2</li>
 <li class="task-list-item"><input type="checkbox" disabled/> item 3</li>
 </ul>
-<h2 id="tilde">Tilde<a class="headerlink" href="#tilde" title="Permanent link">&para;</a></h2>
+<h2 id="md-extensions-tilde">Tilde<a class="headerlink" href="#md-extensions-tilde" title="Permanent link">&para;</a></h2>
 <pre class="highlight"><code class="language-yaml"># location: mkdocs.yml
 markdown_extensions:
   - pymdownx.tilde</code></pre>
@@ -468,9 +575,9 @@ markdown_extensions:
 CH~3~CH~2~OH
 
 text~a\ subscript~</code></pre>
-<h2 id="more">More<a class="headerlink" href="#more" title="Permanent link">&para;</a></h2>
+<h2 id="md-extensions-more">More<a class="headerlink" href="#md-extensions-more" title="Permanent link">&para;</a></h2>
 <p>Read more about the extensions in <a href="https://facelessuser.github.io/pymdown-extensions/extensions/">pymdown-extensions</a></p>
-<h2 id="content-tabs">Content tabs<a class="headerlink" href="#content-tabs" title="Permanent link">&para;</a></h2>
+<h2 id="md-extensions-content-tabs">Content tabs<a class="headerlink" href="#md-extensions-content-tabs" title="Permanent link">&para;</a></h2>
 <pre class="highlight"><code class="language-yaml"># location: mkdocs.yml
 markdown_extensions:
   - pymdownx.tabbed</code></pre>
@@ -492,14 +599,14 @@ markdown_extensions:
 
     - list item a
     - list item b</code></pre>
-<div class="tabbed-set" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">JS</label><div class="tabbed-content">
+<div class="tabbed-set" data-tabs="1:3"><input checked="checked" id="md-extensions-__tabbed_1_1" name="md-extensions-__tabbed_1" type="radio" /><label for="md-extensions-__tabbed_1_1">JS</label><div class="tabbed-content">
 <pre class="highlight"><code>date = new Date()</code></pre>
 </div>
-<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Python</label><div class="tabbed-content">
+<input id="md-extensions-__tabbed_1_2" name="md-extensions-__tabbed_1" type="radio" /><label for="md-extensions-__tabbed_1_2">Python</label><div class="tabbed-content">
 <pre class="highlight"><code class="language-python">import datetime
 datetime.datetime.now()</code></pre>
 </div>
-<input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><label for="__tabbed_1_3">List</label><div class="tabbed-content">
+<input id="md-extensions-__tabbed_1_3" name="md-extensions-__tabbed_1" type="radio" /><label for="md-extensions-__tabbed_1_3">List</label><div class="tabbed-content">
 <p>More <code>Markdown</code> <strong>content</strong>.</p>
 <ul>
 <li>list item a</li>
@@ -507,7 +614,7 @@ datetime.datetime.now()</code></pre>
 </ul>
 </div>
 </div>
-<h2 id="plantuml-diagrams">PlantUML diagrams<a class="headerlink" href="#plantuml-diagrams" title="Permanent link">&para;</a></h2>
+<h2 id="md-extensions-plantuml-diagrams">PlantUML diagrams<a class="headerlink" href="#md-extensions-plantuml-diagrams" title="Permanent link">&para;</a></h2>
 <p>This is a C4 model example</p>
 <p><img src="data:image/png;base64,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" class="uml myDiagram" alt="My super diagram placeholder" title="C4 Model" /></p>
 <pre class="highlight"><code>```plantuml format="png" classes="uml myDiagram" alt="My super diagram placeholder" title="C4 Model"
@@ -541,7 +648,7 @@ Rel_R(api, db, "Reads/Writes")
 <p>If not present, run:</p>
 <pre class="highlight"><code class="language-bash">pip install -U plantuml-markdown</code></pre>
 <p><a href="https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml">VS code extension for PlantUML</a></p>
-<h2 id="mermaid-diagrams">Mermaid diagrams<a class="headerlink" href="#mermaid-diagrams" title="Permanent link">&para;</a></h2>
+<h2 id="md-extensions-mermaid-diagrams">Mermaid diagrams<a class="headerlink" href="#md-extensions-mermaid-diagrams" title="Permanent link">&para;</a></h2>
 <div class="mermaid">graph TD;
     A--&gt;B;
     A--&gt;C;
@@ -561,7 +668,7 @@ graph TD;
           - name: mermaid
             class: mermaid
             format: !!python/name:pymdownx.superfences.fence_div_format</code></pre>
-<h2 id="printing-to-pdf">Printing to PDF<a class="headerlink" href="#printing-to-pdf" title="Permanent link">&para;</a></h2>
+<h2 id="md-extensions-printing-to-pdf">Printing to PDF<a class="headerlink" href="#md-extensions-printing-to-pdf" title="Permanent link">&para;</a></h2>
 <p>To print to PDF simple add the <code>print-site</code> plugin to your <code>mkdocs.yml</code>:</p>
 <pre class="highlight"><code class="language-yaml">plugins:
   - print-site: # bottom of the plugin list
@@ -582,11 +689,215 @@ foo bar
 <div class="footnote">
 <hr />
 <ol>
-<li id="fn:1">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+<li id="md-extensions-fn:1">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.&#160;<a class="footnote-backref" href="#md-extensions-fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 </ol>
-</div>
+</div></section><section class="print-page" id="usage" heading-number="4"><h1 id="usage-markdown-usage">Markdown usage<a class="headerlink" href="#usage-markdown-usage" title="Permanent link">&para;</a></h1>
+<p>Markdown is a simple language that will become HTML.</p>
+<p>The syntax is quite simple, use this <a href="https://www.markdownguide.org/cheat-sheet/">cheatsheet</a> as reference.</p>
+<p>Coming up next we'll see some examples</p>
+<h2 id="usage-code-blocks-and-links">Code blocks and links<a class="headerlink" href="#usage-code-blocks-and-links" title="Permanent link">&para;</a></h2>
+<p><a href="https://www.kpn.com">a link to kpn</a></p>
+<p><code>
+<a href="#usage-mkdocs-kpn-theme-usage-code-block">a link to kpn also code</a>
+</code></p>
+<p><code>variable = 1</code></p>
+<h2 id="usage-code-block">Code block<a class="headerlink" href="#usage-code-block" title="Permanent link">&para;</a></h2>
+<p>In order to add a code block you need to wrap your coude around 3 backticks</p>
+<pre class="highlight"><code>```python
+@requires_authorization(roles=["ADMIN"])
+def somefunc(param1='', param2=0):
+    r'''A docstring'''
+    if param1 &gt; param2: # interesting
+        print 'Gre\'ater'
+    return (param2 - param1 + 1 + 0b10l) or None
+
+class SomeClass:
+    pass
+
+&gt;&gt;&gt; message = '''interpreter
+... prompt'''
+```</code></pre>
+<p>Other languages:</p>
+<p>groovy</p>
+<pre class="highlight"><code class="language-groovy">stage("hello") {
+
+}</code></pre>
+<p>typescript</p>
+<pre class="highlight"><code class="language-ts">const a = "A";</code></pre>
+<p>asciidoc</p>
+<pre class="highlight"><code class="language-asciidoc">= Title</code></pre>
+<p>nix</p>
+<pre class="highlight"><code class="language-nix">{
+    name = "x";
+}</code></pre>
+<h2 id="usage-image">Image<a class="headerlink" href="#usage-image" title="Permanent link">&para;</a></h2>
+<pre class="highlight"><code class="language-text">![alternative text](https://www.kpn.com/public/images/logos/logo-kpn-groot.png)</code></pre>
+<p><img alt="alternative text" src="https://www.kpn.com/public/images/logos/logo-kpn-groot.png" /></p>
+<h2 id="usage-unordered-lists">Unordered Lists<a class="headerlink" href="#usage-unordered-lists" title="Permanent link">&para;</a></h2>
+<pre class="highlight"><code class="language-md">- item
+    - item a
+        - other nested
+        - other nested
+    - item b
+    - item b</code></pre>
+<ul>
+<li>item<ul>
+<li>item a<ul>
+<li>other nested</li>
+<li>other nested</li>
+</ul>
+</li>
+<li>item b</li>
+<li>item b</li>
+</ul>
+</li>
+</ul>
+<h2 id="usage-ordered-lists">Ordered Lists<a class="headerlink" href="#usage-ordered-lists" title="Permanent link">&para;</a></h2>
+<pre class="highlight"><code class="language-md">1. item
+    1. item a
+        1. other nested
+        1. other nested
+    1. item b
+    1. item b</code></pre>
+<ol>
+<li>item<ol>
+<li>item a<ol>
+<li>other nested</li>
+<li>other nested</li>
+</ol>
+</li>
+<li>item b</li>
+<li>item b</li>
+</ol>
+</li>
+</ol>
+<h2 id="usage-code-inside-a-list">Code inside a <code>list</code><a class="headerlink" href="#usage-code-inside-a-list" title="Permanent link">&para;</a></h2>
+<pre class="highlight"><code class="language-md">- `name`
+- `list`
+- `name`
+    - `name`
+    - `name`</code></pre>
+<ul>
+<li><code>name</code></li>
+<li><code>list</code></li>
+<li><code>name</code><ul>
+<li><code>name</code></li>
+<li><code>name</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="usage-code-inside-table">Code inside <code>table</code><a class="headerlink" href="#usage-code-inside-table" title="Permanent link">&para;</a></h2>
+<pre class="highlight"><code class="language-md">| Example | Bla      | Foo | Bla      | Bla      |
+| ------- | -------- | --- | -------- | -------- |
+| `name`  | `String` | Bar | `String` | `String` |
+| `name`  | Bar      | Bar | Bar      | Bar      |
+| Bar     | `String` | Bar | `String` | `String` |</code></pre>
+<table>
+<thead>
+<tr>
+<th>Example</th>
+<th>Bla</th>
+<th>Foo</th>
+<th>Bla</th>
+<th>Bla</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>name</code></td>
+<td><code>String</code></td>
+<td>Bar</td>
+<td><code>String</code></td>
+<td><code>String</code></td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td>Bar</td>
+<td>Bar</td>
+<td>Bar</td>
+<td>Bar</td>
+</tr>
+<tr>
+<td>Bar</td>
+<td><code>String</code></td>
+<td>Bar</td>
+<td><code>String</code></td>
+<td><code>String</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="usage-quotes">Quotes<a class="headerlink" href="#usage-quotes" title="Permanent link">&para;</a></h2>
+<pre class="highlight"><code class="language-md">&gt; Lorem ipsum dolor sit amet, consectetur</code></pre>
+<blockquote>
+<p>Lorem ipsum dolor sit amet, consectetur</p>
+</blockquote>
+<hr />
+<blockquote>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut tortor sed lorem auctor vulputate id hendrerit quam. Integer maximus molestie elit, non elementum libero rutrum ac. Suspendisse a gravida massa, vitae ullamcorper urna. Quisque various finibus leo, et ornare est bibendum et. Donec feugiat vitae ipsum fringilla volutpat. Duis hendrerit iaculis pellentesque. Nullam sed egestas nisi. Proin aliquet faucibus mi lacinia maximus. Integer urna ligula, malesuada in purus et, cursus tincidunt tortor. Donec et nunc consectetur, gravida nulla eu, viverra lorem. Nullam suscipit nibh sed nisl fringilla, sit amet tristique ante vulputate. Sed ultrices purus vel erat lacinia pellentesque. Phasellus elit mi, auctor eget nisl vehicula, sollicitudin ultrices risus. Etiam venenatis tempus arcu at dignissim.</p>
+</blockquote>
+<h2 id="usage-quotes-with-code-block">Quotes with code block<a class="headerlink" href="#usage-quotes-with-code-block" title="Permanent link">&para;</a></h2>
+<pre class="highlight"><code class="language-md">&gt; Lorem ipsum dolor `sit` amet, consectetur</code></pre>
+<blockquote>
+<p>Lorem ipsum dolor <code>sit</code> amet, consectetur</p>
+</blockquote>
+<h2 id="usage-titles">Titles<a class="headerlink" href="#usage-titles" title="Permanent link">&para;</a></h2>
+<usage-h1 id="usage-h1">H1<a class="headerlink" href="#usage-h1" title="Permanent link">&para;</a></h1>
+<p>header 1</p>
+<usage-h2 id="usage-h2">H2<a class="headerlink" href="#usage-h2" title="Permanent link">&para;</a></h2>
+<p>header 2</p>
+<usage-h3 id="usage-h3">H3<a class="headerlink" href="#usage-h3" title="Permanent link">&para;</a></h3>
+<p>header 3</p>
+<usage-h4 id="usage-h4">h4<a class="headerlink" href="#usage-h4" title="Permanent link">&para;</a></h4>
+<p>header 4</p></section>
+                    <section class='print-page md-section' id='section-5' heading-number='5'>
+                        <h1>Nested<a class='headerlink' href='#section-5' title='Permanent link'></a>
+                        </h1>
+                    <section class="print-page" id="nested-sample1" heading-number="5.1"><h1 id="nested-sample1-nested-sample1">Sample1</h1><h2 id="no-title">No title<a class="headerlink" href="#nested-sample1-no-title" title="Permanent link">&para;</a></h2>
+<h2 id="nested-sample1-no-title_1">No title<a class="headerlink" href="#nested-sample1-no-title_1" title="Permanent link">&para;</a></h2></section><section class="print-page" id="nested-sample2" heading-number="5.2"><h1 id="nested-sample2-basic">Basic<a class="headerlink" href="#nested-sample2-basic" title="Permanent link">&para;</a></h1></section></section></div><style>.print-site-enumerate-headings #index > h1:before { content: '1 ' }
+
+                .print-site-enumerate-headings #index h2:before { content: '1.' counter(counter-index-2) ' ' }
+                .print-site-enumerate-headings #index h2 {  counter-reset: counter-index-3 ;  counter-increment: counter-index-2 }
+            
+                .print-site-enumerate-headings #index h3:before { content: '1.' counter(counter-index-2) '.' counter(counter-index-3) ' ' }
+                .print-site-enumerate-headings #index h3 {  counter-increment: counter-index-3 }
+            
+.print-site-enumerate-headings #getting-started > h1:before { content: '2 ' }
+
+                .print-site-enumerate-headings #getting-started h2:before { content: '2.' counter(counter-getting-started-2) ' ' }
+                .print-site-enumerate-headings #getting-started h2 {  counter-reset: counter-getting-started-3 ;  counter-increment: counter-getting-started-2 }
+            
+                .print-site-enumerate-headings #getting-started h3:before { content: '2.' counter(counter-getting-started-2) '.' counter(counter-getting-started-3) ' ' }
+                .print-site-enumerate-headings #getting-started h3 {  counter-increment: counter-getting-started-3 }
+            
+.print-site-enumerate-headings #md-extensions > h1:before { content: '3 ' }
+
+                .print-site-enumerate-headings #md-extensions h2:before { content: '3.' counter(counter-md-extensions-2) ' ' }
+                .print-site-enumerate-headings #md-extensions h2 {  counter-reset: counter-md-extensions-3 ;  counter-increment: counter-md-extensions-2 }
+            
+                .print-site-enumerate-headings #md-extensions h3:before { content: '3.' counter(counter-md-extensions-2) '.' counter(counter-md-extensions-3) ' ' }
+                .print-site-enumerate-headings #md-extensions h3 {  counter-increment: counter-md-extensions-3 }
+            
+.print-site-enumerate-headings #usage > h1:before { content: '4 ' }
+
+                .print-site-enumerate-headings #usage h2:before { content: '4.' counter(counter-usage-2) ' ' }
+                .print-site-enumerate-headings #usage h2 {  counter-reset: counter-usage-3 ;  counter-increment: counter-usage-2 }
+            
+                .print-site-enumerate-headings #usage h3:before { content: '4.' counter(counter-usage-2) '.' counter(counter-usage-3) ' ' }
+                .print-site-enumerate-headings #usage h3 {  counter-increment: counter-usage-3 }
+            
+.print-site-enumerate-headings #section-5 > h1:before { content: '5 ' }
+.print-site-enumerate-headings #nested-sample1 > h1:before { content: '5.1 ' }
+
+                .print-site-enumerate-headings #nested-sample1 h2:before { content: '5.1.' counter(counter-nested-sample1-2) ' ' }
+                .print-site-enumerate-headings #nested-sample1 h2 {  counter-increment: counter-nested-sample1-2 }
+            
+.print-site-enumerate-headings #nested-sample2 > h1:before { content: '5.2 ' }
+
+                .print-site-enumerate-headings #nested-sample2 h2:before { content: '5.2.' counter(counter-nested-sample2-2) ' ' }
+                .print-site-enumerate-headings #nested-sample2 h2 {  counter-increment: counter-nested-sample2-2 }
+            </style>
               
             </div>
           </div>
@@ -598,34 +909,6 @@ foo bar
     <footer class="footer">
       <div class="footer__body">
         
-        <div class="row">
-          <div class="col col--s-4 col--m-3 col--l-2">
-          </div>
-          <div class="col col--s-4 col--m space-between">
-            
-              <a class="footer__link padding-top-0 navigation-prev"
-                href="../getting-started/"
-                title="Getting started">
-                &#8592; Previous Page
-              </a>
-            
-            
-              <div>
-                Copyright &copy; KPN
-              </div>
-            
-            
-              <a class="footer__link padding-top-0 navigation-next"
-                href="../usage/"
-                title="Markdown usage"/>
-                Next Page &#8594;
-              </a>
-            
-          </div>
-          <div class="col col--s-4 col--m-3 ">
-          </div>
-        </div>
-        
       </div>
     </footer>
   </div>
@@ -633,12 +916,12 @@ foo bar
 
   <!--
   MkDocs version      : 1.6.1
-  Docs Build Date UTC : 2026-03-27 16:45:44.682576+00:00
+  Docs Build Date UTC : 2026-03-27 16:45:44.651384+00:00
   -->
 
   <!--
     To include static assets from our theme, just add
-    .. beforehand which will be the relative path to
+    /mkdocs-kpn-theme/ beforehand which will be the relative path to
     the root of the documentation.
   -->
   <script src="../js/highlight.min.js"></script>

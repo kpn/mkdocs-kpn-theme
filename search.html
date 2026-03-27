@@ -37,6 +37,8 @@
     http://www.mkdocs.org/user-guide/configuration/#extra_css
   -->
   
+    <link href="./css/print-site.css" rel="stylesheet">
+  
 
   
   <script>var base_url = '.';</script>
@@ -61,12 +63,12 @@
   <!-- KPN STYLE Beginning -->
   <div class="app-layout ">
     <!-- Top Bar -->
-    <nav class="app-layout__top-bar top-bar">
+    <nav class="app-layout__top-bar top-bar no-print">
       <a class="top-bar__logo">
         <img alt="KPN Logo" src="./img/logo-kpn.svg" />
       </a>
-      <div class="top-bar__title">KPN Theme</div>
-      <ul class="top-bar__menu">
+      <div class="top-bar__title no-print">KPN Theme</div>
+      <ul class="top-bar__menu no-print">
         <!--
           Create a search form that sends the user to the search.html file - this is
           the other file in the template which adds search to the theme. The only
@@ -87,7 +89,7 @@
         
         <li class="top-bar__item top-bar__item__version">
           <label class="top-bar__version text-sm" title="Current version">
-            1.8.2
+            1.9.0
           </label>
         </li>
         
@@ -109,7 +111,9 @@
               </svg>
             </a>
           
+
         </li>
+        
 
         <li class="top-bar__item">
             <label class="top-bar__link" id="label-dark-mode" for="dark-mode" title="Dark mode">
@@ -142,7 +146,7 @@
 
       See the nav.html file for more details about how this works.
     -->
-    <nav class="app-layout__side-bar side-bar">
+    <nav class="app-layout__side-bar side-bar no-print">
       <div class="side-bar__action-bar">
         <a class="side-bar__link" href="/">KPN Theme</a>
         <!--
@@ -150,7 +154,7 @@
         -->
         
         <label class="side-bar__version text-sm" title="Current version">
-          1.8.2
+          1.9.0
         </label>
         
         <button class="side-bar__close"></button>
@@ -228,7 +232,7 @@
 
 <li>
   <a href="./nested/sample2/" class="side-bar__link ">
-    Sample2
+    Basic
   </a>
 </li>
 
@@ -242,7 +246,7 @@
 
     <!-- MAIN BLOCK -->
     <main class="app-layout__main main">
-      <div class="app-layout__title-bar title-bar">
+      <div class="app-layout__title-bar title-bar no-print">
         <div class="title-bar__title"></div>
       </div>
       
@@ -282,7 +286,7 @@
 
   <!--
   MkDocs version      : 1.6.1
-  Docs Build Date UTC : 2026-03-27 12:16:48.736985+00:00
+  Docs Build Date UTC : 2026-03-27 16:45:44.678600+00:00
   -->
 
   <!--
@@ -306,6 +310,8 @@
 
     http://www.mkdocs.org/user-guide/configuration/#extra_javascript
   -->
+  
+    <script src="./js/print-site.js"></script>
   
     <script src="./search/main.js"></script>
   
