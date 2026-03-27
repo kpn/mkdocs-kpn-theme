@@ -1,4 +1,0 @@
-mkdocs>=1.0
-markdown>=3.3.7
-pymdown-extensions>=9.4
-plantuml-markdown>=3.4.2,<4

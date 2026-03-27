@@ -1,24 +1,7 @@
 #!/bin/sh -e
 
-PREFIX=""
-if [ -d '.venv' ] ; then
-    PREFIX=".venv/bin/"
-fi
-
-if ! command -v "${PREFIX}twine" > /dev/null ; then
-    echo "Unable to find the 'twine' command."
-    echo "Install from PyPI, using '${PREFIX}pip install twine'."
-    exit 1
-fi
-
-if ! command -v "${PREFIX}wheel" > /dev/null ; then
-    echo "Unable to find the 'wheel' command."
-    echo "Install from PyPI, using '${PREFIX}pip install wheel'."
-    exit 1
-fi
-
 find kpn_theme -type f -name "*.py[co]" -delete
 find kpn_theme -type d -name __pycache__ -delete
 
-${PREFIX}python setup.py sdist bdist_wheel
-${PREFIX}twine upload -u $PYPI_USERNAME -p $PYPI_PASSWORD dist/*
+uv build
+uv publish
