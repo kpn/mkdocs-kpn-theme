@@ -1,19 +1,19 @@
 site_name: KPN Theme
-site_description: 'A KPN theme for MkDocs'
-site_url: 'https://kpn.github.io/mkdocs-kpn-theme/'
+site_description: "A KPN theme for MkDocs"
+site_url: "https://kpn.github.io/mkdocs-kpn-theme/"
 
 theme:
   name: kpn
 
-repo_name: 'kpn/mkdocs-kpn-theme'
+repo_name: "kpn/mkdocs-kpn-theme"
 repo_url: https://github.com/kpn/mkdocs-kpn-theme/
 
 extra:
   version:
-    provider: 'manual'
+    provider: "manual"
     version: 1.8.2
 
-copyright: 'Copyright &copy; KPN'
+copyright: "Copyright &copy; KPN"
 
 markdown_extensions:
   - admonition
@@ -31,12 +31,16 @@ markdown_extensions:
       use_pygments: false
   - pymdownx.superfences:
       custom_fences:
-          - name: mermaid
-            class: mermaid
-            format: !!python/name:pymdownx.superfences.fence_div_format
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_format
   - plantuml_markdown:
       server: http://www.plantuml.com/plantuml
   - pymdownx.tabbed
+
 plugins:
   - search:
       prebuild_index: true
+  - print-site: # bottom of the plugin list
+      add_print_site_banner: true
+      print_page_title: "mkdocs KPN theme manual"

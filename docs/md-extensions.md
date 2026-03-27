@@ -33,6 +33,8 @@ markdown_extensions:
 !!! danger "Failure"
     This is an admonition box.
 
+<div class="page-break"></div>
+
 !!! Example "Default"
     This is the default box
 
@@ -372,4 +374,36 @@ markdown_extensions:
           - name: mermaid
             class: mermaid
             format: !!python/name:pymdownx.superfences.fence_div_format
+```
+
+
+## Printing to PDF
+
+To print to PDF simple add the `print-site` plugin to your `mkdocs.yml`:
+
+```yaml
+plugins:
+  - print-site: # bottom of the plugin list
+      add_print_site_banner: true
+      print_page_title: "User Manual"
+```
+
+
+A new print icon will appear. If you click on it, you'll be redirected to a print-friendly version of all of
+your documentation. From there you can print to PDF using your browser's print functionality, normally <kbd>Ctrl</kbd> + <kbd>P</kbd> or in mac <kbd>Cmd</kbd> + <kbd>P</kbd>.
+
+**Browsers recommended**: Google Chrome or Microsoft Edge, as they have better support for printing web pages to PDF.
+
+For more options check [mkdocs-print-site-plugin](https://timvink.github.io/mkdocs-print-site-plugin/options.html)
+
+If you need to send content to a new page, you can use the `page-break` class in your markdown:
+
+```html
+# Title
+
+foo bar
+
+<div class="page-break"></div>
+
+# New page
 ```

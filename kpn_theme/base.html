@@ -93,12 +93,12 @@
   <!-- KPN STYLE Beginning -->
   <div class="app-layout ">
     <!-- Top Bar -->
-    <nav class="app-layout__top-bar top-bar">
+    <nav class="app-layout__top-bar top-bar no-print">
       <a class="top-bar__logo">
         <img alt="KPN Logo" src="{{ "img/logo-kpn.svg"|url }}" />
       </a>
-      <div class="top-bar__title">{{ config.site_name }}</div>
-      <ul class="top-bar__menu">
+      <div class="top-bar__title no-print">{{ config.site_name }}</div>
+      <ul class="top-bar__menu no-print">
         <!--
           Create a search form that sends the user to the search.html file - this is
           the other file in the template which adds search to the theme. The only
@@ -157,7 +157,15 @@
               <img height="24" alt="{{ config.repo_name }}" src="{{ "img/git-icon-black.png"|url }}" />
             </a>
           {% endif %}
+
         </li>
+        {% if page.url_to_print_page %}
+        <li class="top-bar__item">
+            <a class="top-bar__link repo-link" href="{{ page.url_to_print_page }}" title="Link to Print site" >
+                <img height="25" alt="printer" src="{{ "img/print.svg"|url }}" />
+            </a>
+        </li>
+        {% endif %}
 
         <li class="top-bar__item">
             <label class="top-bar__link" id="label-dark-mode" for="dark-mode" title="Dark mode">
@@ -190,7 +198,7 @@
 
       See the nav.html file for more details about how this works.
     -->
-    <nav class="app-layout__side-bar side-bar">
+    <nav class="app-layout__side-bar side-bar no-print">
       <div class="side-bar__action-bar">
         <a class="side-bar__link" href="/">{{ config.site_name }}</a>
         <!--
@@ -212,11 +220,11 @@
 
     <!-- MAIN BLOCK -->
     <main class="app-layout__main main">
-      <div class="app-layout__title-bar title-bar">
+      <div class="app-layout__title-bar title-bar no-print">
         <div class="title-bar__title">{{ page.title }}</div>
       </div>
       {% if page.toc %}
-      <div class="sidebar--secondary hidden-s hidden-xs">
+      <div class="sidebar--secondary hidden-s hidden-xs md-sidebar--secondary">
         <h4>Table of contents</h4>
         <ul>
         {% for toc_item in page.toc %}

@@ -15,7 +15,7 @@ uv sync
 Run the development server:
 
 ```sh
-uv run mkdocs serve -w
+uv run mkdocs serve -w .
 ```
 
 The site will be available at `http://127.0.0.1:8000`.
