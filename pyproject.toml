@@ -1,6 +1,6 @@
 [project]
 name = "mkdocs-kpn"
-version = "1.9.0"
+version = "1.9.1"
 description = "A KPN-styles theme for MkDocs"
 readme = "README.md"
 license = "MIT"
