@@ -65,6 +65,12 @@ nix
 }
 ```
 
+shell
+
+```sh
+CLIENT_ID="<INSERT>" CLIENT_SECRET="<INSERT>" EXTRA_HEADERS=key1:value1,key2:value2 mvn exec:java -Dexec.mainClass=com.kpn.app.Main
+```
+
 ## Image
 
 ```text
