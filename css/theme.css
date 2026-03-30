@@ -561,7 +561,15 @@ label[for="dark-mode"] {
     top: 0 !important;
     width: 100% !important;
   }
-  .highlight {
+  /* .highlight {
+    print-color-adjust: exact;
+  } */
+  .highlight,
+  .highlight pre,
+  .highlight code {
+    white-space: pre-wrap !important; /* Forces line wrapping */
+    word-break: break-all; /* Breaks long strings (like URLs) */
+    overflow-x: visible !important; /* Ensures no scrollbar appears */
     print-color-adjust: exact;
   }
 
