@@ -439,7 +439,7 @@ wheels = [
 
 [[package]]
 name = "mkdocs-kpn"
-version = "1.9.1"
+version = "1.10.0"
 source = { editable = "." }
 dependencies = [
     { name = "markdown", version = "3.9", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.10'" },
