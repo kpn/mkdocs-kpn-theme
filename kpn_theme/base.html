@@ -143,6 +143,10 @@
                   {% set repo_conf.img = 'img/logo-bitbucket.svg' %}
               {% elif 'gitea' in config.repo_url %}
                 {% set repo_conf.img = 'img/logo-gitea.svg' %}
+              {% elif 'forgejo' in config.repo_url %}
+                {% set repo_conf.img = 'img/logo-forgejo.svg' %}
+              {% elif 'codeberg' in config.repo_url %}
+                {% set repo_conf.img = 'img/logo-codeberg.svg' %}
               {% endif %}
               {% if config.extra.repo_icon %}
                 {% set repo_conf.img = 'img/logo-' + config.extra.repo_icon + '.svg' %}
