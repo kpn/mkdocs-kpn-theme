@@ -1,5 +1,5 @@
 site_name: KPN Theme
-site_description: "A KPN theme for MkDocs"
+site_description: "A KPN theme for documentation"
 site_url: "https://kpn.github.io/mkdocs-kpn-theme/"
 
 theme:
@@ -43,4 +43,4 @@ plugins:
       prebuild_index: true
   - print-site: # bottom of the plugin list
       add_print_site_banner: true
-      print_page_title: "mkdocs KPN theme manual"
+      print_page_title: "KPN theme manual"

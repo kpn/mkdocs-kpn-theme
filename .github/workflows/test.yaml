@@ -1,0 +1,27 @@
+name: Test
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        library:
+          - mkdocs
+          - properdocs
+          - zensical
+    steps:
+      - uses: actions/checkout@v6
+      - name: Install uv
+        uses: astral-sh/setup-uv@v7
+      - name: Set up Python
+        run: |
+          uv venv
+      - name: Install ${{ matrix.library }}
+        run: uv pip install "${{ matrix.library }}"
+      - name: Build with ${{ matrix.library }}
+        run: uv run ${{ matrix.library }} build

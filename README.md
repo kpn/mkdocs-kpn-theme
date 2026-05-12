@@ -1,4 +1,4 @@
-# KPN for MkDocs
+# KPN documentation site for MkDocs, Zensical and ProperDocs
 
 [![Conventional
 Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg?style=flat-square)](https://conventionalcommits.org)
@@ -11,7 +11,7 @@ release](https://img.shields.io/pypi/v/mkdocs-kpn.svg?style=flat-square)](https:
 
 ## Create a beautiful KPN project documentation
 
-KPN Theme is a theme for MkDocs, an excellent static site generator geared towards project documentation.
+KPN Theme is a theme for MkDocs, ProperDocs and Zensical. Excellent static site generators geared towards project documentation.
 It is built using [KPN Styles][kpn_styles].
 
 ## Quickstart
@@ -22,7 +22,7 @@ Install the latest version of KPN theme with pip:
 pip install mkdocs-kpn
 ```
 
-Append the following line to your project's mkdocs.yml:
+Append the following line to your project's `mkdocs.yml` (or `zensical.toml`):
 
 ```yaml
 theme:

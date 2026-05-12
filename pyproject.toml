@@ -3,24 +3,24 @@ name = "mkdocs-kpn"
 version = "1.9.1"
 description = "A KPN-styles theme for MkDocs"
 readme = "README.md"
-license = "MIT"
 requires-python = ">=3.9"
+license = "MIT"
 authors = [{ name = "Santiago Fraire Willemoës", email = "de-streams@kpn.com" }]
+keywords = ["documentation", "mkdocs", "theme"]
 classifiers = [
-    "Development Status :: 5 - Production/Stable",
-    "License :: OSI Approved :: MIT License",
-    "Programming Language :: JavaScript",
-    "Programming Language :: Python",
-    "Topic :: Documentation",
-    "Topic :: Text Processing :: Markup :: HTML",
+  "Development Status :: 5 - Production/Stable",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: JavaScript",
+  "Programming Language :: Python",
+  "Topic :: Documentation",
+  "Topic :: Text Processing :: Markup :: HTML",
 ]
-keywords = ["mkdocs", "documentation", "theme"]
 dependencies = [
-    "mkdocs>=1.0,<2",
-    "markdown>=3.3.7",
-    "pymdown-extensions>=9.4",
-    "plantuml-markdown>=3.4.2,<4",
-    "mkdocs-print-site-plugin>=2.8",
+  "markdown>=3.3.7",
+  "mkdocs>=1.0,<2",
+  "mkdocs-print-site-plugin>=2.8",
+  "plantuml-markdown>=3.4.2,<4",
+  "pymdown-extensions>=9.4",
 ]
 
 [project.urls]
