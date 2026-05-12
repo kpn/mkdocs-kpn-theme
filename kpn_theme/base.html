@@ -216,7 +216,8 @@
         <button class="side-bar__close"></button>
       </div>
       <ul class="side-bar__menu">
-        {% for nav_item in nav %}
+        {% set nav_items = nav.items if nav.items is defined else nav %}
+        {% for nav_item in nav_items %}
           {% include "nav.html" %}
         {% endfor %}
       </ul>
