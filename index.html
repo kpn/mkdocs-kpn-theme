@@ -8,11 +8,11 @@
     The page_title contains the title for a page as shown in the navigation.
     Site name contains the name as defined in the mkdocs.yml
   -->
-  <title>KPN for MkDocs - KPN Theme</title>
+  <title>KPN Theme - KPN Theme</title>
 
   <!-- Page description -->
   
-    <meta name="description" content="A KPN theme for MkDocs" />
+    <meta name="description" content="A KPN theme for documentation" />
   
 
   <!-- Redirect -->
@@ -90,7 +90,7 @@
         
         <li class="top-bar__item top-bar__item__version">
           <label class="top-bar__version text-sm" title="Current version">
-            1.9.1
+            1.10.0
           </label>
         </li>
         
@@ -161,12 +161,13 @@
         -->
         
         <label class="side-bar__version text-sm" title="Current version">
-          1.9.1
+          1.10.0
         </label>
         
         <button class="side-bar__close"></button>
       </div>
       <ul class="side-bar__menu">
+        
         
           <!--
 
@@ -174,7 +175,7 @@
 
 <li>
   <a href="." class="side-bar__link side-bar__link--active">
-    KPN for MkDocs
+    KPN Theme
   </a>
 </li>
 
@@ -254,7 +255,7 @@
     <!-- MAIN BLOCK -->
     <main class="app-layout__main main">
       <div class="app-layout__title-bar title-bar no-print">
-        <div class="title-bar__title">KPN for MkDocs</div>
+        <div class="title-bar__title">KPN Theme</div>
       </div>
       
       <div class="sidebar--secondary hidden-s hidden-xs md-sidebar--secondary">
@@ -263,19 +264,19 @@
         
           
             
-                <li><a class="a" href="#create-a-beautiful-kpn-project-documentation">Create a beautiful KPN project documentation</a></li>
+                <li><a class="a" href="#create-a-beautiful-kpn-project-documentation">Create a Beautiful KPN Project Documentation</a></li>
                 
             
                 <li><a class="a" href="#quickstart">Quickstart</a></li>
                 
             
-                <li><a class="a" href="#what-to-expect">What to expect</a></li>
+                <li><a class="a" href="#what-to-expect">What to Expect</a></li>
                 
             
-                <li><a class="a" href="#change-repo-icon">Change repo icon</a></li>
+                <li><a class="a" href="#change-repo-icon">Change Repo Icon</a></li>
                 
             
-                <li><a class="a" href="#add-version-to-site">Add version to site</a></li>
+                <li><a class="a" href="#add-version-to-site">Add Version to Site</a></li>
                 
             
           
@@ -289,33 +290,38 @@
             <div class="card__body">
 
               
-              <h1 id="kpn-for-mkdocs">KPN for MkDocs<a class="headerlink" href="#kpn-for-mkdocs" title="Permanent link">&para;</a></h1>
-<h2 id="create-a-beautiful-kpn-project-documentation">Create a beautiful KPN project documentation<a class="headerlink" href="#create-a-beautiful-kpn-project-documentation" title="Permanent link">&para;</a></h2>
-<p>KPN Theme is a theme for MkDocs, an excellent static site generator geared towards project documentation.
+              <h1 id="kpn-theme">KPN Theme<a class="headerlink" href="#kpn-theme" title="Permanent link">&para;</a></h1>
+<p>Theme for your favorite documentation tool:</p>
+<ul>
+<li><a href="(https://www.mkdocs.org/)">MkDocs v1</a></li>
+<li><a href="(https://properdocs.org/)">ProperDocs</a></li>
+<li><a href="(https://zensical.org/)">Zensical</a></li>
+</ul>
+<h2 id="create-a-beautiful-kpn-project-documentation">Create a Beautiful KPN Project Documentation<a class="headerlink" href="#create-a-beautiful-kpn-project-documentation" title="Permanent link">&para;</a></h2>
+<p>KPN Theme is a theme for <a href="(https://www.mkdocs.org/)">MkDocs v1</a>, <a href="(https://properdocs.org/)">ProperDocs</a> or <a href="(https://zensical.org/)">Zensical</a>. These are excellent static site generators geared towards project documentation.
 It is built using <a href="https://style.kpn.com/">KPN Styles</a>.</p>
 <h2 id="quickstart">Quickstart<a class="headerlink" href="#quickstart" title="Permanent link">&para;</a></h2>
-<p>Install the latest version of KPN theme with pip:</p>
+<p>Install the latest version of KPN theme with pip (after your favorite doc library):</p>
 <pre class="highlight"><code class="language-bash">pip install mkdocs-kpn</code></pre>
-<p>Append the following line to your project's mkdocs.yml:</p>
+<p>Append the following line to your project's <code>mkdocs.yml</code>:</p>
 <pre class="highlight"><code class="language-yaml">theme:
   name: 'kpn'</code></pre>
-<h2 id="what-to-expect">What to expect<a class="headerlink" href="#what-to-expect" title="Permanent link">&para;</a></h2>
+<h2 id="what-to-expect">What to Expect<a class="headerlink" href="#what-to-expect" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Responsive design and fluid layout for all kinds of screens and devices,
 designed to serve your project documentation in a user-friendly way.</li>
-<li>Support for a lot of markdown extensions.</li>
+<li>Support for a lot of Markdown extensions.</li>
 </ul>
-<h2 id="change-repo-icon">Change repo icon<a class="headerlink" href="#change-repo-icon" title="Permanent link">&para;</a></h2>
+<h2 id="change-repo-icon">Change Repo Icon<a class="headerlink" href="#change-repo-icon" title="Permanent link">&para;</a></h2>
 <pre class="highlight"><code class="language-yaml"># options: github | gitlab | bitbucket | gitea
 extra:
   repo_icon: 'github'</code></pre>
-<h2 id="add-version-to-site">Add version to site<a class="headerlink" href="#add-version-to-site" title="Permanent link">&para;</a></h2>
+<h2 id="add-version-to-site">Add Version to Site<a class="headerlink" href="#add-version-to-site" title="Permanent link">&para;</a></h2>
 <p>Edit <code>mkdocs.yml</code> with</p>
 <pre class="highlight"><code class="language-yaml">extra:
   version:
     provider: 'manual'
     version: 1.2.2</code></pre>
-<p><strong>TODO</strong>: Add support for <a href="https://github.com/jimporter/mike/">mike</a> versioning</p>
               
             </div>
           </div>
@@ -358,7 +364,7 @@ extra:
 
   <!--
   MkDocs version      : 1.6.1
-  Docs Build Date UTC : 2026-03-30 10:28:47.976674+00:00
+  Docs Build Date UTC : 2026-05-12 14:01:14.295339+00:00
   -->
 
   <!--
